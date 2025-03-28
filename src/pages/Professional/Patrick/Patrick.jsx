@@ -79,6 +79,8 @@ const faMobileScreenButtonSkillIcon = faMobileScreenButtonSolid ? faMobileScreen
 
 
 const PatrickPage = () => {
+  console.log("Componente PatrickPage renderizado!");
+
 
   const professional = {
         name: 'Patrick Siqueira',
