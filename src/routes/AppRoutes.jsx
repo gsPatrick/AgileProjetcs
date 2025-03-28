@@ -6,7 +6,7 @@ import Professionals from "../pages/Professional/Professionals";
 import Projects from "../pages/Projects/Projects";
 
 import Maria from "../pages/Professional/Maria/Maria";
-import Patrick from "../pages/Professional/Patrick/Patrick";
+import PatrickPage from "../pages/Professional/Patrick/Patrick";
 import Giovani from "../pages/Professional/Giovani/Giovani";
 import Ranathan from "../pages/Professional/Ranathan/Ranathan";
 import Renan from "../pages/Professional/Renan/Renan";
@@ -26,7 +26,7 @@ const AppRoutes = () => {
           <Route path="/projects" element={<Projects />} />
           
           <Route path="/professionals/maria" element={<Maria />} />
-          <Route path="/Professional/Patrick" element={<Patrick />} />
+          <Route path="/Professional/Patrick" element={<PatrickPage />} />
           <Route path="/professionals/giovani" element={<Giovani />} />
           <Route path="/professionals/ranathan" element={<Ranathan />} />
           <Route path="/professionals/renan" element={<Renan />} />
