@@ -52,7 +52,9 @@
     import ShopifyIcon from '../../assets/ShopifyIcon.svg';
     import WixIcon from '../../assets/WixIcon.svg';
     import taiwindCssIcon from '../../assets/TailwindCss.svg';
-  
+    import FigmaIcon from '../../assets/FigmaIcon.svg'
+    import JavascriptIcon from '../../assets/JavascriptIcon.svg'
+
     const faReactIcon = faReactBrandIcon ? faReactBrandIcon : faLaptopCode;
     const faCss3AltIcon = faCss3AltBrandIcon ? faCss3AltBrandIcon : faPalette;
     const faHtml5Icon = faHtml5BrandIcon ? faHtml5BrandIcon : faCode;

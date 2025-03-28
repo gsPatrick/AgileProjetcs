@@ -65,7 +65,7 @@ import NginxIcon from '../../assets/NginxIcon.svg';
 import NodeJsIcon from '../../assets/NodeJsIcon.svg';
 import ReactIcon from '../../assets/ReactIcon.svg'; // Usando Reacticon.svg conforme imagem destacada
 import SpringBootIcon from '../../assets/SpringBoot.svg';
-import TypeScriptIcon from '../assets/TypeScript.svg';
+import TypeScriptIcon from '../../assets/TypeScript.svg';
 import ViteIcon from '../../assets/ViteIcon.svg';
 import NestJsIcon from '../../assets/NestJSIcon.svg'; // Importando o ícone do Nest.js - ASSUMINDO QUE VOCÊ TEM
 

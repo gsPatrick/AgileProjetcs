@@ -4,9 +4,8 @@
     import Skills from "../../professionals-components/Skills/Skills";
     import Header from "../../components/Header/Header";
     import AboutMe from "../../professionals-components/AboutMe/AboutMe";
-    import Projects from "../../professionals-components/Projects/Projects";
     // import Pro from "../../../professionals-components/AnotherProfessionals/Pro"; // Comente ou remova se não for usar
-    import '../../../App.css';
+    import '../../App.css';
 import Pro from "../../professionals-components/AnotherProfessionals/Pro";
 
     import { faReact as faReactBrandIcon, faCss3Alt as faCss3AltBrandIcon, faHtml5 as faHtml5BrandIcon } from '@fortawesome/free-brands-svg-icons';
@@ -46,39 +45,10 @@ import Pro from "../../professionals-components/AnotherProfessionals/Pro";
 
 
       // Importe os ícones SVG diretamente - IMPORTADOS AQUI
-      import AspNetIcon from '../../../assets/AspNetIcon.svg';
-      import AwsIcon from '../../../assets/AwsIcon.svg';
-      import AzureIcon from '../../../assets/AzureIcon.svg';
-      import CSharpIcon from '../../../assets/CSharpIcon.svg';
-      import DockerIcon from '../../../assets/DockerIcon.svg';
-      import FigmaIcon from '../../../assets/FigmaIcon.svg';
-      import GitHubIcon from '../../../assets/GitHubIcon.svg';
-      import JavaIcon from '../../../assets/JavaIcon.svg';
-      import JavascriptIcon from '../../../assets/JavascriptIcon.svg';
-      import MariaDbIcon from '../../../assets/MariaDBIcon.svg';
-      import MySqlIcon from '../../../assets/MySqlIcon.svg';
-  
-      import NetIcon from '../../../assets/NetIcon.svg';
-      import NextJsIcon from '../../../assets/NextJsIcon.svg';
-      import NginxIcon from '../../../assets/NginxIcon.svg';
-      import NodeJsIcon from '../../../assets/NodeJsIcon.svg';
-      import ReactIcon from '../../../assets/ReactIcon.svg'; // Usando Reacticon.svg conforme imagem destacada
-      import SpringBootIcon from '../../../assets/SpringBoot.svg';
-      import TypeScriptIcon from '../../../assets/TypeScript.svg';
-      import ViteIcon from '../../../assets/ViteIcon.svg';
-      import NestJsIcon from '../../../assets/NestJSIcon.svg'; // Importando o ícone do Nest.js - ASSUMINDO QUE VOCÊ TEM
-      import VueIcon from '../../../assets/VueIcon.svg'; // Importando o ícone do Vue.js - ASSUMINDO QUE VOCÊ TEM
-      import IonicIcon from '../../../assets/IonicIcon.svg'; // Importando o ícone do Ionic - ASSUMINDO QUE VOCÊ TEM
-      import PhpIcon from '../../../assets/PhpIcon.svg'; // Importando o ícone do PHP - ASSUMINDO QUE VOCÊ TEM
-      import LaravelIcon from '../../../assets/LaravelIcon.svg'; // Importando o í
-      import RedisIcon from '../../../assets/RedisIcon.svg'; // Importando o ícone do Redis - ASSUMINDO QUE VOCÊ TEM
-      import ClickUpIcon from '../../../assets/ClickUpIcon.svg';
-      import HtmlIcon from '../../../assets/HtmlIcon.svg';
-      import CssIcon from '../../../assets/CssIcon.svg';
-      import WordPressIcon from '../../../assets/WordPressIcon.svg';
-      import ShopifyIcon from '../../../assets/ShopifyIcon.svg';
-      import WixIcon from '../../../assets/WixIcon.svg';
-      import taiwindCssIcon from '../../../assets/TailwindCss.svg';
+      import FigmaIcon from '../../assets/FigmaIcon.svg';
+      import HtmlIcon from '../../assets/HtmlIcon.svg';
+      import CssIcon from '../../assets/CssIcon.svg';
+
       // import BootstrapIcon from '../../../assets/BootstrapIcon.svg';
 
     const faReactIcon = faReactBrandIcon ? faReactBrandIcon : faLaptopCode;
