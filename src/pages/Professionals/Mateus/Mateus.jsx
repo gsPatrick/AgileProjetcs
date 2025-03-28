@@ -91,7 +91,7 @@
     const faMobileScreenButtonSkillIcon = faMobileScreenButtonSolid ? faMobileScreenButtonSolid : faMobileScreenButton;
 
 
-    const Mateus = () => {
+    const MateusPage = () => {
 
       const professional = {
             name: 'Mateus Texeira',
@@ -253,4 +253,4 @@ Ao longo da minha carreira, tive o privilégio de trabalhar em uma variedade de 
       );
     };
 
-    export default Mateus;
+    export default MateusPage;

@@ -80,7 +80,7 @@
     const faMobileScreenButtonSkillIcon = faMobileScreenButtonSolid ? faMobileScreenButtonSolid : faMobileScreenButton;
 
 
-    const Patrick = () => {
+    const RanathanPage = () => {
 
       const professional = {
             name: 'Ranathan Henrique',
@@ -212,4 +212,4 @@ Ao longo da minha carreira, tive o privilégio de trabalhar em uma variedade de 
       );
     };
 
-    export default Patrick;
+    export default RanathanPage;

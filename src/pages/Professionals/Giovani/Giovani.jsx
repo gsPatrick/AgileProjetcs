@@ -82,7 +82,7 @@
     const faMobileScreenButtonSkillIcon = faMobileScreenButtonSolid ? faMobileScreenButtonSolid : faMobileScreenButton;
 
 
-    const Patrick = () => {
+    const GiovaniPage = () => {
 
       const professional = {
             name: 'Giovani Appezzato N. Rosa',
@@ -223,4 +223,4 @@ Apaixonado por tecnologia, estou sempre em busca de desafios que me permitam apl
       );
     };
 
-    export default Patrick;
+    export default GiovaniPage;

@@ -89,7 +89,7 @@ import Pro from "../../../professionals-components/AnotherProfessionals/Pro";
     const faMobileScreenButtonSkillIcon = faMobileScreenButtonSolid ? faMobileScreenButtonSolid : faMobileScreenButton;
 
 
-    const Patrick = () => {
+    const RenanPage = () => {
 
       const professional = {
             name: 'Renan Bueno',
@@ -233,4 +233,4 @@ Meu foco é entender suas necessidades e criar soluções criativas que verdadei
       );
     };
 
-    export default Patrick;
+    export default RenanPage;

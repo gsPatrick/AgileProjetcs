@@ -38,7 +38,7 @@
     const faMobileScreenButtonSkillIcon = faMobileScreenButtonSolid ? faMobileScreenButtonSolid : faMobileScreenButton;
 
 
-    const Maria = () => {
+    const MariaPage = () => {
 
       const professional = {
             name: 'Maria G. Silva',
@@ -176,4 +176,4 @@
       );
     };
 
-    export default Maria;
+    export default MariaPage;

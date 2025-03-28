@@ -78,7 +78,7 @@ const faReactSkillIcon = faReactBrandSkillIcon ? faReactBrandSkillIcon : faCube;
 const faMobileScreenButtonSkillIcon = faMobileScreenButtonSolid ? faMobileScreenButtonSolid : faMobileScreenButton;
 
 
-const Patrick = () => {
+const PatrickPage = () => {
 
   const professional = {
         name: 'Patrick Siqueira',
@@ -226,4 +226,4 @@ const Patrick = () => {
   );
 };
 
-export default Patrick;
+export default PatrickPage;
