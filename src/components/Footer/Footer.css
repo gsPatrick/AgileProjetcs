@@ -280,26 +280,11 @@ color: #eff3f5;
   }
   
   /* Responsive adjustments for tablets (769px to 1024px) */
-  @media (min-width: 769px) and (max-width: 1024px) {
-      .footer-section {
-          padding: 50px 20px; /* Reduced padding for tablet */
-      }
-      .footer-column-title {
-          font-size: 1.2em; /* Slightly smaller title for tablet */
-      }
-      .company-description,
-      .footer-links li a,
-      .footer-contact-info li {
-          font-size: 0.9em; /* Slightly smaller text for tablet */
-      }
-      .social-icon {
-          font-size: 1.4em; /* Slightly smaller social icons for tablet */
-      }
-  }
+ 
   
   
   /* Responsive adjustments for mobile */
-  @media (max-width: 768px) {
+  @media (max-width: 950px) {
     .footer-section {
       padding: 40px 20px; /* Further reduced padding for mobile */
       text-align: center; /* Center text on mobile footer */
@@ -349,5 +334,10 @@ color: #eff3f5;
     .copyright-text,
     .developer-text {
       font-size: 0.75em; /* Even smaller copyright text on mobile */
+    }
+    .footer-logo-container{
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
     }
   }
