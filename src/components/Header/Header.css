@@ -1,0 +1,351 @@
+/* Header.css */
+.header-container { /* Container externo para centralizar */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.header {
+  background-color: rgba(59, 75, 107, 0.95);
+  color: #eff3f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-family: 'Inter', sans-serif;
+  max-width: 1200px; /* Mantém o max-width para telas grandes */
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: background-color 0.5s ease, opacity 0.5s ease, backdrop-filter 0.5s ease; /* Adicionado backdrop-filter à transição */
+  border-bottom: 1px solid rgba(134, 143, 160, 0.2);
+}
+
+/* Classe para header transparente */
+.header-transparent {
+  background-color: transparent;
+  opacity: 0.7;
+  backdrop-filter: blur(10px); /* Adiciona o efeito de borrão */
+}
+
+/* Hover effect para remover transparência e borrão */
+.header:hover,
+.header-transparent:hover {
+  background-color: rgba(59, 75, 107, 0.95); /* Volta para a cor original */
+  opacity: 1; /* Remove a transparência */
+  backdrop-filter: none; /* Remove o borrão no hover */
+}
+
+
+/* ... restante do CSS Header.css (logo-container, navigation, etc.) ... */
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para o link do logo para remover sublinhado */
+.logo-link {
+  text-decoration: none;
+  color: inherit; /* Herda a cor do pai para manter a cor do texto */
+  display: flex; /* Garante que o link envolva todo o container do logo */
+  align-items: center; /* Centraliza verticalmente os itens dentro do link */
+}
+
+
+.logo {
+  height: 35px;
+  margin-right: 10px;
+}
+
+
+.company-name {
+  font-size: 1.4em;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease; /* Transição para cor e escala */
+  display: inline-block; /* Necessário para animação de escala funcionar corretamente */
+}
+
+/* Animação de hover no texto do logo (escala) */
+.logo-link:hover .company-name {
+  color: #c2cad8; /* Cor mais clara no hover */
+  transform: scale(1.1); /* Aumenta o texto em 10% no hover */
+}
+
+
+.navigation {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #eff3f5;
+  font-size: 1em;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative; /* Necessário para posicionar a linha */
+}
+
+.nav-link:hover {
+  color: #9bacbd;
+}
+
+/* Estilo para link de navegação ativo - Linha azul embaixo */
+.nav-link.active-nav-link,
+.mobile-nav-link.active-nav-link {
+  color: #c2cad8; /* Mantém a cor mais clara para indicar ativo */
+  font-weight: normal; /* Remove o negrito se não quiser mais */
+}
+
+/* Linha azul embaixo do link ativo - ANIMAÇÃO */
+.nav-link.active-nav-link::after,
+.mobile-nav-link.active-nav-link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -5px; /* Ajusta a distância da linha do texto */
+  left: 0;
+  height: 2px; /* Espessura da linha */
+  background-color: #5dade2; /* Cor azul */
+  width: 0; /* Começa com largura zero */
+  opacity: 0; /* Começa invisível */
+  transition: width 0.5s ease, opacity 0.5s ease; /* Transição para largura e opacidade */
+  animation: lineWidthGrow 0.5s ease forwards; /* Aplica a animação lineWidthGrow */
+}
+
+/* Keyframes para a animação da linha crescer */
+@keyframes lineWidthGrow {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+
+.contact-button-container {
+  margin-left: 15px;
+}
+
+.contact-button {
+  background-color: #1c2444;
+  color: #eff3f5;
+  border: none;
+  padding: 10px 20px; /* Mantendo o padding menor do header */
+  border-radius: 30px; /* Mantendo o border-radius menor do header */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em; /* Mantendo o tamanho da fonte menor do header */
+  transition: background-color 0.3s ease;
+  position: relative; /* Adicionado para o box-shadow funcionar corretamente */
+  animation: pulse-glow-header 2s infinite; /* Aplica uma nova animação pulse-glow-header (escala menor) */
+}
+
+.contact-button:hover {
+  background-color: #222d43;
+}
+
+/* Animação pulse-glow para o Hero Section (já existente - não altere) */
+@keyframes pulse-glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(35, 119, 195, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(35, 199, 195, 0); /* Corrigido o typo: 119 para 199 */
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(35, 119, 195, 0);
+  }
+}
+
+/* Nova animação pulse-glow-header para o botão do Header (escala menor) */
+@keyframes pulse-glow-header {
+  0% {
+    box-shadow: 0 0 0 0 rgba(35, 119, 195, 0.4); /* Intensidade inicial um pouco menor */
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(35, 119, 195, 0); /* Raio máximo menor (8px em vez de 15px) */
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(35, 119, 195, 0);
+  }
+}
+
+/* Estilos para o botão do menu mobile (sanduíche) */
+.mobile-menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* Oculto por padrão em telas maiores */
+}
+
+/* Estilos para o menu mobile */
+.mobile-menu {
+  position: fixed;
+  top: 10px;
+  left: -50vw;
+  width: 50vw;
+  height: 100%;
+  background-color: rgba(59, 75, 107, 0.95);
+  color: #eff3f5;
+  z-index: 99;
+  transition: transform 0.3s ease-out;
+  padding-top: 60px;
+  overflow-y: auto;
+  font-family: 'Inter', sans-serif;
+  border-radius: 23px 0px 59px 50px;
+}
+
+.mobile-menu.open {
+  transform: translateX(50vw); /* Abre o menu, movendo-o para a direita em 50vw */
+  animation: slideInMenu 0.5s ease-out forwards; /* Adiciona a animação slideInMenu */
+}
+
+.mobile-navigation {
+  padding: 20px;
+}
+
+.mobile-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav-item {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(134, 143, 160, 0.2); /* Separador entre os itens */
+}
+
+.mobile-nav-link {
+  text-decoration: none;
+  color: #eff3f5;
+  font-size: 1.1em;
+  display: block; /* Para ocupar toda a largura do item */
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+  position: relative; /* Necessário para posicionar a linha no mobile também */
+}
+
+.mobile-nav-link:hover {
+  background-color: rgba(134, 143, 160, 0.2); /* Feedback de hover */
+}
+
+/* Estilo para link de navegação ativo no mobile */
+.mobile-nav-link.active-nav-link {
+    background-color: rgba(134, 143, 160, 0.2); /* Mantém o destaque de fundo no mobile */
+    color: #c2cad8; /* Mantém a cor mais clara para indicar ativo */
+    font-weight: normal; /* Remove o negrito se não quiser mais */
+}
+
+/* Linha azul embaixo do link ativo no mobile - ANIMAÇÃO */
+.mobile-nav-link.active-nav-link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 5px; /* Ajusta a distância da linha do texto no mobile */
+  left: 0;
+  height: 2px; /* Espessura da linha */
+  background-color: #5dade2; /* Cor azul */
+  width: 0; /* Começa com largura zero */
+  opacity: 0; /* Começa invisível */
+  transition: width 0.5s ease, opacity 0.5s ease; /* Transição para largura e opacidade */
+  animation: lineWidthGrow 0.5s ease forwards; /* Aplica a animação lineWidthGrow */
+}
+
+
+/* Keyframes para a animação slideInMenu */
+@keyframes slideInMenu {
+  0% {
+    transform: translateX(-50vw); /* Começa totalmente fora da tela à esquerda */
+  }
+  100% {
+    transform: translateX(50vw); /* Termina na posição visível */
+  }
+}
+
+
+/* Media Queries para Responsividade */
+
+/* Para telas menores que 1200px (tablets maiores e alguns desktops menores) */
+@media (max-width: 1200px) {
+  .header {
+    max-width: 960px; /* Diminui o max-width para telas menores */
+  }
+}
+
+/* Para telas menores que 992px (tablets menores) */
+@media (max-width: 992px) {
+  .header {
+    max-width: 720px; /* Diminui mais o max-width para telas menores */
+  }
+  .nav-item {
+    margin: 0 10px; /* Reduz o espaço entre os itens de navegação */
+  }
+  .nav-link {
+    font-size: 0.9em; /* Reduz o tamanho da fonte dos links de navegação */
+  }
+  .contact-button-container {
+    margin-left: 10px; /* Ajusta a margem do botão em telas menores */
+  }
+}
+
+/* Para telas menores que 768px (celulares maiores e tablets pequenos em modo retrato) */
+@media (max-width: 768px) {
+  .header {
+    max-width: 95%; /* Header ocupa 95% da largura da tela, deixando espaço nas bordas */
+    padding: 8px 15px; /* Reduz o padding para telas menores */
+    justify-content: space-between; /* Espaço entre logo e botão menu */
+  }
+  .company-name {
+    font-size: 1.2em; /* Reduz o tamanho da fonte do nome da empresa */
+  }
+  .logo {
+    height: 30px; /* Reduz o tamanho do logo */
+  }
+  .contact-button {
+    padding: 8px 16px; /* Reduz o padding do botão para telas menores */
+    font-size: 0.9em; /* Reduz o tamanho da fonte do botão */
+  }
+  .nav-item {
+    margin: 0 8px; /* Reduz ainda mais a margem dos itens de navegação */
+  }
+  .nav-link {
+    font-size: 0.85em; /* Reduz ainda mais o tamanho da fonte dos links de navegação */
+  }
+  .navigation {
+    display: none; /* Oculta a navegação desktop */
+  }
+  .contact-button-container {
+    display: none; /* Oculta o botão de contato desktop, se desejar */
+  }
+  .mobile-menu-button {
+    display: block; /* Mostra o botão do menu mobile */
+    margin-right: 50px;
+
+  }
+  .logo-container {
+    margin-left: 0; /* Remove margem esquerda do logo em mobile */
+  }
+}
+
+/* Para telas de celulares menores (menores que 576px) */

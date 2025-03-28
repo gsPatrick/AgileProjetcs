@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* App.css (ou seu CSS global) */
+.app-container {
+    min-height: 100vh;
+  /* background-color: #1c2444; 
+  color: #eff3f5; 
+  flex-direction: column;  
+  align-items: center; 
+  justify-content: flex-start; 
+  display: flex; 
+  box-sizing: border-box;  */
+  padding-top: 80px; 
+}
+
+.skill-icon {
+  color: #a1a1a9;
+}

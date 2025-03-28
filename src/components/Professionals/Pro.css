@@ -1,0 +1,408 @@
+/* Pro.css */
+/* Estilos padrão para telas maiores (desktop e acima) */
+.pro-component-section {
+  padding: 80px 20px;
+  text-align: center;
+  color: #eff3f5;
+  font-family: 'Inter', sans-serif;
+  background-color: transparent;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.pro-component-section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.pro-component-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.pro-component-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 60px;
+  font-weight: 500;
+}
+
+.pro-component-carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 auto; /* Centralizar o wrapper do carrossel */
+}
+
+.pro-component-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding-bottom: 20px;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  justify-content: flex-start; /* Alinhamento padrão à esquerda */
+}
+
+/* Centraliza os cards quando a classe 'pro-component-carousel-center' é adicionada */
+.pro-component-carousel.pro-component-carousel-center {
+  justify-content: center; /* Centraliza os cards */
+}
+
+
+.pro-component-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.pro-component-carousel::-webkit-scrollbar-thumb {
+  background-color: #3b4b6b;
+  border-radius: 4px;
+}
+
+.pro-component-carousel::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.pro-component-card {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 0 0 auto;
+  width: 250px; /* Largura padrão dos cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.pro-component-card.pro-component-card-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.pro-component-image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+
+.pro-component-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pro-component-name {
+  font-size: 1.4em;
+  margin-bottom: 5px;
+  color: #eff3f5;
+  font-weight: 500;
+}
+
+.pro-component-tags {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: nowrap; /* Garante que as tags fiquem em uma linha */
+  overflow-x: auto; /* Adiciona scroll horizontal se necessário */
+  -webkit-overflow-scrolling: touch; /* Rolagem suave em iOS */
+  scrollbar-width: none; /* Oculta scrollbar no Firefox */
+  -ms-overflow-style: none;  /* Oculta scrollbar no IE/Edge */
+}
+
+/* Oculta scrollbar no Chrome, Safari, Opera */
+.pro-component-tags::-webkit-scrollbar {
+  display: none;
+}
+
+.pro-component-tag {
+  font-size: 0.9em;
+  color: #eff3f5;
+  background-color: #3b4b6b;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.pro-component-role {
+  display: none;
+}
+
+.pro-component-button {
+  background-color: #2377c3;
+  color: #eff3f5;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  text-decoration: none;
+  color: inherit;
+}
+
+.pro-component-button:hover {
+  background-color: #145ca6;
+  text-decoration: none;
+}
+
+/* Estilos para os botões de seta DESKTOP (nas laterais) - MANTIDOS */
+.pro-component-carousel-button.pro-component-carousel-button-desktop {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #eff3f5;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s ease;
+  display: block; /* Mostrar em desktop */
+}
+
+.pro-component-carousel-button.pro-component-carousel-button-desktop.pro-component-carousel-button-prev {
+  left: -10px;
+}
+
+.pro-component-carousel-button.pro-component-carousel-button-desktop.pro-component-carousel-button-next {
+  right: -10px;
+}
+
+.pro-component-carousel-button.pro-component-carousel-button-desktop:hover {
+  color: #9bacbd;
+}
+
+
+/* Container para os botões MOBILE (embaixo do carrossel) */
+.pro-component-carousel-buttons-mobile {
+  display: none; /* Esconder por padrão em telas maiores, será mostrado via media query */
+  text-align: center; /* Centralizar os botões horizontalmente */
+  margin-top: 15px; /* Espaço acima dos botões mobile */
+}
+
+/* Estilos para os botões de seta MOBILE (dentro do container) */
+.pro-component-carousel-buttons-mobile .pro-component-carousel-button {
+  background: transparent;
+  border: none;
+  color: #eff3f5;
+  font-size: 1.3em; /* Ajuste o tamanho se necessário */
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s ease;
+  display: inline-block; /* Botões lado a lado */
+  margin: 0 10px; /* Espaço entre os botões mobile */
+}
+
+.pro-component-carousel-buttons-mobile .pro-component-carousel-button:hover {
+  color: #9bacbd;
+}
+
+
+/* Media query para telas menores que 1200px (tablets maiores e laptops menores) */
+@media (max-width: 1200px) {
+  .pro-component-section {
+      padding: 70px 15px; /* Ajuste no padding horizontal da seção */
+  }
+
+  .pro-component-section h2 {
+      font-size: 2.3em; /* Reduzindo um pouco o tamanho do título */
+      margin-bottom: 50px; /* Ajuste no margin bottom do título */
+  }
+
+  .pro-component-carousel-wrapper {
+      padding: 0 15px; /* Garante que o wrapper tenha padding nas laterais */
+  }
+
+  .pro-component-carousel {
+      gap: 20px; /* Reduzindo o espaço entre os cards */
+      padding-left: 10px;
+      padding-right: 10px;
+      width: auto; /* Largura automática para se ajustar ao wrapper */
+      max-width: 90%; /* Limita a largura máxima em telas menores */
+      margin: 0 auto; /* Centraliza o carrossel */
+  }
+
+  .pro-component-card {
+      width: 220px; /* Reduzindo a largura dos cards */
+      padding: 18px;
+  }
+
+  .pro-component-image-container {
+      width: 130px; /* Reduzindo o tamanho do container da imagem */
+      height: 130px;
+      margin-bottom: 15px;
+  }
+
+  .pro-component-name {
+      font-size: 1.3em; /* Reduzindo o tamanho do nome */
+  }
+
+  .pro-component-tags {
+      margin-bottom: 15px; /* Ajustando o margin bottom das tags */
+  }
+
+  .pro-component-tag {
+      font-size: 0.85em; /* Reduzindo o tamanho da fonte das tags */
+  }
+
+  .pro-component-button {
+      font-size: 0.9em;
+      padding: 10px 18px; /* Ajustando o padding dos botões */
+  }
+
+  .pro-component-carousel-button {
+      font-size: 1.4em; /* Reduzindo o tamanho dos botões de navegação do carrossel */
+  }
+}
+
+
+
+/* Media query para tablets menores - abaixo de 768px */
+@media (max-width: 768px) {
+  .pro-component-section {
+    padding: 50px 15px; /* Reduzindo ainda mais o padding da seção */
+  }
+
+  .pro-component-section h2 {
+    font-size: 2.0em; /* Reduzindo o tamanho do título para tablets */
+    margin-bottom: 30px; /* Reduzindo o margin bottom do título */
+  }
+
+  .pro-component-carousel-wrapper {
+    display: flex; /* Mudar para flex para posicionar as setas top e bottom */
+    flex-direction: column; /* Manter layout vertical */
+    align-items: center; /* Centralizar conteúdo */
+    padding: 0; /* Reset padding */
+  }
+
+  .pro-component-carousel {
+    display: flex; /* Manter display flex para o layout vertical */
+    flex-direction: column; /* Cards em coluna */
+    overflow-x: visible; /* Mostrar todos os cards verticalmente */
+    padding-bottom: 0; /* Removendo padding bottom */
+    gap: 20px; /* Espaço entre os cards na vertical */
+    width: 100%; /* Carrossel ocupa toda a largura */
+    max-width: none; /* Removendo a largura máxima */
+    margin: 0 auto; /* Centralizar */
+  }
+
+  .pro-component-card {
+    width: 90%; /* Cards ocupam 90% da largura do container */
+    max-width: 400px; /* Largura máxima para os cards em mobile */
+    padding: 20px;
+    margin: 0 auto 20px auto; /* Margem inferior entre os cards e centralizar */
+    align-items: center; /* Alinhar itens no centro do card */
+  }
+
+  .pro-component-card:last-child {
+    margin-bottom: 0; /* Remove a margem inferior do último card */
+  }
+
+  .pro-component-image-container {
+    width: 120px; /* Reduzindo o tamanho da imagem para mobile */
+    height: 120px;
+    margin-bottom: 15px;
+  }
+
+  .pro-component-name {
+    font-size: 1.2em; /* Tamanho do nome em mobile */
+  }
+
+  .pro-component-tags {
+    margin-bottom: 15px; /* Ajustando margin das tags em mobile */
+  }
+
+  .pro-component-tag {
+    font-size: 0.8em; /* Tamanho da fonte das tags em mobile */
+    padding: 4px 8px;
+  }
+
+  .pro-component-button {
+    font-size: 0.9em; /* Tamanho da fonte do botão em mobile */
+    padding: 12px 20px;
+    width: 80%; /* Botão ocupa 80% da largura do card */
+    max-width: 200px; /* Largura máxima do botão em mobile */
+  }
+
+  /* --- MEDIA QUERY MOBILE: Mostrar/Esconder e Estilizar Setas --- */
+
+  /* Esconder setas DESKTOP em mobile */
+  .pro-component-carousel-button.pro-component-carousel-button-desktop {
+    display: none !important;
+  }
+
+  /* Mostrar setas MOBILE em mobile */
+  .pro-component-carousel-buttons-mobile {
+    display: flex; /* Mostrar os containers mobile como flex */
+    justify-content: center; /* Centralizar botões horizontalmente dentro do container */
+  }
+
+  /* Posicionar container de setas MOBILE - TOPO */
+  .pro-component-carousel-buttons-mobile-top {
+    margin-bottom: 15px; /* Espaço abaixo das setas do topo */
+  }
+
+  /* Posicionar container de setas MOBILE - BASE */
+  .pro-component-carousel-buttons-mobile-bottom {
+    margin-top: 15px; /* Espaço acima das setas da base */
+  }
+
+  /* Estilos para .pro-component-carousel-buttons-mobile .pro-component-carousel-button já estão definidos acima */
+
+}
+
+/* Media query para smartphones menores - abaixo de 480px */
+@media (max-width: 480px) {
+  .pro-component-section {
+    padding: 40px 10px; /* Reduzindo ainda mais o padding da seção para smartphones */
+  }
+
+  .pro-component-section h2 {
+    font-size: 1.8em; /* Título menor para smartphones */
+    margin-bottom: 25px; /* Menos margin bottom no título */
+  }
+
+  .pro-component-card {
+    padding: 15px; /* Reduzindo o padding dos cards em smartphones */
+  }
+
+  .pro-component-image-container {
+    width: 100px; /* Imagens menores em smartphones */
+    height: 100px;
+    margin-bottom: 10px; /* Menos margin bottom na imagem */
+  }
+
+  .pro-component-name {
+    font-size: 1.1em; /* Nomes menores em smartphones */
+  }
+
+  .pro-component-tags {
+    margin-bottom: 10px; /* Menos margin bottom nas tags */
+  }
+
+  .pro-component-tag {
+    font-size: 0.75em; /* Tags menores em smartphones */
+  }
+
+  .pro-component-button {
+    font-size: 0.85em; /* Botões menores em smartphones */
+    padding: 10px 15px;
+  }
+
+  .pro-component-carousel-buttons-mobile .pro-component-carousel-button {
+    font-size: 1.2em; /* Botões de navegação menores em smartphones */
+  }
+}
