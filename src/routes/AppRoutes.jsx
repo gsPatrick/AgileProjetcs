@@ -7,7 +7,7 @@ import Projects from "../pages/Projects/Projects";
 
 import Maria from "../pages/Professionals/Maria/Maria";
 import PatrickPage from "../pages/Professionals/Patrick/Patrick";
-import Giovani from "../pages/Professionals/Giovani";
+import GiovaniPage from "../pages/Professionals/GiovaniPage";
 import Ranathan from "../pages/Professionals/Ranathan/Ranathan";
 import Renan from "../pages/Professionals/Renan/Renan";
 import Mateus from "../pages/Professionals/Mateus/Mateus";
@@ -27,7 +27,7 @@ const AppRoutes = () => {
           
           <Route path="/professionals/maria" element={<Maria />} />
           <Route path="/Professional/Patrick" element={<PatrickPage />} />
-          <Route path="/professionals/giovani" element={<Giovani />} />
+          <Route path="/professionals/giovani" element={<GiovaniPage />} />
           <Route path="/professionals/ranathan" element={<Ranathan />} />
           <Route path="/professionals/renan" element={<Renan />} />
           <Route path="/professionals/mateus" element={<Mateus />} />
