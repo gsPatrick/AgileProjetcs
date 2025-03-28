@@ -60,6 +60,8 @@
     import HtmlIcon from '../../assets/HtmlIcon.svg'; // Importando o ícone do HTML - ASSUMINDO QUE VOCÊ TEM
     import CssIcon from '../../assets/CssIcon.svg'; // Importando o ícone do CSS - ASSUMINDO QUE VOCÊ TEM
     import JavascriptIcon from '../../assets/JavascriptIcon.svg'
+    import GitHubIcon  from '../../assets/GitHubIcon.svg'
+    import FigmaIcon from '../../assets/FigmaIcon.svg'
 
     const faReactIcon = faReactBrandIcon ? faReactBrandIcon : faLaptopCode;
     const faCss3AltIcon = faCss3AltBrandIcon ? faCss3AltBrandIcon : faPalette;
@@ -95,43 +97,43 @@
               name: 'Maria G. Silva',
               image: 'https://i.imgur.com/q7rfYQ5.jpeg',
               tags: ['Marketing Digital', 'Marketing de Afiliados', 'Trafego Pago', 'Copywritring Estratétgico'],
-              link: '/professionals/maria'
+              link: '/maria'
             },
             {
               name: 'Renan Bueno',
               image: 'https://i.imgur.com/FQDlTGh.jpeg',
               tags: ['Design UX/UI', 'Figma', 'Prototipagem', 'Design Thinking'],
-              link: '/professionals/renan'
+              link: '/renan'
             },
             {
               name: 'Mateus',
               image: 'https://i.imgur.com/UA4BQIt.jpeg',
               tags: ['Product Designer'],
-              link: '/professionals/mateus'
+              link: '/mateus'
             },
             {
               name: 'Giovani Appezzato N. Rosa',
               image: ' https://giovani-appezzato.vercel.app/assets/images/eu.webp',
               tags: ['Desenvolvedor de Sotfware'],
-              link: '/professionals/giovani'
+              link: '/giovani'
             },
             {
               name: 'Ranathan Henrique',
               image: 'https://ranathan-portifolio.vercel.app/assets/img/main.jpg',
               tags: ['Desenvolvedor Full-Stack', 'Desenvolvedor Web'],
-              link: '/professionals/ranathan'
+              link: '/ranathan'
             },
             {
               name: 'Michel Lombardi',
               image: 'https://i.imgur.com/gqGHDF8.jpeg',
               tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
-              link: '/professionals/michel'
+              link: '/michel'
             },
             {
               name: 'Patrick Siqueira',
               image: 'https://i.imgur.com/hsQLqCL.jpeg',
               tags: ['Desenvolvedor Full-Stack', 'Dev-Ops', 'Web-Design'],
-              link: '/professionals/patrick'
+              link: '/patrick'
             },
           ];
 

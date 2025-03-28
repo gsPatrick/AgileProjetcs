@@ -88,43 +88,43 @@
                 name: 'Maria G. Silva',
                 image: 'https://i.imgur.com/q7rfYQ5.jpeg',
                 tags: ['Marketing Digital', 'Marketing de Afiliados', 'Trafego Pago', 'Copywritring Estratétgico'],
-                link: '/professionals/maria'
+                link: '/maria'
               },
               {
                 name: 'Patrick Siqueira',
                 image: 'https://i.imgur.com/hsQLqCL.jpeg',
                 tags: ['Desenvolvedor Full-Stack', 'Dev-Ops', 'Web-Design'],
-                link: '/professionals/patrick'
+                link: '/patrick'
               },
               {
                 name: 'João Vitor',
                 image: ' https://i.imgur.com/Z0uI1bB.jpeg',
                 tags: ['Desenvolvedor Full-Stack'],
-                link: '/professionals/joao'
+                link: '/joao'
               },
               {
                 name: 'Renan Bueno',
                 image: 'https://i.imgur.com/FQDlTGh.jpeg',
                 tags: ['Design UX/UI', 'Figma', 'Prototipagem', 'Design Thinking'],
-                link: '/professionals/renan'
+                link: '/renan'
               },
               {
                 name: 'Mateus',
                 image: 'https://i.imgur.com/UA4BQIt.jpeg',
                 tags: ['Product Designer'],
-                link: '/professionals/mateus'
+                link: '/mateus'
               },
               {
                 name: 'Giovani Appezzato N. Rosa',
                 image: ' https://giovani-appezzato.vercel.app/assets/images/eu.webp',
                 tags: ['Desenvolvedor de Sotfware'],
-                link: '/professionals/giovani'
+                link: '/giovani'
               },
               {
                 name: 'Michel Lombardi',
                 image: 'https://i.imgur.com/gqGHDF8.jpeg',
                 tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
-                link: '/professionals/michel'
+                link: '/michel'
               },
           ];
 
