@@ -45,9 +45,6 @@
     import { DiMysql, DiPostgresql, DiDotnet } from "react-icons/di";
     import { AiOutlineDotNet } from "react-icons/ai";
 
-
-    // Importe os ícones SVG diretamente - IMPORTADOS AQUI
-
     import ClickUpIcon from '../../assets/ClickUpIcon.svg';
     import HtmlIcon from '../../assets/HtmlIcon.svg';
     import CssIcon from '../../assets/CssIcon.svg';
@@ -55,16 +52,13 @@
     import ShopifyIcon from '../../assets/ShopifyIcon.svg';
     import WixIcon from '../../assets/WixIcon.svg';
     import taiwindCssIcon from '../../assets/TailwindCss.svg';
-    // import BootstrapIcon from '../../../assets/BootstrapIcon.svg';
-
-
+  
     const faReactIcon = faReactBrandIcon ? faReactBrandIcon : faLaptopCode;
     const faCss3AltIcon = faCss3AltBrandIcon ? faCss3AltBrandIcon : faPalette;
     const faHtml5Icon = faHtml5BrandIcon ? faHtml5BrandIcon : faCode;
     const globeIcon = faGlobe ? faGlobe : faRocket;
     const faReactSkillIcon = faReactBrandSkillIcon ? faReactBrandSkillIcon : faCube;
     const faMobileScreenButtonSkillIcon = faMobileScreenButtonSolid ? faMobileScreenButtonSolid : faMobileScreenButton;
-
 
     const MateusPage = () => {
 
@@ -79,12 +73,12 @@
             imageSrcSenior: 'https://i.imgur.com/hsQLqCL.jpeg',
             defaultImageSrc: 'https://mateustr.com/Elements/Perfil.jpg',
             tags: [
-                { name: 'UX Designer', icon: faLaptopCode }, // Título: Desenvolvedor Full-Stack
-                { name: 'UI Designer', icon: faServer }, // Título: Arquiteto de Sistemas
-                { name: 'Dev Experience', icon: faCogs }, // Título: Especialista DevOps
+                { name: 'UX Designer', icon: faLaptopCode }, 
+                { name: 'UI Designer', icon: faServer }, 
+                { name: 'Dev Experience', icon: faCogs }, 
             ],
-            portfolioButtonText: 'Entre em Contato', // ✅ Nome do botão
-            portfolioButtonLink: 'https://aistudio.google.com/prompts/1IFd1A6R6Qi8Lkj0bG6Xurh8K8h0XOIVA' // ✅ Link do botão
+            portfolioButtonText: 'Entre em Contato', 
+            portfolioButtonLink: 'https://aistudio.google.com/prompts/1IFd1A6R6Qi8Lkj0bG6Xurh8K8h0XOIVA'
         };
 
         const primeirosProfissionais = [

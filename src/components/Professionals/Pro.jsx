@@ -10,49 +10,49 @@ function Pro() {
       name: 'Maria G. Silva',
       image: 'https://i.imgur.com/q7rfYQ5.jpeg',
       tags: ['Marketing Digital', 'Marketing de Afiliados', 'Trafego Pago', 'Copywritring Estratétgico'],
-      link: '/professionals/maria'
+      link: '/Maria'
     },
     {
       name: 'Patrick Siqueira',
       image: 'https://i.imgur.com/hsQLqCL.jpeg',
       tags: ['Desenvolvedor Full-Stack', 'Dev-Ops', 'Web-Design'],
-      link: '/professionals/patrick'
+      link: '/Patrick'
     },
     {
       name: 'João Vitor',
       image: ' https://i.imgur.com/Z0uI1bB.jpeg',
       tags: ['Desenvolvedor Full-Stack'],
-      link: '/professionals/joao'
+      link: '/Joao'
     },
     {
       name: 'Renan Bueno',
       image: 'https://i.imgur.com/FQDlTGh.jpeg',
       tags: ['Design UX/UI', 'Figma', 'Prototipagem', 'Design Thinking'],
-      link: '/professionals/renan'
+      link: '/Renan'
     },
     {
       name: 'Mateus',
       image: 'https://i.imgur.com/UA4BQIt.jpeg',
       tags: ['Product Designer'],
-      link: '/professionals/mateus'
+      link: '/Mateus'
     },
     {
       name: 'Giovani Appezzato N. Rosa',
       image: ' https://giovani-appezzato.vercel.app/assets/images/eu.webp',
       tags: ['Desenvolvedor de Sotfware'],
-      link: '/professionals/giovani'
+      link: '/Giovani'
     },
     {
       name: 'Ranathan Henrique',
       image: 'https://ranathan-portifolio.vercel.app/assets/img/main.jpg',
       tags: ['Desenvolvedor Full-Stack', 'Desenvolvedor Web'],
-      link: '/professionals/ranathan'
+      link: '/Ranathan'
     },
     {
       name: 'Michel Lombardi',
       image: 'https://i.imgur.com/gqGHDF8.jpeg',
       tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
-      link: '/professionals/michel'
+      link: '/michel'
     },
   ];
 
