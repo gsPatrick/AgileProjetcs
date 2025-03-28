@@ -78,7 +78,7 @@
       import ShopifyIcon from '../../../assets/ShopifyIcon.svg';
       import WixIcon from '../../../assets/WixIcon.svg';
       import taiwindCssIcon from '../../../assets/TailwindCss.svg';
-      import BootstrapIcon from '../../../assets/BootstrapIcon.svg';
+      // import BootstrapIcon from '../../../assets/BootstrapIcon.svg';
 
     const faReactIcon = faReactBrandIcon ? faReactBrandIcon : faLaptopCode;
     const faCss3AltIcon = faCss3AltBrandIcon ? faCss3AltBrandIcon : faPalette;

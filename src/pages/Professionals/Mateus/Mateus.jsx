@@ -80,7 +80,7 @@
     import ShopifyIcon from '../../../assets/ShopifyIcon.svg';
     import WixIcon from '../../../assets/WixIcon.svg';
     import taiwindCssIcon from '../../../assets/TailwindCss.svg';
-    import BootstrapIcon from '../../../assets/BootstrapIcon.svg';
+    // import BootstrapIcon from '../../../assets/BootstrapIcon.svg';
 
 
     const faReactIcon = faReactBrandIcon ? faReactBrandIcon : faLaptopCode;
@@ -183,7 +183,7 @@ Ao longo da minha carreira, tive o privilégio de trabalhar em uma variedade de 
             {name: 'Shopify', icon: <img src={ShopifyIcon} alt="Shopify Icon" className="skill-logo" />},
             {name: 'Wix', icon: <img src={WixIcon} alt="Wix Icon" className="skill-logo" />},
             {name: 'Tailwind CSSS', icon: <img src={taiwindCssIcon} alt="Tailwind CSS Icon" className="skill-logo" />},
-            {name: 'Bootstrap', icon: <img src={BootstrapIcon} alt="Bootstrap Icon" className="skill-logo" />},
+            // {name: 'Bootstrap', icon: <img src={BootstrapIcon} alt="Bootstrap Icon" className="skill-logo" />},
             {name: 'Javascript', icon: <img src={JavascriptIcon} alt="Javascript Icon" className="skill-logo" />},
             { name: 'FigJam' },
             { name: 'UX Research' },
