@@ -6,13 +6,13 @@ import App from "../App";
 import Professionals from "../pages/Professionals"; // Importante: ajustar o caminho aqui!
 import Projects from "../pages/Projects/Projects";
 
-import Maria from "../pages/Maria/Maria"; // Caminhos ajustados
-import Patrick from "../pages/Patrick/Patrick"; // Caminhos ajustados
-import Giovani from "../pages/Giovani/Giovani"; // Caminhos ajustados
-import Ranathan from "../pages/Ranathan/Ranathan"; // Caminhos ajustados
-import Renan from "../pages/Renan/Renan"; // Caminhos ajustados
-import Mateus from "../pages/Mateus/Mateus"; // Caminhos ajustados
-import Joao from "../pages/Joao/Joao"; // Caminhos ajustados
+import MariaPage from "../pages/Maria/Maria"; // Caminhos ajustados
+import PatrickPage from "../pages/Patrick/Patrick"; // Caminhos ajustados
+import GiovaniPage from "../pages/Giovani/Giovani"; // Caminhos ajustados
+import RanathanPage from "../pages/Ranathan/Ranathan"; // Caminhos ajustados
+import RenanPage from "../pages/Renan/Renan"; // Caminhos ajustados
+import MateusPage from "../pages/Mateus/Mateus"; // Caminhos ajustados
+import JoaoPage from "../pages/Joao/Joao"; // Caminhos ajustados
 import Agile from "../pages/Sobre/Agile";
 import TestePage from "../pages/testepage";
 
@@ -25,13 +25,13 @@ const AppRoutes = () => {
           <Route path="/professionals" element={<Professionals />} /> {/* Ajustar o caminho se necessário */}
           <Route path="/projects" element={<Projects />} />
 
-          <Route path="/maria" element={<Maria />} /> {/* Rotas ajustadas */}
-          <Route path="/patrick" element={<Patrick />} /> {/* Rotas ajustadas */}
-          <Route path="/giovani" element={<Giovani />} /> {/* Rotas ajustadas */}
-          <Route path="/ranathan" element={<Ranathan />} /> {/* Rotas ajustadas */}
-          <Route path="/renan" element={<Renan />} /> {/* Rotas ajustadas */}
-          <Route path="/mateus" element={<Mateus />} /> {/* Rotas ajustadas */}
-          <Route path="/joao" element={<Joao />} /> {/* Rotas ajustadas */}
+          <Route path="/maria" element={<MariaPage />} /> {/* Rotas ajustadas */}
+          <Route path="/patrick" element={<PatrickPage />} /> {/* Rotas ajustadas */}
+          <Route path="/giovani" element={<GiovaniPage />} /> {/* Rotas ajustadas */}
+          <Route path="/ranathan" element={<RanathanPage />} /> {/* Rotas ajustadas */}
+          <Route path="/renan" element={<RenanPage />} /> {/* Rotas ajustadas */}
+          <Route path="/mateus" element={<MateusPage />} /> {/* Rotas ajustadas */}
+          <Route path="/joao" element={<JoaoPage />} /> {/* Rotas ajustadas */}
           <Route path="/testepage" element={<TestePage />} />
           <Route path="/sobre" element={<Agile />} />
         </Route>
