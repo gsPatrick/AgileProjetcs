@@ -48,6 +48,7 @@ import Pro from "../../professionals-components/AnotherProfessionals/Pro";
       import FigmaIcon from '../../assets/FigmaIcon.svg';
       import HtmlIcon from '../../assets/HtmlIcon.svg';
       import CssIcon from '../../assets/CssIcon.svg';
+      import JavascriptIcon from '../../assets/JavascriptIcon.svg';
 
       // import BootstrapIcon from '../../../assets/BootstrapIcon.svg';
 
