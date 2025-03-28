@@ -5,7 +5,6 @@ import HeroSection from './components/HeroSection/HeroSection';
 import Service from './components/Service/Service'; // Importe o componente Service
 import Benefits from './components/Benefits/Benefits';
 import Pro from './components/Professionals/Pro'; // Importe o componente Pro
-
 import Classification from './components/Classification/Classification'; // Import Classification component
 
 
@@ -25,7 +24,7 @@ function App() {
       {/* Aqui você adicionaria outros componentes para o resto da sua página */}
       {/* Por exemplo: */}
       {/* <ContentSection1 /> */}
-      {/* <Footer /> */}
+      
     </div>
   );
 }

@@ -48,6 +48,12 @@ const Professionals = () => {
         tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
         link: '/professionals/michel'
       },
+      {
+        name: 'João Vitor',
+        image: ' https://i.imgur.com/Z0uI1bB.jpeg',
+        tags: ['Desenvolvedor Full-Stack'],
+        link: '/professionals/joao'
+      },
   ];
 
   // Dados dos segundos profissionais (exemplo diferente)
@@ -70,6 +76,12 @@ const Professionals = () => {
       tags: ['Desenvolvedor Full-Stack', 'Desenvolvedor Web'],
       link: '/professionals/ranathan'
     },
+    {
+        name: 'João Vitor',
+        image: ' https://i.imgur.com/Z0uI1bB.jpeg',
+        tags: ['Desenvolvedor Full-Stack'],
+        link: '/professionals/joao'
+      },
 
   ];
 

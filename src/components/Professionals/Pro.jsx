@@ -19,6 +19,12 @@ function Pro() {
       link: '/professionals/patrick'
     },
     {
+      name: 'João Vitor',
+      image: ' https://i.imgur.com/Z0uI1bB.jpeg',
+      tags: ['Desenvolvedor Full-Stack'],
+      link: '/professionals/joao'
+    },
+    {
       name: 'Renan Bueno',
       image: 'https://i.imgur.com/FQDlTGh.jpeg',
       tags: ['Design UX/UI', 'Figma', 'Prototipagem', 'Design Thinking'],

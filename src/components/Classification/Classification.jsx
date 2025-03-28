@@ -83,12 +83,7 @@ function Classification() {
             <h3 className="classification-titulo">{level.titulo}</h3>
             <p className="classification-descricao">{level.descricao}</p>
             <div className="classification-button-container">
-              <Link
-                to={`/projects-${level.seniorityFilterValue.toLowerCase()}`} // Rota dinâmica baseada na senioridade
-                className="classification-botao"
-              >
-                {level.botaoTexto}
-              </Link>
+     
             </div>
           </div>
         ))}

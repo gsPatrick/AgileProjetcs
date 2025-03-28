@@ -1,15 +1,17 @@
+// Header.jsx
 import React, { useState, useEffect, useRef } from 'react';
-import Logo from '../../assets/Logo.png'; // Ajuste o caminho se necessário
+import Logo from '../../assets/Logo.png';
 import './Header.css';
-import { FiMenu, FiX } from 'react-icons/fi'; // Importe o ícone FiX
-import { Link, useLocation } from 'react-router-dom'; // Importe Link e useLocation do react-router-dom
+import { FiMenu, FiX } from 'react-icons/fi';
+import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
   const [isTransparent, setIsTransparent] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Estado para controlar o menu mobile
-  const mobileMenuRef = useRef(null); // Referência para o menu mobile
-  const mobileButtonRef = useRef(null); // Referência para o botão mobile
-  const location = useLocation(); // Hook para obter a localização atual
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const mobileMenuRef = useRef(null);
+  const mobileButtonRef = useRef(null);
+  const location = useLocation();
+  const whatsappNumber = '5518998184907';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,7 +40,7 @@ function Header() {
           mobileButtonRef.current &&
           !mobileMenuRef.current.contains(event.target) &&
           !mobileButtonRef.current.contains(event.target)) {
-        setIsMobileMenuOpen(false); // Fecha o menu se clicar fora
+        setIsMobileMenuOpen(false);
       }
     };
 
@@ -46,13 +48,17 @@ function Header() {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [isMobileMenuOpen]); // Dependência em isMobileMenuOpen
+  }, [isMobileMenuOpen]);
+
+  const handleContactClick = () => {
+    window.open(`https://wa.me/${whatsappNumber}`, '_blank');
+  };
 
   return (
     <div className="header-container">
       <header className={`header ${isTransparent ? 'header-transparent' : ''}`}>
         <div className="logo-container">
-          <Link to="/" className="logo-link"> {/* Adicionado Link para o logo-container */}
+          <Link to="/" className="logo-link">
             <img src={Logo} alt="Agile Projects Logo" className="logo" />
             <span className="company-name">Agile Projects</span>
           </Link>
@@ -61,16 +67,16 @@ function Header() {
         <button
           className="mobile-menu-button"
           onClick={toggleMobileMenu}
-          ref={mobileButtonRef} // Adiciona ref ao botão
+          ref={mobileButtonRef}
         >
           {isMobileMenuOpen ? (
-            <FiX size={24} color="#eff3f5" /> // Ícone de 'X' quando o menu está aberto
+            <FiX size={24} color="#eff3f5" />
           ) : (
-            <FiMenu size={24} color="#eff3f5" /> // Ícone de menu sanduíche quando fechado
+            <FiMenu size={24} color="#eff3f5" />
           )}
         </button>
 
-        <nav className="navigation"> {/* Navegação desktop (oculta em mobile) */}
+        <nav className="navigation">
           <ul className="nav-list">
             <li className="nav-item">
               <Link to="/sobre" className={`nav-link ${location.pathname === '/sobre' ? 'active-nav-link' : ''}`}>Sobre</Link>
@@ -84,12 +90,11 @@ function Header() {
           </ul>
         </nav>
         <div className="contact-button-container">
-          <button className="contact-button">Contate-nos</button>
+          <button className="contact-button" onClick={handleContactClick}>Contate-nos</button>
         </div>
       </header>
 
-      {/* Menu Mobile (aparece quando isMobileMenuOpen é true) */}
-      <div className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`} ref={mobileMenuRef}> {/* Adiciona ref ao menu */}
+      <div className={`mobile-menu ${isMobileMenuOpen ? 'open' : ''}`} ref={mobileMenuRef}>
         <nav className="mobile-navigation">
           <ul className="mobile-nav-list">
             <li className="mobile-nav-item">
@@ -101,7 +106,9 @@ function Header() {
             <li className="mobile-nav-item">
               <Link to="/projects" className={`mobile-nav-link ${location.pathname === '/projects' ? 'active-nav-link' : ''}`}>Projetos</Link>
             </li>
-            <li className="mobile-nav-item"><a href="#contact" className="mobile-nav-link contact-button">Contate-nos</a></li>
+            <li className="mobile-nav-item">
+              <button className="mobile-nav-link contact-button" onClick={handleContactClick}>Contate-nos</button>
+            </li>
           </ul>
         </nav>
       </div>

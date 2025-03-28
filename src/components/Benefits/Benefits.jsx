@@ -1,7 +1,7 @@
 // Benefits.jsx
 import React, { useRef, useEffect, useState } from 'react';
 import './Benefits.css';
-import { FaRegLightbulb, FaShieldAlt, FaLayerGroup, FaHandshake } from 'react-icons/fa';
+import { FaRegLightbulb, FaShieldAlt, FaLayerGroup, FaHandshake, FaUsers, FaChartLine, FaCode, FaSearch } from 'react-icons/fa';
 
 function Benefits() {
   const benefitsData = [
@@ -13,7 +13,6 @@ function Benefits() {
         'Suporte rápido e eficiente, com um canal exclusivo para tirar dúvidas.',
       ],
       icon: <FaRegLightbulb className="benefit-icon" />,
-      ctaText: 'Descubra Mais',
     },
     {
       title: 'Garantia de Qualidade',
@@ -22,7 +21,6 @@ function Benefits() {
         'Política de revisão gratuita ou reembolso se o serviço não atender ao esperado.',
       ],
       icon: <FaShieldAlt className="benefit-icon" />,
-      ctaText: 'Verifique a Garantia',
     },
     {
       title: 'Níveis de Serviço',
@@ -31,7 +29,6 @@ function Benefits() {
         'Diferenciação por prazo: entregas normais, urgentes e expressas com preços ajustáveis.',
       ],
       icon: <FaLayerGroup className="benefit-icon" />,
-      ctaText: 'Explore Níveis',
     },
     {
       title: 'Transparência e Confiança',
@@ -40,7 +37,22 @@ function Benefits() {
         'Garantia de qualidade com revisão gratuita ou intermediação da agência em caso de problemas.',
       ],
       icon: <FaHandshake className="benefit-icon" />,
-      ctaText: 'Leia Mais',
+    },
+    {
+      title: 'Escalabilidade Flexível',
+      points: [
+        'Aumente ou diminua sua equipe de desenvolvimento conforme a demanda do projeto.',
+        'Adapte-se rapidamente às mudanças e prioridades do seu negócio.',
+      ],
+      icon: <FaChartLine className="benefit-icon" />,
+    },
+    {
+      title: 'Acesso a Talentos Diversificados',
+      points: [
+        'Conecte-se com uma vasta rede de freelancers especializados em diversas tecnologias e setores.',
+        'Encontre o profissional ideal para cada necessidade específica do seu projeto.',
+      ],
+      icon: <FaUsers className="benefit-icon" />,
     },
   ];
 
@@ -103,7 +115,6 @@ function Benefits() {
                   ))}
                 </ul>
               </div>
-              <button className="benefit-cta-button">{benefit.ctaText}</button>
             </div>
           ))}
         </div>

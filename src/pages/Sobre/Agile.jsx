@@ -75,7 +75,8 @@
 
         
        const primeirosProfissionais = [
-        {
+        
+          {
             name: 'Maria G. Silva',
             image: 'https://i.imgur.com/q7rfYQ5.jpeg',
             tags: ['Marketing Digital', 'Marketing de Afiliados', 'Trafego Pago', 'Copywritring Estratétgico'],
@@ -86,6 +87,12 @@
             image: 'https://i.imgur.com/hsQLqCL.jpeg',
             tags: ['Desenvolvedor Full-Stack', 'Dev-Ops', 'Web-Design'],
             link: '/professionals/patrick'
+          },
+          {
+            name: 'João Vitor',
+            image: ' https://i.imgur.com/Z0uI1bB.jpeg',
+            tags: ['Desenvolvedor Full-Stack'],
+            link: '/professionals/joao'
           },
           {
             name: 'Renan Bueno',

@@ -116,6 +116,12 @@ const Patrick = () => {
           link: '/professionals/renan'
         },
         {
+          name: 'João Vitor',
+          image: ' https://i.imgur.com/Z0uI1bB.jpeg',
+          tags: ['Desenvolvedor Full-Stack'],
+          link: '/professionals/joao'
+        },
+        {
           name: 'Mateus',
           image: 'https://i.imgur.com/UA4BQIt.jpeg',
           tags: ['Product Designer'],

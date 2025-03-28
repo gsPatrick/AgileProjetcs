@@ -83,7 +83,7 @@
     const Patrick = () => {
 
       const professional = {
-            name: 'Giovani Appezzato N. Rosa',
+            name: 'Ranathan Henrique',
             primaryTag: 'Desenvolvedor de Sotware', 
             primaryTagIcon: faCode,
             description: 'Sou um desenvolvedor Full Stack especializado em aplicações mobile e web, apaixonado por construir soluções inovadoras e acessíveis. Com anos de experiência, trago um profundo conhecimento em tecnologias front-end e back-end, combinado com uma abordagem criativa e orientada para resultados. Ao longo da minha carreira, tenho entregue projetos de alta qualidade, desde a concepção até a implementação, focando na experiência do usuário e na performance. Meu portfólio reflete minha dedicação em criar produtos que não só atendem às necessidades do cliente, mas também elevam os padrões da indústria.',
@@ -114,6 +114,12 @@
                 image: 'https://i.imgur.com/hsQLqCL.jpeg',
                 tags: ['Desenvolvedor Full-Stack', 'Dev-Ops', 'Web-Design'],
                 link: '/professionals/patrick'
+              },
+              {
+                name: 'João Vitor',
+                image: ' https://i.imgur.com/Z0uI1bB.jpeg',
+                tags: ['Desenvolvedor Full-Stack'],
+                link: '/professionals/joao'
               },
               {
                 name: 'Renan Bueno',

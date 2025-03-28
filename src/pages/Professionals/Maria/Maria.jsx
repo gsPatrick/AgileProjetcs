@@ -5,7 +5,7 @@
     import Header from "../../../components/Header/Header";
     import AboutMe from "../../../professionals-components/AboutMe/AboutMe";
     import Projects from "../../../professionals-components/Projects/Projects";
-    import Pro from "../../../professionals-components/AnotherProfessionals/Pro"; // Comente ou remova se não for usar
+    import Pro from "../../../professionals-components/AnotherProfessionals/Pro";
     import '../../../App.css';
 
     import { faReact as faReactBrandIcon, faCss3Alt as faCss3AltBrandIcon, faHtml5 as faHtml5BrandIcon } from '@fortawesome/free-brands-svg-icons';
@@ -97,6 +97,46 @@
             icon: faChartBar, // 🟦 ICONE ADICIONADO AQUI e setado para faChartBar (icone de marketing digital)
         };
 
+        const primeirosProfissionais = [
+          {
+            name: 'Renan Bueno',
+            image: 'https://i.imgur.com/FQDlTGh.jpeg',
+            tags: ['Design UX/UI', 'Figma', 'Prototipagem', 'Design Thinking'],
+            link: '/professionals/renan'
+          },
+          {
+            name: 'João Vitor',
+            image: ' https://i.imgur.com/Z0uI1bB.jpeg',
+            tags: ['Desenvolvedor Full-Stack'],
+            link: '/professionals/joao'
+          },
+          {
+            name: 'Mateus',
+            image: 'https://i.imgur.com/UA4BQIt.jpeg',
+            tags: ['Product Designer'],
+            link: '/professionals/mateus'
+          },
+          {
+            name: 'Giovani Appezzato N. Rosa',
+            image: ' https://giovani-appezzato.vercel.app/assets/images/eu.webp',
+            tags: ['Desenvolvedor de Sotfware'],
+            link: '/professionals/giovani'
+          },
+          {
+            name: 'Ranathan Henrique',
+            image: 'https://ranathan-portifolio.vercel.app/assets/img/main.jpg',
+            tags: ['Desenvolvedor Full-Stack', 'Desenvolvedor Web'],
+            link: '/professionals/ranathan'
+          },
+          {
+            name: 'Michel Lombardi',
+            image: 'https://i.imgur.com/gqGHDF8.jpeg',
+            tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
+            link: '/professionals/michel'
+          },
+        ];
+  
+
 
       return (
         <div className="app-container">
@@ -128,7 +168,10 @@
           />
 
           {/* <Projects />  */}
-          <Pro />
+          <Pro
+    professionals={primeirosProfissionais}
+    title="Outros membros da Agile Projects"
+  />
        </div>
       );
     };

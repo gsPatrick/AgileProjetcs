@@ -4,6 +4,7 @@ import Header from "../../components/Header/Header";
 import Project from "../../professionals-components/Projects/Projects";
 import '../../App.css';
 
+
 const ProjectsPage = ({ initialClassificationFilter, initialSeniorityFilter }) => { // Recebe props de filtro iniciais
 
   return (

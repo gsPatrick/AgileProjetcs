@@ -1,0 +1,353 @@
+/* Footer.css */
+/* Estilos padrão para telas maiores (desktop e acima) */
+.footer-section {
+    background-color: #222d43;
+    color: #eff3f5;
+    font-family: 'Inter', sans-serif;
+    padding: 60px 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .footer-section-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .whatsapp-contact-link{
+    text-decoration: none;
+    color: inherit;
+    color: #9bacbd;
+    text-decoration: none; /* ✅ REMOVED UNDERLINE STYLING HERE */
+    transition: color 0.3s ease;
+    font-size: 1em;
+  }
+
+  .whatsapp-contact-link:hover {
+color: #eff3f5;
+
+  }
+  
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .footer-column:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-column-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #eff3f5;
+  }
+  
+  .company-description {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #868fa0;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo-container {
+    margin-bottom: 20px;
+      display: flex; /* Added to align logo and company name */
+      align-items: center; /* Vertically align logo and company name */
+  }
+  
+  .footer-logo {
+    height: 40px;
+      margin-right: 10px; /* Added to space logo and company name */
+  }
+  
+  .footer-company-name { /* Styles for the company name text next to logo */
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #eff3f5;
+      display: inline-block; /* Make it a block for transform to work properly */
+      transition: transform 0.3s ease; /* Add transition for smooth movement */
+      position: relative; /* Needed for positioning fireworks effect */
+      cursor: pointer; /* Indicate it's clickable */
+  }
+  
+  .footer-company-name:hover {
+      transform: translateY(-3px); /* Move text up slightly on hover */
+  }
+  
+  .footer-company-name::before,
+  .footer-company-name::after {
+      content: '';
+      position: absolute;
+      top: -10px; /* Adjust position to start above text */
+      left: 0;
+      right: 0;
+      height: 20px; /* Height of fireworks effect area */
+      opacity: 0; /* Initially hidden */
+      pointer-events: none; /* Ensure it doesn't interfere with hover */
+      transition: opacity 0.3s ease; /* Transition for fade in/out */
+      background-repeat: no-repeat;
+      background-size: contain; /* Adjust size of fireworks */
+      background-position: center bottom; /* Position fireworks below text */
+  }
+  
+  .footer-company-name:hover::before,
+  .footer-company-name:hover::after {
+      opacity: 1; /* Fade in on hover */
+  }
+  
+  .footer-company-name::before {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23eff3f5" d="M12 2L9.5 7 2 7 6.8 10.8 4.4 16 9.5 12.6 14.6 16 12.2 10.8 17 7 9.5 7 12 2z"/></svg>'); /* Example firework SVG - Replace with better SVG or image */
+      animation: fireworkBurst 0.7s ease-out forwards; /* Apply burst animation */
+  }
+  
+  .footer-company-name::after {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23eff3f5" d="M12 2L9.5 7 2 7 6.8 10.8 4.4 16 9.5 12.6 14.6 16 12.2 10.8 17 7 9.5 7 12 2z"/></svg>'); /* Example firework SVG - Replace with better SVG or image */
+      animation: fireworkBurst 0.9s 0.2s ease-out forwards reverse; /* Apply burst animation with delay and reverse */
+      transform: scaleX(-1); /* Flip horizontally for variation */
+  }
+  
+  
+  @keyframes fireworkBurst {
+      0% {
+          opacity: 0;
+          transform: translateY(0) scale(0.5);
+      }
+      50% {
+          opacity: 1;
+          transform: translateY(-50px) scale(1.2);
+      }
+      100% {
+          opacity: 0;
+          transform: translateY(-30px) scale(0.8);
+      }
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links li a {
+    color: #9bacbd;
+    text-decoration: none; /* ✅ REMOVED UNDERLINE STYLING HERE */
+    transition: color 0.3s ease;
+    font-size: 1em;
+    
+  }
+  
+  .footer-link { /* General style for links within footer - removes underline */
+      text-decoration: none; /* ✅ AND HERE - REMOVED UNDERLINE STYLING HERE - REPEATED FOR CLARITY */
+      color: inherit; /* Inherit color from parent (developer-text) */
+      transition: transform 0.3s ease;
+  }
+  
+
+  .footer-link:hover{
+    transform: translateY(-3px); /* Move text up slightly on hover */
+  }
+  
+  .footer-links li a:hover {
+    color: #eff3f5;
+    transform: translateY(-3px); /* Move text up slightly on hover */
+
+  }
+  
+  .footer-contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #9bacbd;
+    font-size: 1em;
+  }
+  
+  .contact-icon {
+    margin-right: 10px;
+    color: #9bacbd;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    
+  }
+  
+  .social-icon {
+    font-size: 1.5em;
+    color: #eff3f5;
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #9bacbd;
+    transform: translateY(-3px); /* Move text up slightly on hover */
+
+  }
+  
+  .copyright-container {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #3b4b6b;
+    margin-top: 30px;
+    position: relative; /* Needed for absolute positioning of hover effect */
+  }
+  
+  .copyright-text,
+  .developer-text {
+    font-size: 0.9em;
+    color: #868fa0;
+    animation-duration: 5s; /* Duration for static animation */
+    animation-timing-function: linear; /* Timing function for static animation */
+    animation-iteration-count: infinite; /* Infinite loop for static animation */
+    animation-direction: alternate; /* Alternate direction for static animation */
+  }
+  
+  .developer-text {
+    animation-name: subtlePulse; /* Apply subtle pulse animation by default */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .developer-link { /* Styles for the developer link - to remove default link styling */
+      text-decoration: none; /* Remove underline from link */
+      color: inherit; /* Inherit color from parent (developer-text) */
+  }
+  
+  
+  .developer-text:hover {
+    color: #eff3f5; /* Change color on hover */
+    text-shadow: 0 0 10px #eff3f5; /* Add text shadow on hover for glow effect */
+    animation-play-state: paused; /* Pause pulse animation on hover */
+    animation-name: glowPulse; /* Change to more intense glow pulse on hover */
+    animation-duration: 1.5s; /* Faster pulse on hover */
+  }
+  
+  /* Keyframes for subtle pulse animation (static) */
+  @keyframes subtlePulse {
+    0% {
+      opacity: 0.8;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.02);
+    }
+    100% {
+      opacity: 0.8;
+      transform: scale(1);
+    }
+  }
+  
+  /* Keyframes for glow pulse animation (on hover) */
+  @keyframes glowPulse {
+    0% {
+      text-shadow: 0 0 5px rgba(239, 243, 245, 0.5);
+      transform: scale(1);
+    }
+    50% {
+      text-shadow: 0 0 15px rgba(239, 243, 245, 0.9);
+      transform: scale(1.05);
+    }
+    100% {
+      text-shadow: 0 0 5px rgba(239, 243, 245, 0.5);
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive adjustments for tablets (769px to 1024px) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+      .footer-section {
+          padding: 50px 20px; /* Reduced padding for tablet */
+      }
+      .footer-column-title {
+          font-size: 1.2em; /* Slightly smaller title for tablet */
+      }
+      .company-description,
+      .footer-links li a,
+      .footer-contact-info li {
+          font-size: 0.9em; /* Slightly smaller text for tablet */
+      }
+      .social-icon {
+          font-size: 1.4em; /* Slightly smaller social icons for tablet */
+      }
+  }
+  
+  
+  /* Responsive adjustments for mobile */
+  @media (max-width: 768px) {
+    .footer-section {
+      padding: 40px 20px; /* Further reduced padding for mobile */
+      text-align: center; /* Center text on mobile footer */
+    }
+  
+    .footer-container {
+      flex-direction: column; /* Stack columns vertically on mobile */
+      text-align: center; /* Center text in container on mobile */
+    }
+  
+    .footer-column {
+      text-align: center; /* Center text in columns on mobile */
+      margin-right: 0;
+      margin-bottom: 30px; /* Increased bottom margin for stacked columns */
+      min-width: auto; /* Auto width for columns on mobile */
+    }
+  
+    .footer-column:last-child {
+      margin-bottom: 0; /* Remove bottom margin from last column in mobile layout */
+    }
+  
+  
+    .footer-column-title {
+      font-size: 1.1em; /* Even smaller title on mobile */
+    }
+  
+    .company-description,
+    .footer-links li a,
+    .footer-contact-info li {
+      font-size: 0.9em; /* Even smaller text on mobile */
+      text-align: center; /* Center align text in contact and links */
+    }
+  
+    .footer-contact-info li {
+      justify-content: center; /* Center align contact info items */
+    }
+  
+    .social-icons {
+      justify-content: center; /* Center social icons on mobile */
+    }
+  
+    .copyright-container {
+      padding-top: 20px;
+      margin-top: 30px;
+    }
+  
+    .copyright-text,
+    .developer-text {
+      font-size: 0.75em; /* Even smaller copyright text on mobile */
+    }
+  }
