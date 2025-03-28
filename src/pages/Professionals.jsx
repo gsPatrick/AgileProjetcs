@@ -1,7 +1,7 @@
 import React from "react";
 import Pro from "../professionals-components/AnotherProfessionals/Pro";
 import Header from "../components/Header/Header";
-import '../../App.css';
+import '../App.css';
 
 const Professionals = () => {
 
