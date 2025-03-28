@@ -50,7 +50,7 @@
     import ReactIcon from '../../assets/ReactIcon.svg'; // Usando Reacticon.svg conforme imagem destacada
     import JavascriptIcon from '../../assets/JavascriptIcon.svg';
     import TypeScriptIcon from '../../assets/TypeScript.svg';
-  
+    import MySqlIcon from '../../assets/MySqlIcon.svg'
     
 
     const faReactIcon = faReactBrandIcon ? faReactBrandIcon : faLaptopCode;

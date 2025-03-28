@@ -59,6 +59,7 @@
     import TaiwindCssIcon from '../../assets/TailwindCss.svg'; // Importando o ícone do Taiwind CSS - ASSUMINDO QUE VOCÊ TEM
     import HtmlIcon from '../../assets/HtmlIcon.svg'; // Importando o ícone do HTML - ASSUMINDO QUE VOCÊ TEM
     import CssIcon from '../../assets/CssIcon.svg'; // Importando o ícone do CSS - ASSUMINDO QUE VOCÊ TEM
+    import JavascriptIcon from '../../assets/JavascriptIcon.svg'
 
     const faReactIcon = faReactBrandIcon ? faReactBrandIcon : faLaptopCode;
     const faCss3AltIcon = faCss3AltBrandIcon ? faCss3AltBrandIcon : faPalette;

@@ -59,6 +59,7 @@
     import PhpIcon from '../../assets/PhpIcon.svg'
     import LaravelIcon from '../../assets/LaravelIcon.svg'; // Importando o í
     import RedisIcon from '../../assets/RedisIcon.svg'; // Importando o ícone do Redis - ASSUMINDO QUE VOCÊ TEM
+    import VueIcon from '../../assets/VueIcon.svg'
 
     const faReactIcon = faReactBrandIcon ? faReactBrandIcon : faLaptopCode;
     const faCss3AltIcon = faCss3AltBrandIcon ? faCss3AltBrandIcon : faPalette;
