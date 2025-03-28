@@ -1,0 +1,182 @@
+/* AboutMe.css */
+
+.aboutme-container-geral {
+    /* Removido background-color para deixar transparente */
+    padding: 40px; /* Adiciona padding ao container geral */
+    border-radius: 8px; /* Bordas arredondadas para o container geral */
+    margin: 20px auto; /* Centraliza e adiciona margem vertical */
+    max-width: 1400px; /* Largura máxima para o container geral */
+    overflow: hidden; /* Garante que as animações de entrada não causem overflow */
+}
+
+.aboutme-section {
+    color: #fff; /* Cor do texto branco */
+    font-family: sans-serif;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.aboutme-header {
+    margin-bottom: 30px;
+}
+
+.aboutme-tag {
+    background-color: #1e293b;
+    color: #cbd5e0;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.aboutme-title {
+    font-size: 3rem; /* Aumentando o tamanho do título da seção "Sobre Mim" */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #e2e8f0; /* Cor do título um pouco mais clara */
+    line-height: 1.2;
+    display: flex; /* Para alinhar o ícone e o texto */
+    align-items: center; /* Alinhamento vertical */
+    gap: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.aboutme-title-icon {
+    font-size: 2rem; /* Aumentando o tamanho do ícone no título */
+    color: #79c0ff; /* Cor do ícone (azul claro, ajuste conforme necessário) */
+}
+
+
+.aboutme-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.aboutme-text-content {
+    flex: 1;
+    padding-top: 20px;
+}
+
+.aboutme-description {
+    font-size: 1.250rem; /* Aumentando o tamanho da fonte da descrição */
+    line-height: 1.8; /* Ajustando o line-height para melhor leitura com fonte maior */
+    color: #c9d1d9;
+    margin-bottom: 30px;
+}
+
+.aboutme-image-container {
+    flex-shrink: 0;
+    width: 500px;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: -40px;
+}
+
+.aboutme-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Estilo do Botão "Entre em Contato" */
+.aboutme-contact-button {
+    background-color: #58a6ff;
+    color: #fff;
+    border: none;
+    padding: 16px 40px; /* Aumentando padding do botão */
+    border-radius: 7px;
+    font-size: 1.2rem; /* Aumentando tamanho da fonte do botão */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+    min-width: 180px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.aboutme-contact-button:hover {
+    background-color: #3d89e1;
+    transform: scale(1.02);
+}
+
+
+/* Responsividade */
+@media (max-width: 960px) {
+    .aboutme-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .aboutme-header {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        
+    }
+
+    .aboutme-image-container {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    .aboutme-text-content {
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .aboutme-title {
+        font-size: 2.5rem; /* Reduzindo um pouco o tamanho do título em telas menores */
+        text-align: center;
+        justify-content: center; /* Centraliza o título e o ícone horizontalmente */
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+    .aboutme-container-geral {
+        padding: 30px;
+    }
+
+    .aboutme-title {
+        font-size: 2.2rem; /* Reduzindo mais o tamanho do título em celulares */
+    }
+
+    .aboutme-description {
+        font-size: 1.2rem; /* Reduzindo a descrição para celulares */
+    }
+
+    .aboutme-contact-button {
+        font-size: 1.1rem; /* Botão um pouco menor em celulares */
+        padding: 12px 30px; /* Padding menor no botão em celulares */
+    }
+}
+
+/* Animação de Entrada */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-element {
+    opacity: 0; /* Começa invisível */
+    animation: fadeInSlideUp 0.8s ease-out forwards; /* Aplica a animação */
+}

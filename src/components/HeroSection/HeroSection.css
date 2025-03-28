@@ -1,0 +1,99 @@
+/* HeroSection.css */
+.hero-section {
+    position: relative;
+    padding: 120px 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #eff3f5;
+    background-color: transparent;
+    opacity: 1;
+    transform: translateY(0);
+    height: 100%;
+    /* Animação de Entrada do Hero Section (Manter como está - slide up e fade in) */
+    opacity: 0; /* Começa invisível */
+    transform: translateY(30px); /* Começa um pouco abaixo */
+    animation: heroSectionEntrance 1.2s ease-out forwards; /* Aplica a animação de entrada */
+  }
+  
+  @keyframes heroSectionEntrance {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .hero-title {
+    font-size: 3.0em;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    overflow: hidden; /* Manter overflow: hidden para garantir que o conteúdo cortado não seja visível */
+  }
+  
+  .hero-title span {
+    font-weight: bold;
+    color: #eff3f5;
+    display: block; /* Manter display: block */
+  }
+  
+  .hero-title-inner {
+    /* Removido transform: translateY */
+    transition: opacity 0.8s ease-in-out; /* Animação de fade apenas */
+    display: block; /* Manter display: block */
+    opacity: 1; /* Começa visível */
+  }
+  
+  .hero-title-inner.fade-out {
+    /* Removido transform: translateY */
+    opacity: 0; /* Fade out */
+  }
+  
+  .hero-title-inner.fade-in {
+    /* Removido transform: translateY */
+    opacity: 1; /* Fade in */
+  }
+  
+  
+  .hero-subtitle {
+    font-size: 1.4em;
+    color: #9bacbd;
+    line-height: 1.6;
+    font-weight: 400;
+    margin-bottom: 40px;
+  }
+  .hero-button {
+    border: 1px solid #273465;
+    background-color: #1c2444; /* Cor do botão da paleta */
+    color: #eff3f5;
+    
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    position: relative; /* Adicionado para o box-shadow funcionar corretamente */
+    animation: pulse-glow 2s infinite; /* Aplica a animação pulse-glow */
+  }
+  
+  .hero-button:hover {
+    background-color: #222d43; /* Cor de hover do botão da paleta */
+  }
+  
+  @keyframes pulse-glow {
+    0% {
+      box-shadow: 0 0 0 0 rgba(35, 119, 195, 0.6); /* Cor inicial do glow - azul da paleta #2377c3, mais forte */
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(35, 119, 195, 0); /* Aumentei o raio para 15px para um glow mais forte */
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(35, 119, 195, 0);
+    }
+  }

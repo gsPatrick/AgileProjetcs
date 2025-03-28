@@ -1,0 +1,303 @@
+/* Service.css */
+.nossos-servicos-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: transparent;
+  color: #eff3f5;
+  font-family: 'Inter', sans-serif;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out, padding 0.3s ease; /* Adicionada transição para padding */
+  border-top: 1px solid rgba(59, 75, 107, 0.95);
+}
+
+.service-section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nossos-servicos-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 60px;
+  font-weight: 500;
+  transition: font-size 0.3s ease, margin-bottom 0.3s ease; /* Adicionadas transições */
+}
+
+/* Estilo do link "Veja os Projetos" como botão */
+.servico-botao-projetos-link {
+  background-color: #58a6ff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.servico-botao-projetos-link:hover {
+  background-color: #3d89e1;
+  transform: scale(1.05); /* Aumentei um pouco o scale no hover */
+}
+
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  transition: grid-template-columns 0.3s ease, gap 0.3s ease, padding 0.3s ease; /* Adicionadas transições */
+}
+
+.servico-card {
+  background-color: #222d43;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, opacity 1s ease-out, transform 1s ease-out, padding 0.3s ease; /* Adicionadas transições */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.servico-card.card-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.servico-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: rgba(59, 75, 107, 0.95);
+}
+
+.servico-icone-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #3b4b6b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  transition: width 0.3s ease, height 0.3s ease, margin-bottom 0.3s ease; /* Adicionadas transições */
+}
+
+.servico-icone {
+  width: 30px;
+  height: 30px;
+  fill: #eff3f5;
+  transition: width 0.3s ease, height 0.3s ease; /* Adicionadas transições */
+}
+
+.servico-titulo {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  color: #eff3f5;
+  font-weight: 500;
+  transition: font-size 0.3s ease, margin-bottom 0.3s ease; /* Adicionadas transições */
+}
+
+.servico-descricao {
+  font-size: 1em;
+  color: #9bacbd;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  flex-grow: 1;
+  transition: font-size 0.3s ease, margin-bottom 0.3s ease; /* Adicionadas transições */
+}
+
+.servico-preco {
+  font-size: 0.9em;
+  color: #eff3f5;
+  margin-bottom: 20px;
+  transition: font-size 0.3s ease, margin-bottom 0.3s ease; /* Adicionadas transições */
+}
+
+.servico-preco span {
+  font-weight: bold;
+}
+
+.servico-botoes {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-top: 20px;
+  transition: gap 0.3s ease, margin-top 0.3s ease, flex-direction 0.3s ease; /* Adicionadas transições */
+  flex-direction: row; /* Garante que a direção padrão seja row para telas maiores */
+}
+
+.servico-botao {
+  background-color: #2377c3;
+  color: #eff3f5;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: bold;
+  transition: background-color 0.3s ease, padding 0.3s ease, font-size 0.3s ease; /* Adicionadas transições */
+  align-self: flex-start;
+}
+
+.servico-botao:hover {
+  background-color: #145ca6;
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas maiores que 1200px (desktops grandes) */
+@media (min-width: 1200px) {
+  .nossos-servicos-section {
+      padding: 100px 20px;
+  }
+  .nossos-servicos-section h2 {
+      font-size: 3em;
+      margin-bottom: 70px;
+  }
+  .servicos-grid {
+      padding: 0 30px;
+  }
+}
+
+
+@media (max-width: 992px) { /* Para tablets maiores e laptops menores */
+  .nossos-servicos-section {
+      padding: 70px 20px;
+  }
+
+  .nossos-servicos-section h2 {
+      font-size: 2.3em;
+      margin-bottom: 50px;
+  }
+
+  .servicos-grid {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+      padding: 0 15px; /* Ajuste no padding horizontal */
+  }
+
+  .servico-card {
+      padding: 22px;
+  }
+
+  .servico-titulo {
+      font-size: 1.5em;
+  }
+}
+
+
+@media (max-width: 768px) { /* Para tablets e telas menores */
+  .nossos-servicos-section {
+      padding: 60px 15px;
+  }
+
+  .nossos-servicos-section h2 {
+      font-size: 2em;
+      margin-bottom: 40px;
+  }
+
+  .servicos-grid {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 0 10px; /* Ajuste no padding horizontal */
+  }
+
+  .servico-card {
+      padding: 20px;
+  }
+
+  .servico-icone-container {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+  }
+
+  .servico-icone {
+      width: 25px;
+      height: 25px;
+  }
+
+  .servico-titulo {
+      font-size: 1.4em;
+      margin-bottom: 8px;
+  }
+
+  .servico-descricao {
+      font-size: 0.9em;
+      margin-bottom: 12px;
+  }
+
+  .servico-preco {
+      font-size: 0.8em;
+      margin-bottom: 15px;
+  }
+
+  .servico-botao {
+      padding: 8px 16px;
+      font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) { /* Para smartphones menores */
+  .nossos-servicos-section {
+      padding: 40px 10px;
+  }
+
+  .nossos-servicos-section h2 {
+      font-size: 1.8em;
+      margin-bottom: 30px;
+  }
+
+  .servicos-grid {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      padding: 0; /* Removido padding horizontal para ocupar toda a largura */
+  }
+
+  .servico-card {
+      padding: 15px;
+  }
+
+  .servico-botoes {
+      flex-direction: column;
+      align-items: stretch; /* Manter stretch para ocupar a largura disponível, mas com max-width no botão */
+      gap: 8px;
+  }
+
+  .servico-botao {
+      max-width: 100%; /* Alterado para max-width */
+      width: auto; /* Adicionado width: auto para respeitar o conteúdo interno */
+      text-align: center;
+      padding: 8px 16px; /* Manter padding horizontal, reduzir vertical se necessário */
+      padding-top: 6px;      /* Reduzindo o padding vertical superior */
+      padding-bottom: 6px;   /* Reduzindo o padding vertical inferior */
+      font-size: 0.8em;     /* Ajustando o tamanho da fonte para telas menores, se necessário */
+  }
+}
+
+/* Para telas ainda menores (opcional, para dispositivos muito pequenos) */
+@media (max-width: 375px) {
+  .nossos-servicos-section h2 {
+      font-size: 1.6em; /* Reduz ainda mais o título em telas muito pequenas */
+      margin-bottom: 25px;
+  }
+  .servico-card {
+      padding: 12px; /* Reduz um pouco mais o padding do card */
+  }
+  .servico-descricao {
+      font-size: 0.85em; /* Reduz um pouco mais a descrição */
+  }
+  .servico-botao {
+      font-size: 0.75em; /* Reduz um pouco mais o tamanho da fonte do botão */
+      padding: 6px 12px; /* Reduz um pouco mais o padding do botão */
+  }
+}

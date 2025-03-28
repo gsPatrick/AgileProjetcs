@@ -1,0 +1,238 @@
+/* ShowPro.css */
+/* Container de 1400px */
+.container-1400 {
+    max-width: 1400px;
+    margin: 0 auto; /* Centraliza na tela se for menor que 1400px */
+    padding-left: 20px; /* Opcional: Padding lateral para telas maiores */
+    padding-right: 20px; /* Opcional: Padding lateral para telas maiores */
+}
+
+.hero-section {
+    width: auto
+}
+
+.showpro-container {
+
+    color: #fff;
+    display: flex;
+    padding: 60px 40px;
+    border-radius: 0px;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: space-between; /* Mudança para space-between */
+    gap: 50px;
+    text-align: left;
+    overflow: hidden; /* Garante que as animações de entrada não causem overflow */
+}
+
+.showpro-image-container {
+    flex-shrink: 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid #1e293b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.showpro-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.showpro-text-content {
+    flex: 1; /* Ocupa o espaço restante */
+    padding-left: 0px;
+    max-width: 700px; /* Aumentando a largura máxima do texto */
+}
+
+.showpro-name {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+/* Estilo da Tag Primária */
+.showpro-primary-tag {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px; /* Espaço abaixo da tag primária */
+}
+
+.primary-tag-icon {
+    font-size: 1.5rem; /* Tamanho do ícone primário */
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+    color: #6ee7b7; /* Cor do ícone primário (verde claro) */
+    transition: transform 0.3s ease-in-out; /* Animação no ícone primário */
+}
+
+.primary-tag-icon:hover {
+    transform: scale(1.2); /* Aumenta o ícone no hover */
+}
+
+.primary-tag-text {
+    font-size: 1.8rem; /* Tamanho do texto da tag primária */
+    font-weight: 600; /* Peso da fonte mais forte */
+    color: #cbd5e0; /* Cor do texto da tag primária (cinza claro) */
+    text-transform: uppercase; /* Tag primária em uppercase */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+}
+
+
+.showpro-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #c9d1d9;
+}
+
+/* Estilo das Tags Secundárias com Ícones */
+.showpro-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.showpro-tag {
+    background-color: #1e293b;
+    color: #e4e4e7;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border: 1px solid #27374d;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Transições para hover */
+    display: inline-flex; /* Para alinhar ícone e texto */
+    align-items: center; /* Alinhamento vertical */
+    gap: 8px; /* Espaço entre ícone e texto dentro da tag */
+    cursor: pointer; /* Indica que é clicável */
+}
+
+.tag-icon {
+    font-size: 0.9rem; /* Tamanho dos ícones nas tags */
+    color: #7dd3fc; /* Cor dos ícones secundários (azul claro) */
+}
+
+
+.showpro-tag:hover {
+    background-color: #334155;
+    color: #fff;
+    transform: scale(1.05); /* Levemente maior no hover */
+}
+
+
+/* Estilo do Botão "Conhecer Portfolio" */
+.showpro-portfolio-button {
+    background-color: #58a6ff;
+    color: #fff;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição para hover */
+    font-weight: 600;
+    min-width: 180px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.showpro-portfolio-button:hover {
+    background-color: #3d89e1;
+    transform: scale(1.02); /* Levemente maior no hover */
+}
+
+
+/* Responsividade (Opcional, mas recomendado) */
+@media (max-width: 768px) {
+    .container-1400 {
+        padding-left: 0; /* Remove padding lateral em telas menores */
+        padding-right: 0; /* Remove padding lateral em telas menores */
+    }
+
+    .showpro-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .showpro-image-container {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 25px;
+        border-width: 5px;
+    }
+
+    .showpro-text-content {
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .showpro-name {
+        font-size: 2.3rem;
+    }
+
+    .showpro-primary-tag {
+        justify-content: center; /* Centraliza a tag primária em telas menores */
+        margin-bottom: 20px; /* Reduzindo margem inferior em telas menores */
+    }
+
+    .primary-tag-icon {
+        font-size: 1.3rem; /* Ícone primário menor em telas menores */
+        margin-right: 8px; /* Espaço menor para telas menores */
+    }
+
+    .primary-tag-text {
+        font-size: 1.6rem; /* Texto da tag primária menor em telas menores */
+    }
+
+
+    .showpro-description {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+    }
+
+    .showpro-tags {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .showpro-tag {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+        border-radius: 20px;
+    }
+
+
+    .showpro-portfolio-button {
+        width: 100%;
+        min-width: auto;
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Animação de Entrada */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-element {
+    opacity: 0; /* Começa invisível */
+    animation: fadeInSlideUp 0.8s ease-out forwards; /* Aplica a animação */
+}

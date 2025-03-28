@@ -11,6 +11,7 @@ import Renan from '../pages/Professionals/Renan/Renan'; // Importe a página Ren
 import Mateus from '../pages/Professionals/Mateus/Mateus'; // Importe a página Mateus
 import Joao from '../pages/Professionals/Joao/Joao'; // Importe a página Mateus
 import Agile from '../pages/Sobre/Agile'; // Importe a página Mateus
+import testepage from '../pages/testepage'; // Importe a página Mateus
 
 const AppRoutes = () => {
   return (

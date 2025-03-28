@@ -1,0 +1,396 @@
+/* Projects.css */
+
+.projects-container-geral {
+    padding: 30px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Ensure overflow: hidden; is here for animation */
+}
+
+.projects-section {
+    color: #fff;
+    font-family: sans-serif;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.projects-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #e2e8f0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 0 20px;
+    align-items: stretch;
+}
+
+.project-card {
+    background-color: #1e293b;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.project-content {
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.project-card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #e2e8f0;
+    margin-bottom: 3px;
+}
+
+.project-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #c9d1d9;
+    min-height: 110px;
+    overflow: hidden;
+}
+
+.project-developer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    color: #a1a1aa;
+    font-size: 0.8rem;
+}
+
+.project-developer-name {
+    font-weight: 700;
+    font-size: 0.9rem;
+    /* Estilo para destacar o nome do desenvolvedor (fora do hover) */
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2); /* Adiciona uma borda inferior tracejada e levemente transparente */
+    padding-bottom: 2px; /* Adiciona um pequeno espaço abaixo do texto para a borda não ficar muito colada */
+}
+
+/* Estilo para o link do nome do desenvolvedor */
+.project-developer-info a.project-developer-link {
+    text-decoration: none; /* Remove sublinhado padrão de links */
+    color: #a1a1aa; /* Cor inicial igual ao nome */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Transição suave para hover */
+    display: inline-block; /* Para que o padding funcione corretamente se adicionarmos */
+}
+
+.project-developer-info a.project-developer-link:hover {
+    color: #79c0ff; /* Cor ao passar o mouse */
+    text-shadow: 0 0 5px rgba(121, 192, 255, 0.6); /* Efeito de sombra suave */
+    cursor: pointer; /*  <-- ADICIONADO: Muda o cursor para ponteiro */
+}
+
+
+.project-classification-tag {
+    background-color: #495769;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: normal;
+    box-shadow: none;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.project-classification-tag:hover {
+    background-color: #5d6e83;
+    color: #fff;
+    transform: scale(1.03);
+}
+
+
+.project-skill-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.skill-tag-icon {
+    font-size: 1.3rem;
+    color: #79c0ff;
+    transition: transform 0.2s ease, color 0.2s ease; /* Transição para animação */
+}
+
+.skill-tag-icon:hover {
+    transform: scale(1.2); /* Aumenta um pouco no hover */
+    color: #58a6ff; /* Muda ligeiramente a cor no hover */
+}
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.project-button {
+    background-color: #58a6ff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.button-icon {
+    font-size: 0.8rem;
+}
+
+.project-button:hover {
+    background-color: #3d89e1;
+    transform: scale(1.01);
+}
+
+.view-more-button {
+    background-color: transparent;
+    color: #58a6ff;
+    border: 1.5px solid #58a6ff;
+}
+
+.view-more-button:hover {
+    background-color: #58a6ff;
+    color: #fff;
+}
+
+
+.project-availability-container {
+    margin-top: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.project-availability {
+    font-size: 0.8rem;
+}
+
+
+
+
+/* Responsividade (Opcional, mas recomendado) */
+@media (max-width: 1024px) { /* Tablets e telas menores de desktop */
+    .projects-container-geral {
+        padding: 25px;
+    }
+
+    .projects-title {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    .projects-grid {
+        gap: 15px;
+    }
+
+    .project-card {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card:hover {
+        transform: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-image-container {
+        height: 180px;
+    }
+
+    .project-card-title {
+        font-size: 1.2rem;
+    }
+
+    .project-description {
+        font-size: 0.85rem;
+        min-height: 90px; /* Ajuste min-height para telas menores */
+    }
+
+    .project-developer-info {
+        font-size: 0.75rem;
+    }
+
+    .skill-tag-icon {
+        font-size: 1.2rem;
+    }
+
+    .project-buttons {
+        gap: 8px;
+        padding: 12px; /* Ajuste padding para telas menores */
+
+    }
+
+    .project-button {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+
+    .project-availability-container {
+        padding: 12px; /* Ajuste padding para telas menores */
+    }
+
+    .project-availability {
+        font-size: 0.75rem; /* Texto de disponibilidade menor em telas pequenas */
+    }
+}
+
+
+@media (max-width: 768px) { /* Celulares */
+    .projects-container-geral {
+        padding: 20px; /* Reduzindo o padding do container geral em telas menores */
+    }
+
+    .projects-title {
+        font-size: 1.8rem; /* Título menor em telas pequenas */
+        margin-bottom: 20px; /* Reduzindo a margem inferior do título em telas menores */
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Cards ocupam a largura total em telas menores */
+        gap: 15px; /* Espaço menor entre os cards em telas menores */
+        padding: 0; /* Remove padding horizontal do grid em telas menores */
+    }
+
+    .project-card {
+        width: 100%; /* Cards ocupam a largura total em telas menores */
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Sombra mais suave em telas menores */
+    }
+
+    .project-card:hover {
+        transform: none; /* Remove a animação de levantar em telas menores */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Mantém uma sombra suave no hover em telas menores */
+    }
+
+    .project-image-container {
+        height: 150px; /* Imagens menores em telas pequenas */
+    }
+
+    .project-card-title {
+        font-size: 1.2rem; /* Título do card menor em telas pequenas */
+    }
+
+    .project-description {
+        font-size: 0.85rem; /* Descrição menor em telas pequenas */
+        min-height: 80px; /* Ajuste min-height para telas menores ainda */
+    }
+
+    .project-developer-info {
+        font-size: 0.75rem; /* Informações do desenvolvedor menores em telas pequenas */
+    }
+
+    .skill-tag-icon {
+        font-size: 1.2rem; /* Ícones de skill menores em telas pequenas */
+    }
+
+    .project-buttons {
+        gap: 8px;
+        position: static; /* Reset positioning for smaller screens */
+        padding: 10px; /* Ajuste padding para telas menores */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-button {
+        font-size: 0.8rem; /* Botões menores em telas pequenas */
+        padding: 8px 12px; /* Padding menor nos botões em telas pequenas */
+    }
+
+    .project-availability-container {
+        padding: 10px; /* Reduz padding em telas menores */
+    }
+
+    .project-availability {
+        font-size: 0.75rem; /* Texto de disponibilidade menor em telas pequenas */
+    }
+}
+
+
+@media (max-width: 500px) { /* Celulares ainda menores */
+    .projects-title {
+        font-size: 1.6rem; /* Título ainda menor em celulares menores */
+    }
+
+    .project-card-title {
+        font-size: 1.1rem; /* Título do card ainda menor em celulares menores */
+    }
+
+    .project-description {
+        font-size: 0.8rem; /* Descrição ainda menor em celulares menores */
+        min-height: 70px; /* Ajuste min-height para telas menores ainda */
+    }
+
+    .project-developer-info {
+        font-size: 0.7rem; /* Informações do desenvolvedor ainda menores em celulares menores */
+    }
+
+    .skill-tag-icon {
+        font-size: 1.1rem; /* Ícones de skill ainda menores em celulares menores */
+    }
+
+    .project-button {
+        font-size: 0.7rem; /* Botões ainda menores em celulares menores */
+    }
+
+    .project-availability {
+        font-size: 0.7rem; /* Texto de disponibilidade ainda menores em celulares menores */
+    }
+}
+
+/* Animação de Entrada */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-element {
+    opacity: 0; /* Começa invisível */
+    animation: fadeInSlideUp 0.8s ease-out forwards; /* Aplica a animação */
+}
+
+

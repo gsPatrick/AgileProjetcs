@@ -1,0 +1,196 @@
+/* Skills.css */
+
+.skills-container-geral {
+    padding: 40px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Garante que as animações de entrada não causem overflow */
+}
+
+.skills-section {
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    border-radius: 0px;
+    padding: 20px 0;
+}
+
+.skills-header {
+    margin-bottom: 40px;
+}
+
+.skills-tag {
+    background-color: #1e293b;
+    color: #cbd5e0;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.skills-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e2e8f0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Mantive o minmax base */
+    gap: 30px;
+    justify-items: center;
+    padding: 0 20px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-logo {
+    /* font-size: 4rem; REMOVIDO */
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    color: #a1a1aa;
+    transition: color 0.3s ease-in-out;
+    transform: scale(1); /* Mantém o estado inicial para animação de scale (hover e pulse) */
+
+    /* Animação de pulso contínua */
+    animation-name: pulse;
+    animation-duration: 2s; /* Duração de cada pulso: 2 segundos */
+    animation-timing-function: ease-in-out; /* Suaviza o início e o fim do pulso */
+    animation-iteration-count: infinite; /* Repete a animação infinitamente */
+}
+
+.skill-item:hover .skill-logo {
+    color: #58a6ff;
+    transform: scale(1.1); /* Animação de scale no hover */
+}
+
+.skill-name {
+    font-size: 0.9rem;
+    color: #a1a1aa;
+    text-align: center; /* Centralizei o texto do nome da habilidade */
+    transition: color 0.3s ease-in-out; /* Transição para a cor do texto */
+}
+
+.skill-item:hover .skill-name {
+    color: #cbd5e0; /* Cor do texto no hover */
+}
+
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .skills-container-geral {
+        padding: 20px;
+        margin: 10px auto;
+    }
+
+    .skills-section {
+        padding: 10px 0;
+    }
+
+    .skills-title {
+        font-size: 1.7rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Reduzi o minmax para telas menores */
+        gap: 20px; /* Reduzi o gap também */
+        padding: 0 10px;
+    }
+
+    .skill-logo {
+        /* font-size: 3rem; REMOVIDO */
+        width: 35px; /* Ajuste responsivo do tamanho do ícone para telas menores */
+        height: 35px; /* Ajuste responsivo do tamanho do ícone para telas menores */
+    }
+
+    .skill-name {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) { /* Adicionado breakpoint para telas menores ainda */
+    .skills-container-geral {
+        padding: 15px; /* Reduzindo ainda mais o padding */
+        margin: 10px auto;
+    }
+
+    .skills-header {
+        margin-bottom: 30px; /* Ajustando margem do header */
+    }
+
+    .skills-tag {
+        font-size: 1.3rem; /* Reduzindo tamanho da tag */
+        padding: 10px 15px;
+    }
+
+    .skills-title {
+        font-size: 1.5rem; /* Reduzindo título */
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Minmax ainda menor para caber mais itens */
+        gap: 15px; /* Gap ainda menor */
+        padding: 0 5px; /* Padding menor ainda */
+    }
+
+    .skill-logo {
+        /* font-size: 2.5rem; REMOVIDO */
+        width: 30px; /* Ajuste responsivo do tamanho do ícone para telas menores ainda */
+        height: 30px; /* Ajuste responsivo do tamanho do ícone para telas menores ainda */
+    }
+
+    .skill-name {
+        font-size: 0.7rem; /* Nomes menores */
+    }
+}
+
+
+/* Animação de Entrada */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-element {
+    opacity: 0; /* Começa invisível */
+    animation: fadeInSlideUp 0.8s ease-out forwards; /* Aplica a animação */
+}
+
+/* Animação de Pulso Contínuo (adicionado no início deste passo) */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); /* Aumenta ligeiramente no meio da animação */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
