@@ -88,7 +88,7 @@
                 // Removi os outros tags para simplificar conforme a nova copy, você pode readicionar ou ajustar se necessário
               ],
               portfolioButtonText: 'Entre em Contato', // ✅ Nome do botão
-              portfolioButtonLink: 'https://aistudio.google.com/prompts/1IFd1A6R6Qi8Lkj0bG6Xurh8K8h0XOIVA' // ✅ Link do botão
+              portfolioButtonLink: 'https://wa.me/5518998184907' // ✅ Link do botão
           };
 
 
@@ -145,7 +145,7 @@
                Tenho experiência em construir aplicações web completas, dominando tanto o front-end quanto o back-end. Especialista em JavaScript e seus frameworks, foco em criar soluções eficientes, escaláveis e de alta qualidade. Sempre em busca de evolução, meu objetivo é entregar produtos que atendam às reais necessidades dos usuários e dos negócios.
             `, // Nova descrição conforme fornecido
             buttonText: 'Entre em Contato',
-            buttonLink: '#contact',
+            buttonLink: 'https://wa.me/5518998184907',
             imageSrc: 'https://i.imgur.com/Z0uI1bB.jpeg',
         };
 

@@ -85,14 +85,14 @@ function Footer() {
           <ul className="footer-links">
             <li><Link to="/sobre" className="footer-link">Sobre Nós</Link></li>
             <li><Link to="/professionals" className="footer-link">Nossos Profissionais</Link></li>
-            <li><a href="#contact" className="footer-link">Contato</a></li>
-            <li><a href="#coupon" className="footer-link">Cupom</a></li>
+            <li><Link to="https://wa.me/5518998184907" className="footer-link">Contato</Link></li>
           </ul>
         </div>
 
         <div className="footer-column contact">
           <h4 className="footer-column-title">CONTATO</h4>
           <ul className="footer-contact-info">
+            
             <li><a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="whatsapp-contact-link">
               <FaWhatsapp className="contact-icon whatsapp-icon" /> +55 18 99818-4907 </a></li>
           </ul>
@@ -100,7 +100,7 @@ function Footer() {
       </div>
       <div className="copyright-container">
         <p className="copyright-text">Copyright 2025 © Agile Projects - Todos Direitos Reservados</p>
-        <p className="developer-text">Desenvolvido com <span role="img" aria-label="heart">❤️</span> por <Link to="/professionals/patrick" className="developer-link">Patrick.Developer</Link></p>
+        <p className="developer-text">Desenvolvido com <span role="img" aria-label="heart">❤️</span> por <Link to="/patrick" className="developer-link">Patrick.Developer</Link></p>
       </div>
     </footer>
   );

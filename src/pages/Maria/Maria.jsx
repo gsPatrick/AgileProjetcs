@@ -61,7 +61,7 @@
                 { name: 'Multilinguismo', icon: globeIcon },
             ],
             portfolioButtonText: 'Entre em Contato', // ✅ Nome do botão
-              portfolioButtonLink: 'https://aistudio.google.com/prompts/1IFd1A6R6Qi8Lkj0bG6Xurh8K8h0XOIVA' // ✅ Link do botão
+              portfolioButtonLink: 'https://wa.me/5518998184907' // ✅ Link do botão
           };
           
         const professionalSkills = [
@@ -91,7 +91,7 @@
                 Com formação em Marketing e pós-graduação em áreas ambientais e auditoria, trago uma perspectiva única e responsável para o mundo do marketing digital.
             `, // Descrição adaptada do portfólio
             buttonText: 'Entre em Contato',
-            buttonLink: '#contact',
+            buttonLink: 'https://wa.me/5518998184907',
             imageSrc: 'https://i.imgur.com/q7rfYQ5.jpeg', // Placeholder - Substitua por imagem real
             icon: faChartBar, // 🟦 ICONE ADICIONADO AQUI e setado para faChartBar (icone de marketing digital)
         };

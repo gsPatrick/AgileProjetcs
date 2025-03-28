@@ -80,7 +80,7 @@
                 { name: 'Dev Experience', icon: faCogs }, 
             ],
             portfolioButtonText: 'Entre em Contato', 
-            portfolioButtonLink: 'https://aistudio.google.com/prompts/1IFd1A6R6Qi8Lkj0bG6Xurh8K8h0XOIVA'
+            portfolioButtonLink: 'https://wa.me/5518998184907'
         };
 
         const primeirosProfissionais = [
@@ -146,7 +146,7 @@ Estou aberto a colaborações, projetos emocionantes e oportunidades de trabalho
 Ao longo da minha carreira, tive o privilégio de trabalhar em uma variedade de projetos desafiadores, onde pude demonstrar minha capacidade de análise, resolução de problemas e colaboração eficaz em equipe. Meu foco principal é criar produtos de alta qualidade que não apenas atendam, mas também excedam as expectativas dos clientes.
             `, // Ajustei a descrição para refletir os títulos nas tags e mencionar algumas skills
             buttonText: 'Entre em Contato',
-            buttonLink: '#contact',
+            buttonLink: 'https://wa.me/5518998184907',
             imageSrc: 'https://mateustr.com/Elements/Perfil.jpg',
         };
 

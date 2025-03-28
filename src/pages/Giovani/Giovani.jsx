@@ -90,7 +90,7 @@
                 { name: 'Desenvolvedor Web', icon: faGlobe }, // Título: Desenvolvedor Web
             ],
             portfolioButtonText: 'Entre em Contato', // ✅ Nome do botão
-            portfolioButtonLink: 'https://aistudio.google.com/prompts/1IFd1A6R6Qi8Lkj0bG6Xurh8K8h0XOIVA' // ✅ Link do botão
+            portfolioButtonLink: 'https://wa.me/5518998184907' // ✅ Link do botão
         };
 
 
@@ -150,7 +150,7 @@
 Apaixonado por tecnologia, estou sempre em busca de desafios que me permitam aplicar minhas habilidades e aprender novas soluções. Se você procura um profissional comprometido e orientado a resultados!
             `, // Ajustei a descrição para refletir os títulos nas tags e mencionar algumas skills
             buttonText: 'Entre em Contato',
-            buttonLink: '#contact',
+            buttonLink: 'https://wa.me/5518998184907',
             imageSrc: 'https://giovani-appezzato.vercel.app/assets/images/eu.webp',
         };
 

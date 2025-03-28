@@ -48,7 +48,6 @@
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, opacity 1s ease-out, transform 1s ease-out, padding 0.3s ease; /* Added transition for padding */
-  justify-content: space-between;
   opacity: 0;
   transform: translateY(20px);
 }

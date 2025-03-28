@@ -77,7 +77,7 @@ import Pro from "../../professionals-components/AnotherProfessionals/Pro";
                 { name: 'Dev Experience', icon: faCogs }, // Título: Especialista DevOps
             ],
             portfolioButtonText: 'Entre em Contato', // ✅ Nome do botão
-            portfolioButtonLink: 'https://aistudio.google.com/prompts/1IFd1A6R6Qi8Lkj0bG6Xurh8K8h0XOIVA' // ✅ Link do botão
+            portfolioButtonLink: 'https://wa.me/5518998184907' // ✅ Link do botão
         };
 
 
@@ -93,7 +93,7 @@ Tive a oportunidade de colaborar com grandes marcas internacionais por exemplo e
 Meu foco é entender suas necessidades e criar soluções criativas que verdadeiramente se destaquem. Se você quer resultados que realmente impressionam, aqui é o lugar certo! Pronto para dar o próximo passo e fazer sua ideia brilhar?
             `, // Ajustei a descrição para refletir os títulos nas tags e mencionar algumas skills
             buttonText: 'Entre em Contato',
-            buttonLink: '#contact',
+            buttonLink: 'https://wa.me/5518998184907',
             imageSrc: 'https://i.imgur.com/FQDlTGh.jpeg',
         };
 
@@ -124,43 +124,43 @@ Meu foco é entender suas necessidades e criar soluções criativas que verdadei
               name: 'Maria G. Silva',
               image: 'https://i.imgur.com/q7rfYQ5.jpeg',
               tags: ['Marketing Digital', 'Marketing de Afiliados', 'Trafego Pago', 'Copywritring Estratétgico'],
-              link: '/professionals/maria'
+              link: '/maria'
             },
             {
               name: 'Renan Bueno',
               image: 'https://i.imgur.com/FQDlTGh.jpeg',
               tags: ['Design UX/UI', 'Figma', 'Prototipagem', 'Design Thinking'],
-              link: '/professionals/renan'
+              link: '/renan'
             },
             {
               name: 'João Vitor',
               image: ' https://i.imgur.com/Z0uI1bB.jpeg',
               tags: ['Desenvolvedor Full-Stack'],
-              link: '/professionals/joao'
+              link: '/joao'
             },
             {
               name: 'Mateus',
               image: 'https://i.imgur.com/UA4BQIt.jpeg',
               tags: ['Product Designer'],
-              link: '/professionals/mateus'
+              link: '/mateus'
             },
             {
               name: 'Giovani Appezzato N. Rosa',
               image: ' https://giovani-appezzato.vercel.app/assets/images/eu.webp',
               tags: ['Desenvolvedor de Sotfware'],
-              link: '/professionals/giovani'
+              link: '/giovani'
             },
             {
               name: 'Ranathan Henrique',
               image: 'https://ranathan-portifolio.vercel.app/assets/img/main.jpg',
               tags: ['Desenvolvedor Full-Stack', 'Desenvolvedor Web'],
-              link: '/professionals/ranathan'
+              link: '/ranathan'
             },
             {
               name: 'Michel Lombardi',
               image: 'https://i.imgur.com/gqGHDF8.jpeg',
               tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
-              link: '/professionals/michel'
+              link: '/michel'
             },
           ];
 

@@ -100,7 +100,7 @@ const PatrickPage = () => {
             { name: 'Desenvolvedor Web', icon: faGlobe }, // Título: Desenvolvedor Web
           ],
           portfolioButtonText: 'Entre em Contato', // ✅ Nome do botão
-          portfolioButtonLink: 'https://aistudio.google.com/prompts/1IFd1A6R6Qi8Lkj0bG6Xurh8K8h0XOIVA' // ✅ Link do botão
+          portfolioButtonLink: 'https://wa.me/5518998184907' // ✅ Link do botão
       };
 
 
@@ -160,8 +160,9 @@ const PatrickPage = () => {
             Domino linguagens como Java, JavaScript, TypeScript e frameworks como Spring Boot, Nest.js e .NET Core, entre outras.
         `, // Ajustei a descrição para refletir os títulos nas tags e mencionar algumas skills
         buttonText: 'Entre em Contato',
-        buttonLink: '#contact',
+        buttonLink: 'https://wa.me/5518998184907',
         imageSrc: 'https://i.imgur.com/mICtXkO.jpeg',
+
     };
 
     // Lista de habilidades para Patrick - DEFINA AQUI AS HABILIDADES QUE VOCÊ QUER MOSTRAR
