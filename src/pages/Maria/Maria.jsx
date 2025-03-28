@@ -1,12 +1,12 @@
     // Patrick.jsx
     import React from "react";
-    import ShowPro from "../../professionals-components/HeroSection/ShowPro";
-    import Skills from "../../professionals-components/Skills/Skills";
-    import Header from "../../components/Header/Header";
-    import AboutMe from "../../professionals-components/AboutMe/AboutMe";
-    import Projects from "../../professionals-components/Projects/Projects";
-    import Pro from "../../professionals-components/AnotherProfessionals/Pro";
-    import '../../../App.css';
+    import ShowPro from "../professionals-components/HeroSection/ShowPro";
+    import Skills from "../professionals-components/Skills/Skills";
+    import Header from "../components/Header/Header";
+    import AboutMe from "../professionals-components/AboutMe/AboutMe";
+    import Projects from "../professionals-components/Projects/Projects";
+    import Pro from "../professionals-components/AnotherProfessionals/Pro";
+    import '../../App.css';
 
     import { faReact as faReactBrandIcon, faCss3Alt as faCss3AltBrandIcon, faHtml5 as faHtml5BrandIcon } from '@fortawesome/free-brands-svg-icons';
     import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

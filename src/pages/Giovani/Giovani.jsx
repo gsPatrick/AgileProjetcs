@@ -1,14 +1,14 @@
     // Patrick.jsx
     import React from "react";
-    import ShowPro from "../../professionals-components/HeroSection/ShowPro";
-    import Skills from "../../professionals-components/Skills/Skills";
-    import Header from "../../components/Header/Header";
-    import AboutMe from "../../professionals-components/AboutMe/AboutMe";
-    import Projects from "../../professionals-components/Projects/Projects";
+    import ShowPro from "../professionals-components/HeroSection/ShowPro";
+    import Skills from "../professionals-components/Skills/Skills";
+    import Header from "../components/Header/Header";
+    import AboutMe from "../professionals-components/AboutMe/AboutMe";
+    import Projects from "../professionals-components/Projects/Projects";
     // import Pro from "../../../professionals-components/AnotherProfessionals/Pro"; // Comente ou remova se não for usar
-    import Pro from "../../professionals-components/AnotherProfessionals/Pro";
+    import Pro from "../professionals-components/AnotherProfessionals/Pro";
 
-    import '../../../App.css';
+    import '../../App.css';
 
     import { faReact as faReactBrandIcon, faCss3Alt as faCss3AltBrandIcon, faHtml5 as faHtml5BrandIcon } from '@fortawesome/free-brands-svg-icons';
     import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -47,7 +47,7 @@
 
 
     // Importe os ícones SVG diretamente - IMPORTADOS AQUI
-    import AspNetIcon from '../../../assets/AspNetIcon.svg';
+    import AspNetIcon from '../../assets/AspNetIcon.svg';
     import AwsIcon from '../../../assets/AwsIcon.svg';
     import AzureIcon from '../../../assets/AzureIcon.svg';
     import CSharpIcon from '../../../assets/CSharpIcon.svg';
@@ -68,11 +68,11 @@
     import TypeScriptIcon from '../../../assets/TypeScript.svg';
     import ViteIcon from '../../../assets/ViteIcon.svg';
     import NestJsIcon from '../../../assets/NestJSIcon.svg'; // Importando o ícone do Nest.js - ASSUMINDO QUE VOCÊ TEM
-    import VueIcon from '../../../assets/VueIcon.svg'; // Importando o ícone do Vue.js - ASSUMINDO QUE VOCÊ TEM
-    import IonicIcon from '../../../assets/IonicIcon.svg'; // Importando o ícone do Ionic - ASSUMINDO QUE VOCÊ TEM
-    import PhpIcon from '../../../assets/PhpIcon.svg'; // Importando o ícone do PHP - ASSUMINDO QUE VOCÊ TEM
-    import LaravelIcon from '../../../assets/LaravelIcon.svg'; // Importando o í
-    import RedisIcon from '../../../assets/RedisIcon.svg'; // Importando o ícone do Redis - ASSUMINDO QUE VOCÊ TEM
+    import VueIcon from '../../assets/VueIcon.svg'; // Importando o ícone do Vue.js - ASSUMINDO QUE VOCÊ TEM
+    import IonicIcon from '../../assets/IonicIcon.svg'; // Importando o ícone do Ionic - ASSUMINDO QUE VOCÊ TEM
+    import PhpIcon from '../../assets/PhpIcon.svg'; // Importando o ícone do PHP - ASSUMINDO QUE VOCÊ TEM
+    import LaravelIcon from '../../assets/LaravelIcon.svg'; // Importando o í
+    import RedisIcon from '../../assets/RedisIcon.svg'; // Importando o ícone do Redis - ASSUMINDO QUE VOCÊ TEM
 
     const faReactIcon = faReactBrandIcon ? faReactBrandIcon : faLaptopCode;
     const faCss3AltIcon = faCss3AltBrandIcon ? faCss3AltBrandIcon : faPalette;

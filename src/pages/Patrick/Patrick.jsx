@@ -1,11 +1,11 @@
 // Patrick.jsx
 import React from "react";
-import ShowPro from "../../professionals-components/HeroSection/ShowPro";
-import Skills from "../../professionals-components/Skills/Skills";
-import Header from "../../components/Header/Header";
-import AboutMe from "../../professionals-components/AboutMe/AboutMe";
-import Projects from "../../professionals-components/Projects/Projects";
-import Pro from "../../professionals-components/AnotherProfessionals/Pro";
+import ShowPro from "../professionals-components/HeroSection/ShowPro";
+import Skills from "../professionals-components/Skills/Skills";
+import Header from "../components/Header/Header";
+import AboutMe from "../professionals-components/AboutMe/AboutMe";
+import Projects from "../professionals-components/Projects/Projects";
+import Pro from "../professionals-components/AnotherProfessionals/Pro";
 
 // import Pro from "../../../professionals-components/AnotherProfessionals/Pro"; // Comente ou remova se não for usar
 import '../../../App.css';
@@ -47,27 +47,27 @@ import { AiOutlineDotNet } from "react-icons/ai";
 
 
 // Importe os ícones SVG diretamente - IMPORTADOS AQUI
-import AspNetIcon from '../../../assets/AspNetIcon.svg';
-import AwsIcon from '../../../assets/AwsIcon.svg';
-import AzureIcon from '../../../assets/AzureIcon.svg';
-import CSharpIcon from '../../../assets/CSharpIcon.svg';
-import DockerIcon from '../../../assets/DockerIcon.svg';
-import FigmaIcon from '../../../assets/FigmaIcon.svg';
-import GitHubIcon from '../../../assets/GitHubIcon.svg';
-import JavaIcon from '../../../assets/JavaIcon.svg';
-import JavascriptIcon from '../../../assets/JavascriptIcon.svg';
-import MariaDbIcon from '../../../assets/MariaDBIcon.svg';
-import MySqlIcon from '../../../assets/MySqlIcon.svg';
+import AspNetIcon from '../../assets/AspNetIcon.svg';
+import AwsIcon from '../../assets/AwsIcon.svg';
+import AzureIcon from '../../assets/AzureIcon.svg';
+import CSharpIcon from '../../assets/CSharpIcon.svg';
+import DockerIcon from '../../assets/DockerIcon.svg';
+import FigmaIcon from '../../assets/FigmaIcon.svg';
+import GitHubIcon from '../../assets/GitHubIcon.svg';
+import JavaIcon from '../../assets/JavaIcon.svg';
+import JavascriptIcon from '../../assets/JavascriptIcon.svg';
+import MariaDbIcon from '../../assets/MariaDBIcon.svg';
+import MySqlIcon from '../../assets/MySqlIcon.svg';
 
-import NetIcon from '../../../assets/NetIcon.svg';
-import NextJsIcon from '../../../assets/NextJsIcon.svg';
-import NginxIcon from '../../../assets/NginxIcon.svg';
-import NodeJsIcon from '../../../assets/NodeJsIcon.svg';
-import ReactIcon from '../../../assets/ReactIcon.svg'; // Usando Reacticon.svg conforme imagem destacada
-import SpringBootIcon from '../../../assets/SpringBoot.svg';
-import TypeScriptIcon from '../../../assets/TypeScript.svg';
-import ViteIcon from '../../../assets/ViteIcon.svg';
-import NestJsIcon from '../../../assets/NestJSIcon.svg'; // Importando o ícone do Nest.js - ASSUMINDO QUE VOCÊ TEM
+import NetIcon from '../../assets/NetIcon.svg';
+import NextJsIcon from '../../assets/NextJsIcon.svg';
+import NginxIcon from '../../assets/NginxIcon.svg';
+import NodeJsIcon from '../../assets/NodeJsIcon.svg';
+import ReactIcon from '../../assets/ReactIcon.svg'; // Usando Reacticon.svg conforme imagem destacada
+import SpringBootIcon from '../../assets/SpringBoot.svg';
+import TypeScriptIcon from '../assets/TypeScript.svg';
+import ViteIcon from '../../assets/ViteIcon.svg';
+import NestJsIcon from '../../assets/NestJSIcon.svg'; // Importando o ícone do Nest.js - ASSUMINDO QUE VOCÊ TEM
 
 
 const faReactIcon = faReactBrandIcon ? faReactBrandIcon : faLaptopCode;
