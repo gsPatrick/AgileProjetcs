@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import App from "../App"; // Ajuste o caminho conforme necessário
-import Professionals from "../pages/Professionals/Professionals"; // Ajuste o caminho conforme necessário
+import Professionals from "../pages/Professionals/"; // Ajuste o caminho conforme necessário
 import Projects from '../pages/Projects/Projects'; // Importe a página Projects
 
 import Maria from "../pages/Professionals/Maria/Maria"; // Ajuste o caminho conforme necessário
