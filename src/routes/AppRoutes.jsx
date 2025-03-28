@@ -1,38 +1,38 @@
-
+// AppRoutes.js
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "../components/Layout"; // Importando o Layout
+import Layout from "../components/Layout";
 import App from "../App";
-import Professionals from "../pages/Professionals/Professionals";
+import Professionals from "../pages/Professionals"; // Importante: ajustar o caminho aqui!
 import Projects from "../pages/Projects/Projects";
 
-import Maria from "../pages/Professionals/Maria/Maria";
-import PatrickPage from "../pages/Professionals/Patrick/Patrick";
-import GiovaniPage from "../pages/Professionals/GiovaniPage";
-import Ranathan from "../pages/Professionals/Ranathan/Ranathan";
-import Renan from "../pages/Professionals/Renan/Renan";
-import Mateus from "../pages/Professionals/Mateus/Mateus";
-import Joao from "../pages/Professionals/Joao/Joao";
+import Maria from "../pages/Maria/Maria"; // Caminhos ajustados
+import Patrick from "../pages/Patrick/Patrick"; // Caminhos ajustados
+import Giovani from "../pages/Giovani/Giovani"; // Caminhos ajustados
+import Ranathan from "../pages/Ranathan/Ranathan"; // Caminhos ajustados
+import Renan from "../pages/Renan/Renan"; // Caminhos ajustados
+import Mateus from "../pages/Mateus/Mateus"; // Caminhos ajustados
+import Joao from "../pages/Joao/Joao"; // Caminhos ajustados
 import Agile from "../pages/Sobre/Agile";
-import TestePage from "../pages/testepage"; // Corrigi o nome para TestePage
+import TestePage from "../pages/testepage";
 
 const AppRoutes = () => {
   return (
     <Router>
       <Routes>
-        {/* O Layout envolve todas as páginas e renderiza o Footer */}
         <Route path="/" element={<Layout />}>
           <Route index element={<App />} />
-          <Route path="/professionals" element={<Professionals />} />
+          <Route path="/professionals" element={<Professionals />} /> {/* Ajustar o caminho se necessário */}
           <Route path="/projects" element={<Projects />} />
-          
-          <Route path="/professionals/maria" element={<Maria />} />
-          <Route path="/Professional/Patrick" element={<PatrickPage />} />
-          <Route path="/professionals/giovani" element={<GiovaniPage />} />
-          <Route path="/professionals/ranathan" element={<Ranathan />} />
-          <Route path="/professionals/renan" element={<Renan />} />
-          <Route path="/professionals/mateus" element={<Mateus />} />
-          <Route path="/professionals/joao" element={<Joao />} />
-          <Route path="/testepage" element={<GiovaniPage />} />
+
+          <Route path="/maria" element={<Maria />} /> {/* Rotas ajustadas */}
+          <Route path="/patrick" element={<Patrick />} /> {/* Rotas ajustadas */}
+          <Route path="/giovani" element={<Giovani />} /> {/* Rotas ajustadas */}
+          <Route path="/ranathan" element={<Ranathan />} /> {/* Rotas ajustadas */}
+          <Route path="/renan" element={<Renan />} /> {/* Rotas ajustadas */}
+          <Route path="/mateus" element={<Mateus />} /> {/* Rotas ajustadas */}
+          <Route path="/joao" element={<Joao />} /> {/* Rotas ajustadas */}
+          <Route path="/testepage" element={<TestePage />} />
           <Route path="/sobre" element={<Agile />} />
         </Route>
       </Routes>

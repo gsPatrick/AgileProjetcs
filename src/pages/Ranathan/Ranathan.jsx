@@ -1,13 +1,11 @@
     // Patrick.jsx
     import React from "react";
-    import ShowPro from "../../../professionals-components/HeroSection/ShowPro";
-    import Skills from "../../../professionals-components/Skills/Skills";
-    import Header from "../../../components/Header/Header";
-    import AboutMe from "../../../professionals-components/AboutMe/AboutMe";
-    import Projects from "../../../professionals-components/Projects/Projects";
-    import Pro from "../../../professionals-components/AnotherProfessionals/Pro";
-
-    // import Pro from "../../../professionals-components/AnotherProfessionals/Pro"; // Comente ou remova se não for usar
+    import ShowPro from "../../professionals-components/HeroSection/ShowPro";
+    import Skills from "../../professionals-components/Skills/Skills";
+    import Header from "../../components/Header/Header";
+    import AboutMe from "../../professionals-components/AboutMe/AboutMe";
+    import Projects from "../../professionals-components/Projects/Projects";
+    import Pro from "../../professionals-components/AnotherProfessionals/Pro";
     import '../../../App.css';
 
     import { faReact as faReactBrandIcon, faCss3Alt as faCss3AltBrandIcon, faHtml5 as faHtml5BrandIcon } from '@fortawesome/free-brands-svg-icons';
@@ -73,15 +71,6 @@
     import PhpIcon from '../../../assets/PhpIcon.svg'; // Importando o ícone do PHP - ASSUMINDO QUE VOCÊ TEM
     import LaravelIcon from '../../../assets/LaravelIcon.svg'; // Importando o í
     import RedisIcon from '../../../assets/RedisIcon.svg'; // Importando o ícone do Redis - ASSUMINDO QUE VOCÊ TEM
-    import ClickUpIcon from '../../../assets/ClickUpIcon.svg';
-    import HtmlIcon from '../../../assets/HtmlIcon.svg';
-    import CssIcon from '../../../assets/CssIcon.svg';
-    import WordPressIcon from '../../../assets/WordPressIcon.svg';
-    import ShopifyIcon from '../../../assets/ShopifyIcon.svg';
-    import WixIcon from '../../../assets/WixIcon.svg';
-    import taiwindCssIcon from '../../../assets/TailwindCss.svg';
-    // import BootstrapIcon from '../../../assets/BootstrapIcon.svg';
-
 
     const faReactIcon = faReactBrandIcon ? faReactBrandIcon : faLaptopCode;
     const faCss3AltIcon = faCss3AltBrandIcon ? faCss3AltBrandIcon : faPalette;
@@ -91,26 +80,27 @@
     const faMobileScreenButtonSkillIcon = faMobileScreenButtonSolid ? faMobileScreenButtonSolid : faMobileScreenButton;
 
 
-    const MateusPage = () => {
+    const RanathanPage = () => {
 
       const professional = {
-            name: 'Mateus Texeira',
-            primaryTag: 'UI/UX Designer', 
+            name: 'Ranathan Henrique',
+            primaryTag: 'Desenvolvedor de Sotware', 
             primaryTagIcon: faCode,
-            description: 'Atuando como Product Designer há 2 anos, focado em uma ótima UX consegui desenvolver produtos intuitivos e bonitos, visando persona, utilizando pesquisas, testes, boas práticas e resultados positivos. Minha trajetória foi marcada por uma abordagem centrada no usuário, resultando em melhoras significativas de KPIs relacionados à satisfação e growth.',
-            imageSrc: 'https://mateustr.com/Elements/Perfil.jpg',
+            description: 'Sou um desenvolvedor Full Stack especializado em aplicações mobile e web, apaixonado por construir soluções inovadoras e acessíveis. Com anos de experiência, trago um profundo conhecimento em tecnologias front-end e back-end, combinado com uma abordagem criativa e orientada para resultados. Ao longo da minha carreira, tenho entregue projetos de alta qualidade, desde a concepção até a implementação, focando na experiência do usuário e na performance. Meu portfólio reflete minha dedicação em criar produtos que não só atendem às necessidades do cliente, mas também elevam os padrões da indústria.',
+            imageSrc: 'https://ranathan-portifolio.vercel.app/assets/img/main.jpg',
             imageSrcJunior: 'https://placehold.co/300x300/777/fff?text=Junior',
             imageSrcPleno: 'https://placehold.co/300x300/999/fff?text=Pleno',
             imageSrcSenior: 'https://i.imgur.com/hsQLqCL.jpeg',
-            defaultImageSrc: 'https://mateustr.com/Elements/Perfil.jpg',
+            defaultImageSrc: 'https://ranathan-portifolio.vercel.app/assets/img/main.jpg',
             tags: [
-                { name: 'UX Designer', icon: faLaptopCode }, // Título: Desenvolvedor Full-Stack
-                { name: 'UI Designer', icon: faServer }, // Título: Arquiteto de Sistemas
-                { name: 'Dev Experience', icon: faCogs }, // Título: Especialista DevOps
+                { name: 'Desenvolvedor Full Stack', icon: faLaptopCode }, // Título: Desenvolvedor Full-Stack
+                { name: 'Web Developer', icon: faServer }, // Título: Arquiteto de Sistemas
+                { name: 'Mobile App', icon: faCogs }, // Título: Especialista DevOps
             ],
             portfolioButtonText: 'Entre em Contato', // ✅ Nome do botão
             portfolioButtonLink: 'https://aistudio.google.com/prompts/1IFd1A6R6Qi8Lkj0bG6Xurh8K8h0XOIVA' // ✅ Link do botão
         };
+
 
         const primeirosProfissionais = [
             {
@@ -124,6 +114,12 @@
                 image: 'https://i.imgur.com/hsQLqCL.jpeg',
                 tags: ['Desenvolvedor Full-Stack', 'Dev-Ops', 'Web-Design'],
                 link: '/professionals/patrick'
+              },
+              {
+                name: 'João Vitor',
+                image: ' https://i.imgur.com/Z0uI1bB.jpeg',
+                tags: ['Desenvolvedor Full-Stack'],
+                link: '/professionals/joao'
               },
               {
                 name: 'Renan Bueno',
@@ -144,25 +140,12 @@
                 link: '/professionals/giovani'
               },
               {
-                name: 'Ranathan Henrique',
-                image: 'https://ranathan-portifolio.vercel.app/assets/img/main.jpg',
-                tags: ['Desenvolvedor Full-Stack', 'Desenvolvedor Web'],
-                link: '/professionals/ranathan'
-              },
-              {
                 name: 'Michel Lombardi',
                 image: 'https://i.imgur.com/gqGHDF8.jpeg',
                 tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
                 link: '/professionals/michel'
               },
-              {
-                name: 'João Vitor',
-                image: ' https://i.imgur.com/Z0uI1bB.jpeg',
-                tags: ['Desenvolvedor Full-Stack'],
-                link: '/professionals/joao'
-              },
           ];
-
 
 
         // Dados para o componente AboutMe
@@ -176,41 +159,17 @@ Ao longo da minha carreira, tive o privilégio de trabalhar em uma variedade de 
             `, // Ajustei a descrição para refletir os títulos nas tags e mencionar algumas skills
             buttonText: 'Entre em Contato',
             buttonLink: '#contact',
-            imageSrc: 'https://mateustr.com/Elements/Perfil.jpg',
+            imageSrc: 'https://ranathan-portifolio.vercel.app/assets/img/main.jpg',
         };
 
         // Lista de habilidades para Patrick - DEFINA AQUI AS HABILIDADES QUE VOCÊ QUER MOSTRAR
         const patrickSkillsList = [
-            {name: 'Figma', icon: <img src={FigmaIcon} alt="Figma Icon" className="skill-logo" />},
-            {name:'ClickUp', icon: <img src={ClickUpIcon} alt="ClickUp Icon" className="skill-logo" />},
-            {name: 'HTML', icon: <img src={HtmlIcon} alt="HTML Icon" className="skill-logo" />},
-            {name: 'CSS', icon: <img src={CssIcon} alt="CSS Icon" className="skill-logo" />},
-            {name: 'WordPress', icon: <img src={WordPressIcon} alt="WordPress Icon" className="skill-logo" />},
-            {name: 'Shopify', icon: <img src={ShopifyIcon} alt="Shopify Icon" className="skill-logo" />},
-            {name: 'Wix', icon: <img src={WixIcon} alt="Wix Icon" className="skill-logo" />},
-            {name: 'Tailwind CSSS', icon: <img src={taiwindCssIcon} alt="Tailwind CSS Icon" className="skill-logo" />},
-            // {name: 'Bootstrap', icon: <img src={BootstrapIcon} alt="Bootstrap Icon" className="skill-logo" />},
-            {name: 'Javascript', icon: <img src={JavascriptIcon} alt="Javascript Icon" className="skill-logo" />},
-            { name: 'FigJam' },
-            { name: 'UX Research' },
-            { name: 'Design Thinking' },
-            { name: 'Emotional Design' },
-            { name: 'User Flow' },
-            { name: 'Teste de usabilidade' },
-            { name: 'Pesquisa de usuário' },
-            { name: 'Análise de dados UX' },
-            { name: 'StoryBoard' },
-            { name: 'Accessibility Design' },
-            { name: 'Information Architecture' },
-            { name: 'Dev Experience' },
-            { name: 'Princípios do Design' },
-            { name: 'Design system' },
-            { name: 'Wireframe' },
-            { name: 'Responsive Design' },
-            { name: 'Material Design' },
-            { name: 'Human Interface Guidelines' },
-            { name: 'Metodologia Scrum' },
-        
+            { name: 'Javascript', icon: <img src={JavascriptIcon} alt="Javascript Icon" className="skill-logo" /> },
+            { name: 'Typescript', icon: <img src={TypeScriptIcon} alt="Typescript Icon" className="skill-logo" /> },
+            { name: 'React', icon: <img src={ReactIcon} alt="React Icon" className="skill-logo" /> },
+            { name: 'React Native', icon: <img src={ReactIcon} alt="React Icon" className="skill-logo" /> },
+            { name: 'Node.js', icon: <img src={NodeJsIcon} alt="Node.js Icon" className="skill-logo" /> },
+            { name: 'MySQL', icon: <img src={MySqlIcon} alt="MySQL Icon" className="skill-logo" /> },
 
           ];
 
@@ -245,7 +204,7 @@ Ao longo da minha carreira, tive o privilégio de trabalhar em uma variedade de 
         <Pro
         professionals={primeirosProfissionais}
         title="Outros membros da Agile Projects"
-        />
+      />
 
           {/* <Projects />  */}
           {/* <Pro />  */} 
@@ -253,4 +212,4 @@ Ao longo da minha carreira, tive o privilégio de trabalhar em uma variedade de 
       );
     };
 
-    export default MateusPage;
+    export default RanathanPage;

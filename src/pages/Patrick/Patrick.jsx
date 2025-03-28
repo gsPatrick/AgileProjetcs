@@ -1,11 +1,11 @@
 // Patrick.jsx
 import React from "react";
-import ShowPro from "../../../professionals-components/HeroSection/ShowPro";
-import Skills from "../../../professionals-components/Skills/Skills";
-import Header from "../../../components/Header/Header";
-import AboutMe from "../../../professionals-components/AboutMe/AboutMe";
-import Projects from "../../../professionals-components/Projects/Projects";
-import Pro from "../../../professionals-components/AnotherProfessionals/Pro";
+import ShowPro from "../../professionals-components/HeroSection/ShowPro";
+import Skills from "../../professionals-components/Skills/Skills";
+import Header from "../../components/Header/Header";
+import AboutMe from "../../professionals-components/AboutMe/AboutMe";
+import Projects from "../../professionals-components/Projects/Projects";
+import Pro from "../../professionals-components/AnotherProfessionals/Pro";
 
 // import Pro from "../../../professionals-components/AnotherProfessionals/Pro"; // Comente ou remova se não for usar
 import '../../../App.css';
