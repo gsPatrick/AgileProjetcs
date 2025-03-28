@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import App from "../App"; // Ajuste o caminho conforme necessário
-import Professionals from "../pages/Professionals/"; // Ajuste o caminho conforme necessário
+import Professionals from "../pages/Professionals/Professionals"; // Ajuste o caminho conforme necessário
 import Projects from '../pages/Projects/Projects'; // Importe a página Projects
 
 import Maria from "../pages/Professionals/Maria/Maria"; // Ajuste o caminho conforme necessário
@@ -11,7 +11,6 @@ import Renan from '../pages/Professionals/Renan/Renan'; // Importe a página Ren
 import Mateus from '../pages/Professionals/Mateus/Mateus'; // Importe a página Mateus
 import Joao from '../pages/Professionals/Joao/Joao'; // Importe a página Mateus
 import Agile from '../pages/Sobre/Agile'; // Importe a página Mateus
-import testepage from '../pages/testepage'; // Importe a página Mateus
 
 const AppRoutes = () => {
   return (
