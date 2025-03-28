@@ -2,16 +2,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "../components/Layout"; // Importando o Layout
 import App from "../App";
-import Professionals from "../pages/Professionals/Professionals";
+import Professionals from "../pages/Professional/Professionals";
 import Projects from "../pages/Projects/Projects";
 
-import Maria from "../pages/Professionals/Maria/Maria";
-import Patrick from "../pages/Professionals/Patrick/Patrick";
-import Giovani from "../pages/Professionals/Giovani/Giovani";
-import Ranathan from "../pages/Professionals/Ranathan/Ranathan";
-import Renan from "../pages/Professionals/Renan/Renan";
-import Mateus from "../pages/Professionals/Mateus/Mateus";
-import Joao from "../pages/Professionals/Joao/Joao";
+import Maria from "../pages/Professional/Maria/Maria";
+import Patrick from "../pages/Professional/Patrick/Patrick";
+import Giovani from "../pages/Professional/Giovani/Giovani";
+import Ranathan from "../pages/Professional/Ranathan/Ranathan";
+import Renan from "../pages/Professional/Renan/Renan";
+import Mateus from "../pages/Professional/Mateus/Mateus";
+import Joao from "../pages/Professional/Joao/Joao";
 import Agile from "../pages/Sobre/Agile";
 import TestePage from "../pages/testepage"; // Corrigi o nome para TestePage
 
@@ -26,7 +26,7 @@ const AppRoutes = () => {
           <Route path="/projects" element={<Projects />} />
           
           <Route path="/professionals/maria" element={<Maria />} />
-          <Route path="/Patrick" element={<Patrick />} />
+          <Route path="/Professional/Patrick" element={<Patrick />} />
           <Route path="/professionals/giovani" element={<Giovani />} />
           <Route path="/professionals/ranathan" element={<Ranathan />} />
           <Route path="/professionals/renan" element={<Renan />} />
