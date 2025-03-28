@@ -16,37 +16,37 @@ function Pro() {
       name: 'Patrick Siqueira',
       image: 'https://i.imgur.com/hsQLqCL.jpeg',
       tags: ['Desenvolvedor Full-Stack', 'Dev-Ops', 'Web-Design'],
-      link: '/Patrick'
+      link: '/patrick'
     },
     {
       name: 'João Vitor',
       image: ' https://i.imgur.com/Z0uI1bB.jpeg',
       tags: ['Desenvolvedor Full-Stack'],
-      link: '/Joao'
+      link: '/joao'
     },
     {
       name: 'Renan Bueno',
       image: 'https://i.imgur.com/FQDlTGh.jpeg',
       tags: ['Design UX/UI', 'Figma', 'Prototipagem', 'Design Thinking'],
-      link: '/Renan'
+      link: '/renan'
     },
     {
       name: 'Mateus',
       image: 'https://i.imgur.com/UA4BQIt.jpeg',
       tags: ['Product Designer'],
-      link: '/Mateus'
+      link: '/mateus'
     },
     {
       name: 'Giovani Appezzato N. Rosa',
       image: ' https://giovani-appezzato.vercel.app/assets/images/eu.webp',
       tags: ['Desenvolvedor de Sotfware'],
-      link: '/Giovani'
+      link: '/giovani'
     },
     {
       name: 'Ranathan Henrique',
       image: 'https://ranathan-portifolio.vercel.app/assets/img/main.jpg',
       tags: ['Desenvolvedor Full-Stack', 'Desenvolvedor Web'],
-      link: '/Ranathan'
+      link: '/ranathan'
     },
     {
       name: 'Michel Lombardi',
