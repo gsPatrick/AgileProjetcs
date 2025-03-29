@@ -101,12 +101,12 @@
                 tags: ['Marketing Digital', 'Marketing de Afiliados', 'Trafego Pago', 'Copywritring Estratétgico'],
                 link: '/maria'
               },
-              {
+              { // Alteração aqui
                 name: 'Ana Caroline Gomes',
-                image: 'https://i.imgur.com/w4W9Lbf.jpeg',
-                tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
-                link: '/carol'
-              },
+                image: 'https://i.imgur.com/w4W9Lbf.jpeg', // Mantenha a imagem
+                tags: ['Telemarketing', 'Prospecção de Leads', 'Administração', 'Secretaria'], // Atualize as tags
+                link: '/carol' // Mantenha o link
+            },
               {
                 name: 'Patrick Siqueira',
                 image: 'https://i.imgur.com/hsQLqCL.jpeg',

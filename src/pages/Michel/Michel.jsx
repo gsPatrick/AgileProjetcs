@@ -111,12 +111,12 @@ const MichelPage = () => {
             tags: ['Desenvolvedor Full-Stack'],
             link: '/joao'
         },
-        {
+        { // Alteração aqui
           name: 'Ana Caroline Gomes',
-          image: 'https://i.imgur.com/w4W9Lbf.jpeg',
-          tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
-          link: '/carol'
-        },
+          image: 'https://i.imgur.com/w4W9Lbf.jpeg', // Mantenha a imagem
+          tags: ['Telemarketing', 'Prospecção de Leads', 'Administração', 'Secretaria'], // Atualize as tags
+          link: '/carol' // Mantenha o link
+      },
         {
             name: 'Mateus',
             image: 'https://i.imgur.com/UA4BQIt.jpeg',

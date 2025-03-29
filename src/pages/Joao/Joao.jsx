@@ -117,12 +117,12 @@
               tags: ['Desenvolvedor de Sotfware'],
               link: '/giovani'
             },
-            {
+            { // Alteração aqui
               name: 'Ana Caroline Gomes',
-              image: 'https://i.imgur.com/w4W9Lbf.jpeg',
-              tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
-              link: '/carol'
-            },
+              image: 'https://i.imgur.com/w4W9Lbf.jpeg', // Mantenha a imagem
+              tags: ['Telemarketing', 'Prospecção de Leads', 'Administração', 'Secretaria'], // Atualize as tags
+              link: '/carol' // Mantenha o link
+          },
             {
               name: 'Ranathan Henrique',
               image: 'https://ranathan-portifolio.vercel.app/assets/img/main.jpg',

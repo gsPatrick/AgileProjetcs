@@ -103,12 +103,12 @@
             tags: ['Design UX/UI', 'Figma', 'Prototipagem', 'Design Thinking'],
             link: '/renan'
           },
-          {
+          { // Alteração aqui
             name: 'Ana Caroline Gomes',
-            image: 'https://i.imgur.com/w4W9Lbf.jpeg',
-            tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
-            link: '/carol'
-          },
+            image: 'https://i.imgur.com/w4W9Lbf.jpeg', // Mantenha a imagem
+            tags: ['Telemarketing', 'Prospecção de Leads', 'Administração', 'Secretaria'], // Atualize as tags
+            link: '/carol' // Mantenha o link
+        },
           {
             name: 'João Vitor',
             image: ' https://i.imgur.com/Z0uI1bB.jpeg',
