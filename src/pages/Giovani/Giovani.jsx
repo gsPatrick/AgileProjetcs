@@ -102,6 +102,12 @@
                 link: '/maria'
               },
               {
+                name: 'Ana Caroline Gomes',
+                image: 'https://i.imgur.com/w4W9Lbf.jpeg',
+                tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
+                link: '/carol'
+              },
+              {
                 name: 'Patrick Siqueira',
                 image: 'https://i.imgur.com/hsQLqCL.jpeg',
                 tags: ['Desenvolvedor Full-Stack', 'Dev-Ops', 'Web-Design'],

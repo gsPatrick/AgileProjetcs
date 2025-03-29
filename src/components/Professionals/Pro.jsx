@@ -31,7 +31,7 @@ function Pro() {
       link: '/renan'
     },
     {
-      name: 'Mateus',
+      name: 'Mateus Texeira',
       image: 'https://i.imgur.com/UA4BQIt.jpeg',
       tags: ['Product Designer'],
       link: '/mateus'
@@ -53,6 +53,12 @@ function Pro() {
       image: 'https://i.imgur.com/gqGHDF8.jpeg',
       tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
       link: '/michel'
+    },
+    {
+      name: 'Ana Caroline Gomes',
+      image: 'https://i.imgur.com/w4W9Lbf.jpeg',
+      tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
+      link: '/carol'
     },
   ];
 
@@ -195,7 +201,7 @@ function Pro() {
                   {/* Botão "Conhecer Mais" transformado em link */}
                   <a
                     href={developer.link}
-                    target="_blank"
+          
                     rel="noopener noreferrer"
                     className="pro-component-button"
                   >

@@ -118,6 +118,12 @@
               link: '/giovani'
             },
             {
+              name: 'Ana Caroline Gomes',
+              image: 'https://i.imgur.com/w4W9Lbf.jpeg',
+              tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
+              link: '/carol'
+            },
+            {
               name: 'Ranathan Henrique',
               image: 'https://ranathan-portifolio.vercel.app/assets/img/main.jpg',
               tags: ['Desenvolvedor Full-Stack', 'Desenvolvedor Web'],

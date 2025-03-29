@@ -1,5 +1,5 @@
 // Projects.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Projects.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,10 +7,11 @@ import {
     faReact, faHtml5, faCss3Alt, faNodeJs, faPython, faFigma,
 } from '@fortawesome/free-brands-svg-icons';
 import { faEye, faLink, faCube } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate, useLocation } from 'react-router-dom';
 
-function Projects({ initialClassificationFilter, initialSeniorityFilter, developerNameFilter }) {
-    // Mock de dados para projetos
+function Projects({ initialClassificationFilter, initialSeniorityFilter, developerNameFilter, projectsPerPage = 6 }) { // Define projectsPerPage como prop
     const projectsData = [
+    // Mock de dados para projetos
     
 
         // Giovanni
@@ -64,7 +65,7 @@ function Projects({ initialClassificationFilter, initialSeniorityFilter, develop
             seniority: 'Senior'
         },
 
-        {
+         {
             title: 'Landing Page de Portfolio + 3 projetos para repositorio',
             description: 'Uma página de portfolio com 3 projetos para repositorio inclusos',
             developer: 'Patrick Siqueira',
@@ -248,26 +249,37 @@ function Projects({ initialClassificationFilter, initialSeniorityFilter, develop
 
 
     ];
-
     const [languageFilter, setLanguageFilter] = useState('Todos');
-    const [developerFilter, setDeveloperFilter] = useState('Todos'); // Removido do HTML, mas mantido no state caso precise para outra funcionalidade futura
+    const [developerFilter, setDeveloperFilter] = useState('Todos');
     const [classificationFilter, setClassificationFilter] = useState(initialClassificationFilter || 'Todos');
     const [seniorityFilter, setSeniorityFilter] = useState(initialSeniorityFilter || 'Todos');
+    const [currentPage, setCurrentPage] = useState(1);
 
+    const navigate = useNavigate();
+    const location = useLocation();
 
-    const uniqueLanguages = ['Todos', ...Array.from(new Set(projectsData.flatMap(project => project.skillTags.map(tag => {
+    useEffect(() => {
+        const params = new URLSearchParams(location.search);
+        const page = params.get('page');
+        if (page && parseInt(page) > 0) {
+            setCurrentPage(parseInt(page));
+        } else {
+            setCurrentPage(1);
+        }
+    }, [location.search]);
+
+    const uniqueLanguages = ['Todos', ...new Set(projectsData.flatMap(project => project.skillTags.map(tag => {
         if (tag.icon === faReact) return 'React';
         if (tag.icon === faHtml5) return 'HTML5';
         if (tag.icon === faCss3Alt) return 'CSS3';
         if (tag.icon === faNodeJs) return 'Node.js';
         if (tag.icon === faPython) return 'Python';
-        if (tag.icon === faCube) return 'Outra';
+        if (tag.icon === faFigma) return 'Figma';
         return 'Outra';
-    }))))];
-    const uniqueDevelopers = ['Todos', ...Array.from(new Set(projectsData.map(project => project.developer)))]; // Mantido caso precise para outra funcionalidade futura
-    const uniqueClassifications = ['Todos', ...Array.from(new Set(projectsData.map(project => project.classificationTag)))];
+    })))];
+    const uniqueDevelopers = ['Todos', ...new Set(projectsData.map(project => project.developer))];
+    const uniqueClassifications = ['Todos', ...new Set(projectsData.map(project => project.classificationTag))];
     const uniqueSeniorities = ['Todos', 'Junior', 'Pleno', 'Senior'];
-
 
     const filteredProjects = projectsData.filter(project => {
         const languageMatch = languageFilter === 'Todos' || project.skillTags.some(tag => {
@@ -276,25 +288,50 @@ function Projects({ initialClassificationFilter, initialSeniorityFilter, develop
             if (languageFilter === 'CSS3' && tag.icon === faCss3Alt) return true;
             if (languageFilter === 'Node.js' && tag.icon === faNodeJs) return true;
             if (languageFilter === 'Python' && tag.icon === faPython) return true;
-            if (languageFilter === 'Outra' && tag.icon === faCube) return true;
+            if (languageFilter === 'Figma' && tag.icon === faFigma) return true;
             return false;
         });
-        const developerMatch = developerFilter === 'Todos' || project.developer === developerFilter; // Mantido caso precise para outra funcionalidade futura
+        const developerMatch = developerFilter === 'Todos' || project.developer === developerFilter;
         const classificationMatch = classificationFilter === 'Todos' || project.classificationTag === classificationFilter;
         const seniorityMatch = seniorityFilter === 'Todos' || project.seniority === seniorityFilter;
-        const developerNameMatch = !developerNameFilter || project.developer === developerNameFilter; // ADICIONANDO FILTRO POR NOME DO DESENVOLVEDOR
+        const developerNameMatch = !developerNameFilter || project.developer === developerNameFilter;
 
-
-        return languageMatch && developerMatch && classificationMatch && seniorityMatch && developerNameMatch; // INCLUINDO developerNameMatch NA CONDIÇÃO
+        return languageMatch && developerMatch && classificationMatch && seniorityMatch && developerNameMatch;
     });
 
+    const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);
+    const startIndex = (currentPage - 1) * projectsPerPage;
+    const endIndex = startIndex + projectsPerPage;
+    const projectsToDisplay = filteredProjects.slice(startIndex, endIndex);
+
+    const scrollToTop = (path) => {
+        navigate(path);
+        window.scrollTo(0, 0);
+    };
+
+    const handleDeveloperClick = (event, path) => {
+        event.preventDefault();
+        scrollToTop(path);
+    };
+
+    const handleViewPageClick = (event, siteLink) => {
+        event.preventDefault();
+        if (siteLink) {
+            window.open(siteLink, '_blank');
+        }
+    };
+
+    const handlePageChange = (newPage) => {
+        const params = new URLSearchParams(location.search);
+        params.set('page', newPage);
+        navigate({ ...location, search: params.toString() });
+    };
 
     return (
         <div className="projects-container-geral">
             <div className="projects-section">
                 <h2 className="projects-title">Projetos</h2>
 
-                {/* REMOVENDO FILTRO DE DESENVOLVEDOR DO COMPONENTE Projects, pois agora filtramos por prop */}
                 <div className="projects-filters">
                     <div className="filter-group">
                         <label htmlFor="languageFilter">Linguagem/Tecnologia:</label>
@@ -336,9 +373,8 @@ function Projects({ initialClassificationFilter, initialSeniorityFilter, develop
                     </div>
                 </div>
 
-
                 <div className="projects-grid">
-                    {filteredProjects.map((project, index) => (
+                    {projectsToDisplay.map((project, index) => (
                         <div key={index} className="project-card animated-element" style={{ animationDelay: `${0.2 + index * 0.15}s` }}>
                             <div className="project-image-container">
                                 <img src={project.imageSrc} alt={project.title} className="project-image" />
@@ -349,9 +385,8 @@ function Projects({ initialClassificationFilter, initialSeniorityFilter, develop
                                 <div className="project-developer-info">
                                     <a
                                         href={project.developerLink}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
                                         className="project-developer-link"
+                                        onClick={(event) => handleDeveloperClick(event, project.developerLink)}
                                     >
                                         <span className="project-developer-name">{project.developer}</span>
                                     </a>
@@ -363,11 +398,16 @@ function Projects({ initialClassificationFilter, initialSeniorityFilter, develop
                                     ))}
                                 </div>
                                 <div className="project-buttons">
-
-                                    <button className="project-button view-more-button" onClick={() => window.location.href = project.siteLink}>
+                                    <a
+                                        href={project.siteLink}
+                                        className="project-button view-more-button"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        onClick={(event) => handleViewPageClick(event, project.siteLink)}
+                                    >
                                         <FontAwesomeIcon icon={faEye} className="button-icon" />
-                                        Ver pagina
-                                    </button>
+                                        {project.buttonName || 'Ver pagina'}
+                                    </a>
                                 </div>
                             </div>
                             <div className="project-availability-container">
@@ -375,6 +415,21 @@ function Projects({ initialClassificationFilter, initialSeniorityFilter, develop
                             </div>
                         </div>
                     ))}
+                </div>
+
+                {/* Pagination */}
+                <div className="pagination">
+                    {currentPage > 1 && (
+                        <button onClick={() => handlePageChange(currentPage - 1)} className="pagination-button">
+                            Página Anterior
+                        </button>
+                    )}
+
+                    {currentPage < totalPages && (
+                        <button onClick={() => handlePageChange(currentPage + 1)} className="pagination-button">
+                            Próxima Página
+                        </button>
+                    )}
                 </div>
             </div>
         </div>

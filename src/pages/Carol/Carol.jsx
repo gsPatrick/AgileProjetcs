@@ -8,12 +8,10 @@ import Pro from "../../professionals-components/AnotherProfessionals/Pro";
 import '../../App.css';
 
 import {
-    faCalculator,  // Para modelagem matemática
-    faChartLine,   // Para análise de probabilidades e viabilidade
-    faLightbulb,   // Para projetos inovadores e insights
-    faBrain,       // Para lógicas complexas e abordagem analítica
-    faDiceD6,      // Para criação de jogos
-    faBalanceScale, // Para avaliação de riscos
+    faPhone,         // Telemarketing
+    faSearch,        // Prospecção de leads
+    faBriefcase,    // Administração
+    faFileAlt,      // Secretaria
     faUserGraduate,
     faBookOpen as faBookOpenSolid
 } from '@fortawesome/free-solid-svg-icons';
@@ -46,56 +44,50 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 
-const MichelPage = () => {
+const CarolPage = () => {
 
     const professional = {
-        name: 'Michel Lombardi',
-        primaryTag: 'Físico e Matemático',
+        name: 'Ana Caroline Gomes',
+        primaryTag: 'Assistente Administrativa',
         primaryTagIcon: faUserGraduate,
-        description: 'Físico e matemático, mestre em Física, com expertise em modelagem matemática, análise de probabilidades e viabilidade de negócios. Atua no desenvolvimento de lógicas complexas para projetos inovadores, desde a criação e validação matemática de jogos até estudos de mercado financeiro e avaliação de riscos. Com uma abordagem analítica e estratégica, oferece insights valiosos para a tomada de decisões fundamentadas, contribuindo para o sucesso de projetos em diversas áreas.',
-        imageSrc: 'https://i.imgur.com/gqGHDF8.jpeg',
+        description: 'Olá, eu sou a Ana Caroline Gomes, da equipe Agile Projects! Tenho experiência nas áreas de telemarketing, prospecção de leads, administração e secretaria, ajudando empresas a crescer com organização e eficiência. Se precisar de suporte, estou à disposição!',
+        imageSrc: 'https://i.imgur.com/w4W9Lbf.jpeg', // Substitua por uma imagem real
         imageSrcJunior: 'https://placehold.co/300x300/777/fff?text=Junior',
         imageSrcPleno: 'https://placehold.co/300x300/999/fff?text=Pleno',
         imageSrcSenior: 'https://placehold.co/300x300/555/fff?text=Senior',
-        defaultImageSrc: 'https://i.imgur.com/gqGHDF8.jpeg',
+        defaultImageSrc: 'https://i.imgur.com/w4W9Lbf.jpeg', // Substitua por uma imagem real
         tags: [
-            { name: 'Modelagem Matemática', icon: faCalculator },
-            { name: 'Análise de Probabilidades', icon: faChartLine },
-            { name: 'Viabilidade de Negócios', icon: faChartLine },
-            { name: 'Lógica Complexa', icon: faBrain },
-            { name: 'Criação de Jogos', icon: faDiceD6 },
-            { name: 'Mercado Financeiro', icon: faBalanceScale },
-            { name: 'Avaliação de Riscos', icon: faBalanceScale },
-            { name: 'Projetos Inovadores', icon: faLightbulb },
+            { name: 'Telemarketing', icon: faPhone },
+            { name: 'Prospecção de Leads', icon: faSearch },
+            { name: 'Administração', icon: faBriefcase },
+            { name: 'Secretaria', icon: faFileAlt },
+            { name: 'Organização', icon: faBriefcase }, // Pode usar o mesmo ícone ou outro
+            { name: 'Atendimento ao Cliente', icon: faPhone }, // Pode usar o mesmo ícone ou outro
         ],
         portfolioButtonText: 'Entre em Contato',
-        portfolioButtonLink: 'https://wa.me/5518998184907'
+        portfolioButtonLink: 'https://wa.me/SEU_NUMERO' // Substitua pelo número dela
     };
 
     const professionalSkills = [
-        { name: 'Modelagem Estatística', icon: faChartLine },
-        { name: 'Análise de Dados', icon: faChartLine },
-        { name: 'Matemática Aplicada', icon: faCalculator },
-        { name: 'Simulação', icon: faDiceD6 },
-        { name: 'Otimização', icon: faLightbulb },
-        { name: 'Análise Financeira', icon: faBalanceScale },
-        { name: 'Consultoria Estratégica', icon: faBrain },
-        { name: 'Estatística', icon: faChartLine },
-        { name: 'Probabilidade', icon: faChartLine },
-        { name: 'Física Aplicada', icon: faCalculator },
-        { name: 'Modelagem Computacional', icon: faDiceD6 },
-        { name: 'Inovação', icon: faLightbulb },
+        { name: 'Comunicação', icon: faPhone },
+        { name: 'Organização', icon: faBriefcase },
+        { name: 'Proatividade', icon: faSearch },
+        { name: 'Atendimento Telefônico', icon: faPhone },
+        { name: 'Redação', icon: faPencilAlt }, // Talvez não seja o ideal, mas é o que temos para escrita
+        { name: 'Gerenciamento de Tempo', icon: faBriefcase }, // Pode usar o mesmo ícone ou outro
+        { name: 'Pacote Office', icon: faFileAlt }, // Pode usar o mesmo ícone ou outro
+        { name: 'CRM', icon: faSearch }, // Talvez não seja o ideal, mas pode representar gerenciamento de clientes
     ];
 
     // Dados para o componente AboutMe
     const aboutMeData = {
         tag: 'Sobre Mim',
-        title: 'Minha Expertise Técnica',
-        description: `Físico e matemático, mestre em Física, com expertise em modelagem matemática, análise de probabilidades e viabilidade de negócios. Atua no desenvolvimento de lógicas complexas para projetos inovadores, desde a criação e validação matemática de jogos até estudos de mercado financeiro e avaliação de riscos. Com uma abordagem analítica e estratégica, oferece insights valiosos para a tomada de decisões fundamentadas, contribuindo para o sucesso de projetos em diversas áreas.`,
+        title: 'Minha Expertise Administrativa',
+        description: `Minha missão é oferecer suporte administrativo completo e soluções personalizadas para os desafios da sua empresa. Com expertise em telemarketing, prospecção de leads, administração e organização secretarial, estou à disposição para ajudar você a construir um futuro de sucesso, com foco no cliente e no crescimento sustentável.`,
         buttonText: 'Entre em Contato',
-        buttonLink: 'https://wa.me/5518998184907',
-        imageSrc: 'https://i.imgur.com/gqGHDF8.jpeg',
-        icon: faBrain,
+        buttonLink: 'https://wa.me/SEU_NUMERO', // Substitua pelo número dela
+        imageSrc: 'https://i.imgur.com/w4W9Lbf.jpeg', // Substitua por uma imagem real
+        icon: faBriefcase,
     };
 
     const primeirosProfissionais = [
@@ -110,12 +102,6 @@ const MichelPage = () => {
             image: ' https://i.imgur.com/Z0uI1bB.jpeg',
             tags: ['Desenvolvedor Full-Stack'],
             link: '/joao'
-        },
-        {
-          name: 'Ana Caroline Gomes',
-          image: 'https://i.imgur.com/w4W9Lbf.jpeg',
-          tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
-          link: '/carol'
         },
         {
             name: 'Mateus',
@@ -141,6 +127,12 @@ const MichelPage = () => {
             tags: ['Marketing Digital', 'Marketing de Afiliados', 'Trafego Pago', 'Copywritring Estratétgico'],
             link: '/maria'
         },
+        {
+            name: 'Michel Lombardi',
+            image: 'https://i.imgur.com/gqGHDF8.jpeg',
+            tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
+            link: '/michel'
+          },
     ];
 
 
@@ -180,4 +172,4 @@ const MichelPage = () => {
     );
 };
 
-export default MichelPage;
+export default CarolPage;

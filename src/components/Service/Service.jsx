@@ -1,8 +1,8 @@
 // Service.jsx
 import React, { useRef, useEffect, useState } from 'react';
 import './Service.css';
-import { FaGlobe, FaRocket, FaCode, FaBullhorn, FaPencilRuler,FaPalette } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { FaGlobe, FaRocket, FaCode, FaBullhorn, FaPencilRuler, FaPalette } from 'react-icons/fa';
+import { Link, useNavigate } from 'react-router-dom'; // Import useNavigate
 
 function Service() {
     const whatsappNumber = '5518998184907'; // Número do WhatsApp
@@ -28,12 +28,12 @@ function Service() {
             botaoProjetos: true,
             classificationTag: 'Site Personalizado'
         },
-        
+
         {
             titulo: 'Marketing Digital',
             descricao: 'Estratégias de Marketing Digital para aumentar a visibilidade online e gerar leads qualificados. Alcance seu público-alvo de forma eficaz.',
-            botaoTexto: 'Explore Agora',
             icone: <FaBullhorn className="servico-icone" />,
+            botaoTexto: 'Explore Agora',
             botaoProjetos: true,
             classificationTag: 'Marketing Digital'
         },
@@ -56,6 +56,7 @@ function Service() {
     const sectionRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
     const cardRefs = useRef([]);
+    const navigate = useNavigate(); // Initialize useNavigate
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -94,6 +95,16 @@ function Service() {
         window.open(`https://wa.me/${whatsappNumber}`, '_blank');
     };
 
+    const scrollToTop = (path) => {
+        navigate(path);
+        window.scrollTo(0, 0);
+    };
+
+    const handleProjectClick = (path, event) => {
+        event.preventDefault();
+        scrollToTop(path);
+    };
+
     const getProjectsLink = (title) => {
         return `/projects?category=${encodeURIComponent(title)}`;
     };
@@ -117,12 +128,13 @@ function Service() {
                         <div className="servico-botoes">
                             <button className="servico-botao servico-botao-contato" onClick={handleContactClick}>Entre em Contato</button>
                             {servico.botaoProjetos && (
-                                <Link
-                                    to={getProjectsLink(servico.classificationTag)}
+                                <a
+                                    href={getProjectsLink(servico.classificationTag)}
                                     className="servico-botao servico-botao-projetos-link"
+                                    onClick={(e) => handleProjectClick(getProjectsLink(servico.classificationTag), e)}
                                 >
                                     Veja os Projetos
-                                </Link>
+                                </a>
                             )}
                         </div>
                     </div>

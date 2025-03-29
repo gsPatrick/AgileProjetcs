@@ -1,8 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './Pro.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
-function Pro({ professionals, title }) { // Aceita props 'professionals' e 'title'
+function Pro({ professionals, title }) {
   console.log("Componente Pro está renderizando...");
 
   const [developersData, setDevelopersData] = useState([]);
@@ -12,8 +13,8 @@ function Pro({ professionals, title }) { // Aceita props 'professionals' e 'titl
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
   const cardRefs = useRef([]);
+  const navigate = useNavigate();
 
-  // Função de embaralhamento Fisher-Yates
   const shuffleArray = (array) => {
     const newArray = [...array];
     for (let i = newArray.length - 1; i > 0; i--) {
@@ -67,7 +68,6 @@ function Pro({ professionals, title }) { // Aceita props 'professionals' e 'titl
     };
   }, []);
 
-
   useEffect(() => {
     if (isAutoScrolling) {
       const intervalId = setInterval(() => {
@@ -114,10 +114,20 @@ function Pro({ professionals, title }) { // Aceita props 'professionals' e 'titl
     setTimeout(() => setIsAutoScrolling(true), 5000);
   };
 
+  const scrollToTop = (path) => {
+    navigate(path);
+    window.scrollTo(0, 0);
+  };
+
+  const handleDeveloperClick = (path, event) => {
+    event.preventDefault();
+    scrollToTop(path);
+  };
+
   return (
     <section className={`pro-component-section ${isVisible ? 'pro-component-section-visible' : ''}`} ref={sectionRef}>
       <div className="pro-component-container">
-        <h2>{title}</h2> {/* Título dinâmico via prop 'title' */}
+        <h2>{title}</h2>
         <div className="pro-component-carousel-wrapper">
           {/* Container de botões MOBILE - TOPO */}
           <div className="pro-component-carousel-buttons-mobile pro-component-carousel-buttons-mobile-top">
@@ -129,7 +139,7 @@ function Pro({ professionals, title }) { // Aceita props 'professionals' e 'titl
           <div className="pro-component-carousel" ref={carouselRef}>
             {console.log("Dados para renderizar os cards:", developersData)}
             {developersData.map((developer, index) => {
-               console.log("Renderizando card para:", developer.name);
+              console.log("Renderizando card para:", developer.name);
               return (
                 <div
                   key={index}
@@ -148,9 +158,8 @@ function Pro({ professionals, title }) { // Aceita props 'professionals' e 'titl
                   {/* Botão "Conhecer Mais" transformado em link */}
                   <a
                     href={developer.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="pro-component-button"
+                    onClick={(e) => handleDeveloperClick(developer.link, e)}
                   >
                     Conhecer Mais
                   </a>

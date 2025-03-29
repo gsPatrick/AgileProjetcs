@@ -1,14 +1,15 @@
 // Footer.jsx
-import React, { useRef, useEffect, useState } from 'react'; // **ADD THIS IMPORT STATEMENT**
+import React, { useRef, useEffect, useState } from 'react';
 import './Footer.css';
 import Logo from '../../assets/Logo.png';
 import { FaFacebook, FaInstagram, FaWhatsapp, FaPhone, FaLinkedin } from 'react-icons/fa';
-import { Link } from 'react-router-dom'; // **MAKE SURE THIS LINE IS PRESENT**
+import { Link, useNavigate } from 'react-router-dom'; // Importe useNavigate
 
 function Footer() {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [fireworksActive, setFireworksActive] = useState(false); // ✅ ENSURE THIS LINE IS EXACTLY AS SHOWN
+  const [fireworksActive, setFireworksActive] = useState(false);
+  const navigate = useNavigate(); // Inicialize useNavigate
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -44,8 +45,28 @@ function Footer() {
     }, 1500);
   };
 
-  const whatsappNumber = '+5518998184907'; // Define WhatsApp number
-  const whatsappLink = `https://wa.me/${whatsappNumber}`; // Construct WhatsApp link
+  const scrollToTop = (path) => {
+    navigate(path);
+    window.scrollTo(0, 0);
+  };
+
+  const handleAgileProjectsClick = (event) => {
+    event.preventDefault();
+    scrollToTop('/');
+  };
+
+  const handleServiceClick = (path, event) => {
+    event.preventDefault();
+    scrollToTop(path);
+  };
+
+  const handleCompanyClick = (path, event) => {
+    event.preventDefault();
+    scrollToTop(path);
+  };
+
+  const whatsappNumber = '+5518998184907';
+  const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
     <footer className={`footer-section ${isVisible ? 'footer-section-visible' : ''}`} ref={sectionRef}>
@@ -53,13 +74,15 @@ function Footer() {
         <div className="footer-column company">
           <div className="footer-logo-container">
             <img src={Logo} alt="Agile Projects Logo" className="footer-logo" />
-            <span
-  className={`footer-company-name ${fireworksActive ? 'fireworks-active' : ''}`}
-  onClick={handleFireworksClick}
->
-              Agile Projects
-              <span/> <span/>
-            </span>
+            <a href="/" className="footer-company-name-link" onClick={handleAgileProjectsClick}>
+              <span
+                className={`footer-company-name ${fireworksActive ? 'fireworks-active' : ''}`}
+                onClick={handleFireworksClick}
+              >
+                Agile Projects
+                <span /> <span />
+              </span>
+            </a>
           </div>
           <p className="company-description">Especialistas em desenvolvimento de software, transformando ideias em realidade digital com tecnologia e inovação.</p>
           <div className="social-icons">
@@ -72,29 +95,28 @@ function Footer() {
         <div className="footer-column services">
           <h4 className="footer-column-title">SERVIÇOS</h4>
           <ul className="footer-links">
-            <li><Link to="/projects" className="footer-link">Landing Page</Link></li>
-            <li><Link to="/projects" className="footer-link">Aplicativo</Link></li>
-            <li><Link to="/projects" className="footer-link">Web Site Personalizado</Link></li>
-            <li><Link to="/projects" className="footer-link">Desenvolvimento Web</Link></li>
-            <li><Link to="/projects" className="footer-link">Marketing Digital</Link></li>
-            <li><Link to="/projects" className="footer-link">Automação</Link></li>
-            <li><Link to="/projects" className="footer-link">Design Que Marca</Link></li>
+            <li><a href="/projects" className="footer-link" onClick={(e) => handleServiceClick('/projects', e)}>Landing Page</a></li>
+            <li><a href="/projects" className="footer-link" onClick={(e) => handleServiceClick('/projects', e)}>Aplicativo</a></li>
+            <li><a href="/projects" className="footer-link" onClick={(e) => handleServiceClick('/projects', e)}>Web Site Personalizado</a></li>
+            <li><a href="/projects" className="footer-link" onClick={(e) => handleServiceClick('/projects', e)}>Desenvolvimento Web</a></li>
+            <li><a href="/projects" className="footer-link" onClick={(e) => handleServiceClick('/projects', e)}>Marketing Digital</a></li>
+            <li><a href="/projects" className="footer-link" onClick={(e) => handleServiceClick('/projects', e)}>Automação</a></li>
+            <li><a href="/projects" className="footer-link" onClick={(e) => handleServiceClick('/projects', e)}>Design Que Marca</a></li>
           </ul>
         </div>
 
         <div className="footer-column company-links">
           <h4 className="footer-column-title">EMPRESA</h4>
           <ul className="footer-links">
-            <li><Link to="/sobre" className="footer-link">Sobre Nós</Link></li>
-            <li><Link to="/professionals" className="footer-link">Nossos Profissionais</Link></li>
-            <li><Link to="https://wa.me/5518998184907" className="footer-link">Contato</Link></li>
+            <li><a href="/sobre" className="footer-link" onClick={(e) => handleCompanyClick('/sobre', e)}>Sobre Nós</a></li>
+            <li><a href="/professionals" className="footer-link" onClick={(e) => handleCompanyClick('/professionals', e)}>Nossos Profissionais</a></li>
           </ul>
         </div>
 
         <div className="footer-column contact">
           <h4 className="footer-column-title">CONTATO</h4>
           <ul className="footer-contact-info">
-            
+
             <li><a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="whatsapp-contact-link">
               <FaWhatsapp className="contact-icon whatsapp-icon" /> +55 18 99818-4907 </a></li>
           </ul>

@@ -162,6 +162,12 @@ Meu foco é entender suas necessidades e criar soluções criativas que verdadei
               tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
               link: '/michel'
             },
+            {
+              name: 'Ana Caroline Gomes',
+              image: 'https://i.imgur.com/w4W9Lbf.jpeg',
+              tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
+              link: '/carol'
+            },
           ];
 
 

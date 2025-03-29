@@ -104,6 +104,12 @@
             link: '/renan'
           },
           {
+            name: 'Ana Caroline Gomes',
+            image: 'https://i.imgur.com/w4W9Lbf.jpeg',
+            tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
+            link: '/carol'
+          },
+          {
             name: 'João Vitor',
             image: ' https://i.imgur.com/Z0uI1bB.jpeg',
             tags: ['Desenvolvedor Full-Stack'],
