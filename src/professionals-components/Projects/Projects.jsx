@@ -11,6 +11,59 @@ import { faEye, faLink, faCube } from '@fortawesome/free-solid-svg-icons';
 function Projects({ initialClassificationFilter, initialSeniorityFilter, developerNameFilter }) {
     // Mock de dados para projetos
     const projectsData = [
+    
+
+        // Giovanni
+
+        {
+            title: 'Let´s Deliver',
+            description: 'A plataforma Lets Deliver conecta entregadores e motoristas a clientes que precisam de serviços de entrega na região, permitindo que visualizem os pontos de entrega no mapa e aceitem serviços disponíveis.',
+            developer: 'Giovani Appezzato N. Rosa',
+            developerLink: '/giovani',
+            classificationTag: 'Aplicativo',
+            skillTags: [{ icon: faReact }, { icon: faCss3Alt }],
+            imageSrc: 'https://giovani-appezzato.vercel.app/assets/images/lets-deliver.png',
+            siteLink: '#',
+            detailsLink: '#websenior-details',
+            seniority: 'Senior'
+        },
+        {
+            title: 'Writeflow',
+            description: 'Sistema low-code/no-code que proporciona autonomia na implementação de fluxos de trabalho com a notação BPMN, desde a criação de processos até a execução e geração de relatórios para análise de resultados.',
+            developer: 'Giovani Appezzato N. Rosa',
+            developerLink: '/giovani',
+            classificationTag: 'Aplicativo',
+            skillTags: [{ icon: faReact }, { icon: faCss3Alt }],
+            imageSrc: 'https://giovani-appezzato.vercel.app/assets/images/writeflow.jpg',
+            siteLink: '#',
+            detailsLink: '#websenior-details',
+            seniority: 'Senior'
+        },
+        {
+            title: 'Lovekar Automotive',
+            description: 'Plataforma de agendamento de horários com oficinas da região, com o objetivo de facilitar a comunicação entre proprietários de veículos, lojas de autopeças e oficinas.',
+            developer: 'Giovani Appezzato N. Rosa',
+            developerLink: '/giovani',
+            classificationTag: 'Aplicativo',
+            skillTags: [{ icon: faReact }, { icon: faCss3Alt }],
+            imageSrc: 'https://giovani-appezzato.vercel.app/assets/images/lovekar.png',
+            siteLink: '#',
+            detailsLink: '#websenior-details',
+            seniority: 'Senior'
+        },
+        {
+            title: 'SAIC (Solução de atendimento integrado ao cidadão)',
+            description: 'Sistema de gestão 156 para cidades, projetado para aprimorar a comunicação entre a população e a prefeitura, com integração a um modelador BPMN que possibilita a criação e automação de processos municipais sem a necessidade de codificação.',
+            developer: 'Giovani Appezzato N. Rosa',
+            developerLink: '/giovani',
+            classificationTag: 'Aplicativo',
+            skillTags: [{ icon: faReact }, { icon: faCss3Alt }],
+            imageSrc: 'https://giovani-appezzato.vercel.app/assets/images/saic.png',
+            siteLink: 'https://www.higienizalar.com.br/',
+            detailsLink: '#websenior-details',
+            seniority: 'Senior'
+        },
+
         {
             title: 'Landing Page de Portfolio + 3 projetos para repositorio',
             description: 'Uma página de portfolio com 3 projetos para repositorio inclusos',
@@ -111,57 +164,6 @@ function Projects({ initialClassificationFilter, initialSeniorityFilter, develop
             seniority: 'Senior'
         },
 
-
-        // Giovanni
-
-        {
-            title: 'Let´s Deliver',
-            description: 'A plataforma Lets Deliver conecta entregadores e motoristas a clientes que precisam de serviços de entrega na região, permitindo que visualizem os pontos de entrega no mapa e aceitem serviços disponíveis.',
-            developer: 'Giovani Appezzato N. Rosa',
-            developerLink: '/giovani',
-            classificationTag: 'Aplicativo',
-            skillTags: [{ icon: faReact }, { icon: faCss3Alt }],
-            imageSrc: 'https://giovani-appezzato.vercel.app/assets/images/lets-deliver.png',
-            siteLink: '#',
-            detailsLink: '#websenior-details',
-            seniority: 'Senior'
-        },
-        {
-            title: 'Writeflow',
-            description: 'Sistema low-code/no-code que proporciona autonomia na implementação de fluxos de trabalho com a notação BPMN, desde a criação de processos até a execução e geração de relatórios para análise de resultados.',
-            developer: 'Giovani Appezzato N. Rosa',
-            developerLink: '/giovani',
-            classificationTag: 'Aplicativo',
-            skillTags: [{ icon: faReact }, { icon: faCss3Alt }],
-            imageSrc: 'https://giovani-appezzato.vercel.app/assets/images/writeflow.jpg',
-            siteLink: '#',
-            detailsLink: '#websenior-details',
-            seniority: 'Senior'
-        },
-        {
-            title: 'Lovekar Automotive',
-            description: 'Plataforma de agendamento de horários com oficinas da região, com o objetivo de facilitar a comunicação entre proprietários de veículos, lojas de autopeças e oficinas.',
-            developer: 'Giovani Appezzato N. Rosa',
-            developerLink: '/giovani',
-            classificationTag: 'Aplicativo',
-            skillTags: [{ icon: faReact }, { icon: faCss3Alt }],
-            imageSrc: 'https://giovani-appezzato.vercel.app/assets/images/lovekar.png',
-            siteLink: '#',
-            detailsLink: '#websenior-details',
-            seniority: 'Senior'
-        },
-        {
-            title: 'SAIC (Solução de atendimento integrado ao cidadão)',
-            description: 'Sistema de gestão 156 para cidades, projetado para aprimorar a comunicação entre a população e a prefeitura, com integração a um modelador BPMN que possibilita a criação e automação de processos municipais sem a necessidade de codificação.',
-            developer: 'Giovani Appezzato N. Rosa',
-            developerLink: '/giovani',
-            classificationTag: 'Aplicativo',
-            skillTags: [{ icon: faReact }, { icon: faCss3Alt }],
-            imageSrc: 'https://giovani-appezzato.vercel.app/assets/images/saic.png',
-            siteLink: 'https://www.higienizalar.com.br/',
-            detailsLink: '#websenior-details',
-            seniority: 'Senior'
-        },
 
         // Mateus
 

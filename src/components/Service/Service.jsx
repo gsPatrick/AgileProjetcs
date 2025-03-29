@@ -1,47 +1,55 @@
 // Service.jsx
 import React, { useRef, useEffect, useState } from 'react';
 import './Service.css';
-import { FaGlobe, FaRocket, FaCode, FaBullhorn, FaPencilRuler } from 'react-icons/fa';
+import { FaGlobe, FaRocket, FaCode, FaBullhorn, FaPencilRuler,FaPalette } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 function Service() {
     const whatsappNumber = '5518998184907'; // Número do WhatsApp
     const servicos = [
         {
-            titulo: 'Web Design',
-            descricao: 'Nosso serviço de Web Design é totalmente sobre criar websites visualmente impressionantes e amigáveis que deixam uma impressão duradoura no seu público. Nós misturamos criatividade com funcionalidade para entregar websites que mostram a identidade da sua marca enquanto garantem navegação perfeita e experiência de usuário ideal.',
+            titulo: 'Landing Page',
+            descricao: 'Criação de Landing Pages impactantes e focadas em conversão. Design visual atraente e navegação intuitiva para maximizar resultados.',
             icone: <FaGlobe className="servico-icone" />,
             botaoProjetos: true,
-            classificationTag: 'Web Design'
+            classificationTag: 'Landing Page'
         },
         {
-            titulo: 'DevOps',
-            descricao: 'A agência pode fornecer serviços DevOps para ajudar empresas a otimizar seu desenvolvimento de software.',
+            titulo: 'Aplicativo',
+            descricao: 'Desenvolvimento de aplicativos personalizados para iOS e Android. Soluções inovadoras para otimizar processos e engajar seus usuários.',
             icone: <FaRocket className="servico-icone" />,
             botaoProjetos: true,
-            classificationTag: 'DevOps'
+            classificationTag: 'Aplicativo'
         },
         {
-            titulo: 'Desenvolvimento',
-            descricao: 'A agência pode fornecer serviços de desenvolvimento de software sob medida para atender às necessidades específicas do seu negócio.',
-            icone: <FaCode className="servico-icone" />,
+            titulo: 'Web Site Personalizado',
+            descricao: 'Desenvolvimento de Web Sites Personalizados para impulsionar sua marca. Design exclusivo, funcionalidades sob medida e hospedagem otimizada para o seu sucesso online.',
+            icone: <FaGlobe className="servico-icone" />,
             botaoProjetos: true,
-            classificationTag: 'Desenvolvimento'
+            classificationTag: 'Site Personalizado'
         },
+        
         {
             titulo: 'Marketing Digital',
-            descricao: 'Estratégias de marketing digital eficazes para aumentar a visibilidade online e alcançar seu público-alvo.',
+            descricao: 'Estratégias de Marketing Digital para aumentar a visibilidade online e gerar leads qualificados. Alcance seu público-alvo de forma eficaz.',
             botaoTexto: 'Explore Agora',
             icone: <FaBullhorn className="servico-icone" />,
             botaoProjetos: true,
             classificationTag: 'Marketing Digital'
         },
         {
-            titulo: 'Design Gráfico',
-            descricao: 'Serviços de design gráfico criativos para fortalecer a identidade visual da sua marca.',
+            titulo: 'Automação',
+            descricao: 'Automação de processos para otimizar sua operação e aumentar a produtividade. Reduza custos e foque no que realmente importa.',
             icone: <FaPencilRuler className="servico-icone" />,
             botaoProjetos: true,
-            classificationTag: 'Design Gráfico'
+            classificationTag: 'Automacao'
+        },
+        {
+            titulo: 'Design Que Marca',
+            descricao: 'Criamos identidades visuais únicas e memoráveis para sua marca se destacar. Logotipos, paletas de cores, tipografia e tudo o que você precisa para construir uma imagem forte e profissional.',
+            icone: <FaPalette className="servico-icone" />, // Substitua pelo ícone apropriado
+            botaoProjetos: true,
+            classificationTag: 'Design'
         }
     ];
 

@@ -14,6 +14,7 @@ import RenanPage from "../pages/Renan/Renan"; // Caminhos ajustados
 import MateusPage from "../pages/Mateus/Mateus"; // Caminhos ajustados
 import JoaoPage from "../pages/Joao/Joao"; // Caminhos ajustados
 import Agile from "../pages/Sobre/Agile";
+import MichelPage from '../pages/Michel/Michel'
 import TestePage from "../pages/testepage";
 
 const AppRoutes = () => {
@@ -33,6 +34,7 @@ const AppRoutes = () => {
           <Route path="/mateus" element={<MateusPage />} /> {/* Rotas ajustadas */}
           <Route path="/joao" element={<JoaoPage />} /> {/* Rotas ajustadas */}
           <Route path="/testepage" element={<TestePage />} />
+          <Route path="/michel" element={<MichelPage />} /> {/* Rotas ajustadas */}
           <Route path="/sobre" element={<Agile />} />
         </Route>
       </Routes>

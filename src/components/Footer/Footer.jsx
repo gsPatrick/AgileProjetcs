@@ -2,7 +2,7 @@
 import React, { useRef, useEffect, useState } from 'react'; // **ADD THIS IMPORT STATEMENT**
 import './Footer.css';
 import Logo from '../../assets/Logo.png';
-import { FaFacebook, FaInstagram, FaWhatsapp, FaPhone } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaWhatsapp, FaPhone, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom'; // **MAKE SURE THIS LINE IS PRESENT**
 
 function Footer() {
@@ -63,7 +63,7 @@ function Footer() {
           </div>
           <p className="company-description">Especialistas em desenvolvimento de software, transformando ideias em realidade digital com tecnologia e inovação.</p>
           <div className="social-icons">
-            <a href="#" aria-label="Facebook"><FaFacebook className="social-icon" /></a>
+            <a href="#" aria-label="linkedin"><FaLinkedin className="social-icon" /></a>
             <a href="#" aria-label="Instagram"><FaInstagram className="social-icon" /></a>
             <a href="#" aria-label="WhatsApp"><FaWhatsapp className="social-icon" /></a>
           </div>
@@ -72,11 +72,13 @@ function Footer() {
         <div className="footer-column services">
           <h4 className="footer-column-title">SERVIÇOS</h4>
           <ul className="footer-links">
+            <li><Link to="/projects" className="footer-link">Landing Page</Link></li>
+            <li><Link to="/projects" className="footer-link">Aplicativo</Link></li>
+            <li><Link to="/projects" className="footer-link">Web Site Personalizado</Link></li>
             <li><Link to="/projects" className="footer-link">Desenvolvimento Web</Link></li>
-            <li><Link to="/projects" className="footer-link">DevOps</Link></li>
-            <li><Link to="/projects" className="footer-link">Desenvolvimento</Link></li>
             <li><Link to="/projects" className="footer-link">Marketing Digital</Link></li>
-            <li><Link to="/projects" className="footer-link">Design Gráfico</Link></li>
+            <li><Link to="/projects" className="footer-link">Automação</Link></li>
+            <li><Link to="/projects" className="footer-link">Design Que Marca</Link></li>
           </ul>
         </div>
 
