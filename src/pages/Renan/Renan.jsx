@@ -173,7 +173,13 @@ Meu foco é entender suas necessidades e criar soluções criativas que verdadei
             image: 'https://i.imgur.com/YCsTL5c.jpeg', // Substitua pela URL da imagem dela
             tags: ['Revisão de Textos', 'Tradução (Inglês)', 'Criação de Conteúdo'],
             link: '/wildilene'
-          }
+          },
+          {
+            name: 'Patrick Siqueira',
+            image: 'https://i.imgur.com/hsQLqCL.jpeg',
+            tags: ['Desenvolvedor Full-Stack', 'Dev-Ops', 'Web-Design'],
+            link: '/patrick'
+          },
           ];
 
 
