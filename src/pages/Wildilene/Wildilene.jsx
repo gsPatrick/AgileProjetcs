@@ -64,7 +64,7 @@ const WildilenePage = () => {
             { name: 'Inglês Acadêmico', icon: faLanguage }, // Pode usar o mesmo ícone ou outro
         ],
         portfolioButtonText: 'Entre em Contato',
-        portfolioButtonLink: 'https://wa.me/SEU_NUMERO' // Substitua pelo número dela
+        portfolioButtonLink: 'https://wa.me/5518998184907' // Substitua pelo número dela
     };
 
     const professionalSkills = [
@@ -83,7 +83,7 @@ const WildilenePage = () => {
         title: 'Minha Expertise em Língua Inglesa',
         description: 'Olá eu sou Wildilene Pereira Moreira, sou formada em Letras com especialização em Inglês e acumulo mais de 15 anos de experiência no setor. Minha atuação destaca-se pela revisão de textos acadêmico-científicos e pela criação de uma variedade de projetos que envolvem a Língua Inglesa. Como intérprete e tradutora certificada pelo Cambridge TKT B3, desenvolvo conteúdos originais em inglês, elaborando textos diversos para diferentes finalidades. Minha carreira é marcada pela participação ativa em projetos de criação e desenvolvimento de materiais, além de colaborar em iniciativas voluntárias voltadas para o público jovem.',
         buttonText: 'Entre em Contato',
-        buttonLink: 'https://wa.me/SEU_NUMERO', // Substitua pelo número dela
+        buttonLink: 'https://wa.me/5518998184907', // Substitua pelo número dela
         imageSrc: 'https://i.imgur.com/YCsTL5c.jpeg', // Substitua por uma imagem real
         icon: faLanguage,
     };

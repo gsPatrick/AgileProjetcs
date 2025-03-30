@@ -65,7 +65,7 @@ const CarolPage = () => {
             { name: 'Atendimento ao Cliente', icon: faPhone }, // Pode usar o mesmo ícone ou outro
         ],
         portfolioButtonText: 'Entre em Contato',
-        portfolioButtonLink: 'https://wa.me/SEU_NUMERO' // Substitua pelo número dela
+        portfolioButtonLink: 'https://wa.me/5518998184907' // Substitua pelo número dela
     };
 
     const professionalSkills = [
@@ -85,7 +85,7 @@ const CarolPage = () => {
         title: 'Minha Expertise Administrativa',
         description: `Minha missão é oferecer suporte administrativo completo e soluções personalizadas para os desafios da sua empresa. Com expertise em telemarketing, prospecção de leads, administração e organização secretarial, estou à disposição para ajudar você a construir um futuro de sucesso, com foco no cliente e no crescimento sustentável.`,
         buttonText: 'Entre em Contato',
-        buttonLink: 'https://wa.me/SEU_NUMERO', // Substitua pelo número dela
+        buttonLink: 'https://wa.me/5518998184907', // Substitua pelo número dela
         imageSrc: 'https://i.imgur.com/w4W9Lbf.jpeg', // Substitua por uma imagem real
         icon: faBriefcase,
     };
