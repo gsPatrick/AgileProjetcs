@@ -159,6 +159,7 @@ const PatrickPage = () => {
           tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
           link: '/michel'
         },
+        
       ];
 
     // Dados para o componente AboutMe

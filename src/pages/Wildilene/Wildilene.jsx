@@ -131,6 +131,12 @@ const WildilenePage = () => {
             tags: ['Telemarketing', 'Prospecção de Leads', 'Administração', 'Secretaria'], // Atualize as tags
             link: '/carol' // Mantenha o link
         },
+        {
+            name: 'Patrick Siqueira',
+            image: 'https://i.imgur.com/hsQLqCL.jpeg',
+            tags: ['Desenvolvedor Full-Stack', 'Dev-Ops', 'Web-Design'],
+            link: '/patrick'
+          },
     ];
 
 

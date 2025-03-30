@@ -147,6 +147,12 @@ const MichelPage = () => {
             tags: ['Marketing Digital', 'Marketing de Afiliados', 'Trafego Pago', 'Copywritring Estratétgico'],
             link: '/maria'
         },
+        {
+          name: 'Patrick Siqueira',
+          image: 'https://i.imgur.com/hsQLqCL.jpeg',
+          tags: ['Desenvolvedor Full-Stack', 'Dev-Ops', 'Web-Design'],
+          link: '/patrick'
+        },
     ];
 
 

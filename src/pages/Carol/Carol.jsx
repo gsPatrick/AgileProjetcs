@@ -145,6 +145,12 @@ const CarolPage = () => {
             tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
             link: '/michel'
           },
+          {
+            name: 'Patrick Siqueira',
+            image: 'https://i.imgur.com/hsQLqCL.jpeg',
+            tags: ['Desenvolvedor Full-Stack', 'Dev-Ops', 'Web-Design'],
+            link: '/patrick'
+          },
     ];
 
 
