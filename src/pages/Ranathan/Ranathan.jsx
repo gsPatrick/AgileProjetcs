@@ -132,6 +132,12 @@
                 tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
                 link: '/michel'
               },
+              { // Adicione a Wildilene aqui
+                name: 'Wildilene Pereira Moreira',
+                image: 'https://i.imgur.com/YCsTL5c.jpeg', // Substitua pela URL da imagem dela
+                tags: ['Revisão de Textos', 'Tradução (Inglês)', 'Criação de Conteúdo'],
+                link: '/wildilene'
+              }
           ];
 
 

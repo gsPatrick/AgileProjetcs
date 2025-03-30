@@ -76,12 +76,12 @@
         
        const primeirosProfissionais = [
         
-          {
-            name: 'Maria G. Silva',
-            image: 'https://i.imgur.com/q7rfYQ5.jpeg',
-            tags: ['Marketing Digital', 'Marketing de Afiliados', 'Trafego Pago', 'Copywritring Estratétgico'],
-            link: '/maria'
-          },
+        {
+          name: 'Maria G. Silva',
+          image: 'https://i.imgur.com/q7rfYQ5.jpeg',
+          tags: ['Marketing Digital', 'Marketing de Afiliados', 'Trafego Pago', 'Copywritring Estratétgico'],
+          link: '/maria'
+        },
           {
             name: 'Patrick Siqueira',
             image: 'https://i.imgur.com/hsQLqCL.jpeg',
@@ -124,6 +124,18 @@
             tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
             link: '/michel'
           },
+          { // Adicione a Wildilene aqui
+            name: 'Wildilene Pereira Moreira',
+            image: 'https://i.imgur.com/YCsTL5c.jpeg', // Substitua pela URL da imagem dela
+            tags: ['Revisão de Textos', 'Tradução (Inglês)', 'Criação de Conteúdo'],
+            link: '/wildilene'
+          },
+          { // Alteração aqui
+            name: 'Ana Caroline Gomes',
+            image: 'https://i.imgur.com/w4W9Lbf.jpeg', // Mantenha a imagem
+            tags: ['Telemarketing', 'Prospecção de Leads', 'Administração', 'Secretaria'], // Atualize as tags
+            link: '/carol' // Mantenha o link
+        },
       ];
 
         // Dados para o componente AboutMe

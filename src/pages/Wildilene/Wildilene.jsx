@@ -8,10 +8,11 @@ import Pro from "../../professionals-components/AnotherProfessionals/Pro";
 import '../../App.css';
 
 import {
-    faPhone,         // Telemarketing
-    faSearch,        // Prospecção de leads
-    faBriefcase,    // Administração
-    faFileAlt,      // Secretaria
+    faBook,         // Letras
+    faLanguage,     // Inglês
+    faCheckDouble,  // Revisão
+    faGlobe,        // Tradução
+    faPencilAlt,    // Criação de conteúdo
     faUserGraduate,
     faBookOpen as faBookOpenSolid
 } from '@fortawesome/free-solid-svg-icons';
@@ -33,61 +34,58 @@ import {
     faCheckSquare,
     faMobileScreenButton as faMobileScreenButtonSolid,
     faCube,
-    faGlobe,
     faEnvelope,
     faShareAlt,
     faRobot,
-    faPencilAlt,
     faMobileScreenButton,
     faBullhorn,
     faRocket
 } from '@fortawesome/free-solid-svg-icons';
 
 
-const CarolPage = () => {
+const WildilenePage = () => {
 
     const professional = {
-        name: 'Ana Caroline Gomes',
-        primaryTag: 'Assistente Administrativa',
+        name: 'Wildilene Pereira Moreira',
+        primaryTag: 'Letras/Inglês',
         primaryTagIcon: faUserGraduate,
-        description: 'Olá, eu sou a Ana Caroline Gomes, da equipe Agile Projects! Tenho experiência nas áreas de telemarketing, prospecção de leads, administração e secretaria, ajudando empresas a crescer com organização e eficiência. Se precisar de suporte, estou à disposição!',
-        imageSrc: 'https://i.imgur.com/w4W9Lbf.jpeg', // Substitua por uma imagem real
+        description: 'Olá eu sou Wildilene Pereira Moreira, sou formada em Letras com especialização em Inglês e acumulo mais de 15 anos de experiência no setor. Minha atuação destaca-se pela revisão de textos acadêmico-científicos e pela criação de uma variedade de projetos que envolvem a Língua Inglesa. Como intérprete e tradutora certificada pelo Cambridge TKT B3, desenvolvo conteúdos originais em inglês, elaborando textos diversos para diferentes finalidades. Minha carreira é marcada pela participação ativa em projetos de criação e desenvolvimento de materiais, além de colaborar em iniciativas voluntárias voltadas para o público jovem.',
+        imageSrc: 'https://i.imgur.com/YCsTL5c.jpeg', // Substitua por uma imagem real
         imageSrcJunior: 'https://placehold.co/300x300/777/fff?text=Junior',
         imageSrcPleno: 'https://placehold.co/300x300/999/fff?text=Pleno',
         imageSrcSenior: 'https://placehold.co/300x300/555/fff?text=Senior',
-        defaultImageSrc: 'https://i.imgur.com/w4W9Lbf.jpeg', // Substitua por uma imagem real
+        defaultImageSrc: 'https://i.imgur.com/YCsTL5c.jpeg', // Substitua por uma imagem real
         tags: [
-            { name: 'Telemarketing', icon: faPhone },
-            { name: 'Prospecção de Leads', icon: faSearch },
-            { name: 'Administração', icon: faBriefcase },
-            { name: 'Secretaria', icon: faFileAlt },
-            { name: 'Organização', icon: faBriefcase }, // Pode usar o mesmo ícone ou outro
-            { name: 'Atendimento ao Cliente', icon: faPhone }, // Pode usar o mesmo ícone ou outro
+            { name: 'Revisão de Textos', icon: faCheckDouble },
+            { name: 'Tradução (Inglês)', icon: faGlobe },
+            { name: 'Interpretação (Inglês)', icon: faGlobe }, // Pode usar o mesmo ícone ou outro
+            { name: 'Criação de Conteúdo (Inglês)', icon: faPencilAlt },
+            { name: 'Desenvolvimento de Materiais Didáticos', icon: faBook },
+            { name: 'Inglês Acadêmico', icon: faLanguage }, // Pode usar o mesmo ícone ou outro
         ],
         portfolioButtonText: 'Entre em Contato',
         portfolioButtonLink: 'https://wa.me/SEU_NUMERO' // Substitua pelo número dela
     };
 
     const professionalSkills = [
-        { name: 'Comunicação', icon: faPhone },
-        { name: 'Organização', icon: faBriefcase },
-        { name: 'Proatividade', icon: faSearch },
-        { name: 'Atendimento Telefônico', icon: faPhone },
-        { name: 'Redação', icon: faPencilAlt }, // Talvez não seja o ideal, mas é o que temos para escrita
-        { name: 'Gerenciamento de Tempo', icon: faBriefcase }, // Pode usar o mesmo ícone ou outro
-        { name: 'Pacote Office', icon: faFileAlt }, // Pode usar o mesmo ícone ou outro
-        { name: 'CRM', icon: faSearch }, // Talvez não seja o ideal, mas pode representar gerenciamento de clientes
+        { name: 'Revisão de Textos Acadêmicos', icon: faCheckDouble },
+        { name: 'Tradução (Inglês/Português)', icon: faGlobe },
+        { name: 'Interpretação (Inglês/Português)', icon: faGlobe },
+        { name: 'Criação de Conteúdo para Redes Sociais (Inglês)', icon: faPencilAlt },
+        { name: 'Desenvolvimento de Aulas de Inglês', icon: faBook },
+        { name: 'Consultoria em Inglês', icon: faLanguage },
+        { name: 'Elaboração de Projetos de Inglês', icon: faPencilAlt },
     ];
 
     // Dados para o componente AboutMe
     const aboutMeData = {
         tag: 'Sobre Mim',
-        title: 'Minha Expertise Administrativa',
-        description: `Minha missão é oferecer suporte administrativo completo e soluções personalizadas para os desafios da sua empresa. Com expertise em telemarketing, prospecção de leads, administração e organização secretarial, estou à disposição para ajudar você a construir um futuro de sucesso, com foco no cliente e no crescimento sustentável.`,
+        title: 'Minha Expertise em Língua Inglesa',
+        description: 'Olá eu sou Wildilene Pereira Moreira, sou formada em Letras com especialização em Inglês e acumulo mais de 15 anos de experiência no setor. Minha atuação destaca-se pela revisão de textos acadêmico-científicos e pela criação de uma variedade de projetos que envolvem a Língua Inglesa. Como intérprete e tradutora certificada pelo Cambridge TKT B3, desenvolvo conteúdos originais em inglês, elaborando textos diversos para diferentes finalidades. Minha carreira é marcada pela participação ativa em projetos de criação e desenvolvimento de materiais, além de colaborar em iniciativas voluntárias voltadas para o público jovem.',
         buttonText: 'Entre em Contato',
         buttonLink: 'https://wa.me/SEU_NUMERO', // Substitua pelo número dela
-        imageSrc: 'https://i.imgur.com/w4W9Lbf.jpeg', // Substitua por uma imagem real
-        icon: faBriefcase,
+        imageSrc: 'https://i.imgur.com/YCsTL5c.jpeg', // Substitua por uma imagem real
+        icon: faLanguage,
     };
 
     const primeirosProfissionais = [
@@ -96,12 +94,6 @@ const CarolPage = () => {
             image: 'https://i.imgur.com/FQDlTGh.jpeg',
             tags: ['Design UX/UI', 'Figma', 'Prototipagem', 'Design Thinking'],
             link: '/renan'
-        },
-        { // Alteração aqui
-            name: 'Ana Caroline Gomes',
-            image: 'https://i.imgur.com/w4W9Lbf.jpeg', // Mantenha a imagem
-            tags: ['Telemarketing', 'Prospecção de Leads', 'Administração', 'Secretaria'], // Atualize as tags
-            link: '/carol' // Mantenha o link
         },
         {
             name: 'João Vitor',
@@ -121,12 +113,6 @@ const CarolPage = () => {
             tags: ['Desenvolvedor de Sotfware'],
             link: '/giovani'
         },
-        { // Adicione a Wildilene aqui
-            name: 'Wildilene Pereira Moreira',
-            image: 'https://i.imgur.com/YCsTL5c.jpeg', // Substitua pela URL da imagem dela
-            tags: ['Revisão de Textos', 'Tradução (Inglês)', 'Criação de Conteúdo'],
-            link: '/wildilene'
-          },
         {
             name: 'Ranathan Henrique',
             image: 'https://ranathan-portifolio.vercel.app/assets/img/main.jpg',
@@ -140,11 +126,11 @@ const CarolPage = () => {
             link: '/maria'
         },
         {
-            name: 'Michel Lombardi',
-            image: 'https://i.imgur.com/gqGHDF8.jpeg',
-            tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
-            link: '/michel'
-          },
+            name: 'Ana Caroline Gomes',
+            image: 'https://i.imgur.com/w4W9Lbf.jpeg', // Mantenha a imagem
+            tags: ['Telemarketing', 'Prospecção de Leads', 'Administração', 'Secretaria'], // Atualize as tags
+            link: '/carol' // Mantenha o link
+        },
     ];
 
 
@@ -184,4 +170,4 @@ const CarolPage = () => {
     );
 };
 
-export default CarolPage;
+export default WildilenePage;

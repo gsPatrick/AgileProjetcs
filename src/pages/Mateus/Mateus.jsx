@@ -132,6 +132,12 @@
                 tags: ['Desenvolvedor Full-Stack'],
                 link: '/joao'
               },
+              { // Adicione a Wildilene aqui
+                name: 'Wildilene Pereira Moreira',
+                image: 'https://i.imgur.com/YCsTL5c.jpeg', // Substitua pela URL da imagem dela
+                tags: ['Revisão de Textos', 'Tradução (Inglês)', 'Criação de Conteúdo'],
+                link: '/wildilene'
+              },
               { // Alteração aqui
                 name: 'Ana Caroline Gomes',
                 image: 'https://i.imgur.com/w4W9Lbf.jpeg', // Mantenha a imagem

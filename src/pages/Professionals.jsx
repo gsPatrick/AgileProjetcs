@@ -54,12 +54,18 @@ const Professionals = () => {
         tags: ['Desenvolvedor Full-Stack'],
         link: '/joao'
       },
-      {
+      { // Alteração aqui
         name: 'Ana Caroline Gomes',
-        image: 'https://i.imgur.com/w4W9Lbf.jpeg',
-        tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
-        link: '/carol'
-      },
+        image: 'https://i.imgur.com/w4W9Lbf.jpeg', // Mantenha a imagem
+        tags: ['Telemarketing', 'Prospecção de Leads', 'Administração', 'Secretaria'], // Atualize as tags
+        link: '/carol' // Mantenha o link
+    },
+      { // Adicione a Wildilene aqui
+        name: 'Wildilene Pereira Moreira',
+        image: 'https://i.imgur.com/YCsTL5c.jpeg', // Substitua pela URL da imagem dela
+        tags: ['Revisão de Textos', 'Tradução (Inglês)', 'Criação de Conteúdo'],
+        link: '/wildilene'
+      }
   ];
 
   // Dados dos segundos profissionais (exemplo diferente)
@@ -116,12 +122,12 @@ const Professionals = () => {
       tags: ['Marketing Digital', 'Marketing de Afiliados', 'Trafego Pago', 'Copywritring Estratétgico'],
       link: '/maria'
     },
-    {
+    { // Alteração aqui
       name: 'Ana Caroline Gomes',
-      image: 'https://i.imgur.com/w4W9Lbf.jpeg',
-      tags: ['Matemático', 'Fisico', 'Analista de Probabilidades', ],
-      link: '/carol'
-    },
+      image: 'https://i.imgur.com/w4W9Lbf.jpeg', // Mantenha a imagem
+      tags: ['Telemarketing', 'Prospecção de Leads', 'Administração', 'Secretaria'], // Atualize as tags
+      link: '/carol' // Mantenha o link
+  },
   // ... mais profissionais para esta seção
 ];
 

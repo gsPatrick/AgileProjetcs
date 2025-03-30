@@ -121,6 +121,12 @@
             tags: ['Product Designer'],
             link: '/mateus'
           },
+          { // Adicione a Wildilene aqui
+            name: 'Wildilene Pereira Moreira',
+            image: 'https://i.imgur.com/YCsTL5c.jpeg', // Substitua pela URL da imagem dela
+            tags: ['Revisão de Textos', 'Tradução (Inglês)', 'Criação de Conteúdo'],
+            link: '/wildilene'
+          },
           {
             name: 'Giovani Appezzato N. Rosa',
             image: ' https://giovani-appezzato.vercel.app/assets/images/eu.webp',

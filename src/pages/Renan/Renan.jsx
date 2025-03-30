@@ -168,6 +168,12 @@ Meu foco é entender suas necessidades e criar soluções criativas que verdadei
               tags: ['Telemarketing', 'Prospecção de Leads', 'Administração', 'Secretaria'], // Atualize as tags
               link: '/carol' // Mantenha o link
           },
+          { // Adicione a Wildilene aqui
+            name: 'Wildilene Pereira Moreira',
+            image: 'https://i.imgur.com/YCsTL5c.jpeg', // Substitua pela URL da imagem dela
+            tags: ['Revisão de Textos', 'Tradução (Inglês)', 'Criação de Conteúdo'],
+            link: '/wildilene'
+          }
           ];
 
 
