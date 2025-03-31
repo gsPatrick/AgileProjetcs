@@ -4,11 +4,11 @@ import './HeroSection.css';
 
 function HeroSection() {
   const titles = [
-    "Inovação, Qualidade e Resultados: O Marketplace para Seu Projeto",
-    "Sua Solução Digital, Conectada a Talentos em Diversas Áreas.",
-    "Encontre Especialistas de Qualidade para Cada Projeto Sem Complicação."
+    "Criamos Softwares, Apps e Sites Sob Medida para o Seu Negócio"
+    // "Sua Solução Digital, Conectada a Talentos em Diversas Áreas.",
+    // "Encontre Especialistas de Qualidade para Cada Projeto Sem Complicação."
   ];
-  const subtitle = "A Plataforma que Seu Projeto Merece.";
+  const subtitle = "Desenvolvimento Personalizado de Sotfware e Aplicativos";
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const [animationClass, setAnimationClass] = useState('fade-in');
   const titleInnerRef = useRef(null);
@@ -39,9 +39,9 @@ function HeroSection() {
             {titles[currentTitleIndex]}
           </span>
         </h1>
-        <p className="hero-subtitle">
+        <h2 className="hero-subtitle">
           {subtitle}
-        </p>
+        </h2>
         <button className="hero-button" onClick={handleContactClick}>ENTRE EM CONTATO</button>
       </div>
     </section>
