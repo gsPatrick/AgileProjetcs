@@ -140,8 +140,8 @@
 
         // Dados para o componente AboutMe
         const aboutMeData = {
-            tag: 'Sobre a AGileProjects',
-            title: 'Nos conheça melhor',
+          tag: 'Sobre a AgileProjects',
+          title: 'Quem somos',
             description: `
 A AGileProjects nasceu com um propósito claro: reunir os melhores profissionais da área de tecnologia para oferecer soluções completas e inovadoras. Somos uma agência especializada no desenvolvimento de aplicativos delivery, aplicativos de jogos, inteligência artificial, design web, UI/UX, backend, frontend e animação 3D. Além disso, contamos com especialistas em SEO, otimização de sites, acertos de tags, criação de plugins e produção de conteúdos como e-books e copy persuasiva.
             `, // Ajustei a descrição para refletir os títulos nas tags e mencionar algumas skills
