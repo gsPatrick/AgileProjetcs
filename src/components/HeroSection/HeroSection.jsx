@@ -12,7 +12,7 @@ function HeroSection() {
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const [animationClass, setAnimationClass] = useState('fade-in');
   const titleInnerRef = useRef(null);
-  const whatsappNumber = '5518998184907';
+  const whatsappNumber = '11954728628';
 
   useEffect(() => {
     const intervalId = setInterval(() => {
