@@ -65,7 +65,7 @@ function Footer() {
     scrollToTop(path);
   };
 
-  const whatsappNumber = '+5518997113024';
+  const whatsappNumber = '+55954728628';
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
@@ -118,7 +118,7 @@ function Footer() {
           <ul className="footer-contact-info">
 
             <li><a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="whatsapp-contact-link">
-              <FaWhatsapp className="contact-icon whatsapp-icon" /> +55 18 997113024 </a></li>
+              <FaWhatsapp className="contact-icon whatsapp-icon" /> +55 11 95472-8628 </a></li>
           </ul>
         </div>
       </div>
